@@ -1,0 +1,23 @@
+.reasoning-section { padding-top: 150px; padding-bottom: 150px; background-color: #13181d; color: #ffffff; font-family: Switzer, Arial, sans-serif; scroll-margin-top: 120px; }
+.reasoning-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 64px; }
+.reasoning-card { display: flex; flex-direction: column; min-width: 0; border-radius: 4px; background-color: #d1d1d1; color: #13181d; overflow: hidden; }
+.reasoning-media { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.reasoning-body { padding: 36px 40px 44px 40px; }
+.reasoning-name { margin: 0 0 16px 0; font-size: 32px; line-height: 1.1; font-weight: 400; letter-spacing: -0.01em; }
+.reasoning-text { margin: 0; font-size: 17px; line-height: 1.6; color: rgba(19, 24, 29, 0.85); }
+.reasoning-examples-label { margin: 28px 0 10px 0; font-size: 12px; line-height: 1.3; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(19, 24, 29, 0.6); }
+.reasoning-examples { margin: 0; padding: 0 0 0 20px; }
+.reasoning-example { margin: 0 0 6px 0; font-size: 16px; line-height: 1.5; }
+
+@media screen and (max-width: 991px) {
+  .reasoning-section { padding-top: 112px; padding-bottom: 112px; }
+  .reasoning-grid { gap: 16px; margin-top: 48px; }
+  .reasoning-body { padding: 28px 28px 32px 28px; }
+  .reasoning-name { font-size: 26px; }
+}
+@media screen and (max-width: 767px) {
+  .reasoning-section { padding-top: 88px; padding-bottom: 88px; }
+  .reasoning-grid { grid-template-columns: minmax(0, 1fr); }
+  .reasoning-body { padding: 24px 22px 28px 22px; }
+  .reasoning-text { font-size: 16px; }
+}

@@ -1,0 +1,41 @@
+.site-header { position: sticky; top: 0; z-index: 100; background-color: #13181d; color: #ffffff; font-family: Switzer, Arial, sans-serif; border-bottom: 1px solid rgba(255, 255, 255, 0.14); }
+.main-nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px 40px; }
+.brand-link { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; flex: none; }
+.brand-mark { display: block; width: 32px; height: 32px; }
+.brand-wordmark { display: block; width: 234px; height: 31px; }
+.main-nav-links { display: flex; align-items: center; gap: 8px; }
+.main-nav-link { display: inline-block; padding: 6px 14px; border-radius: 999px; font-size: 16px; line-height: 1.4; color: #ffffff; text-decoration: none; white-space: nowrap; transition: background-color 0.2s ease; }
+.main-nav-link:hover { background-color: rgba(255, 255, 255, 0.12); }
+.main-nav-link-current { display: inline-block; padding: 6px 14px; border-radius: 999px; font-size: 16px; line-height: 1.4; color: #ffffff; text-decoration: none; white-space: nowrap; background-color: rgba(255, 255, 255, 0.14); }
+.main-nav-link-outline { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border: 1px solid rgba(255, 255, 255, 0.7); border-radius: 999px; font-size: 16px; line-height: 1.4; color: #ffffff; text-decoration: none; white-space: nowrap; transition: background-color 0.2s ease; }
+.main-nav-link-outline:hover { background-color: rgba(255, 255, 255, 0.12); }
+.main-nav-out-icon { display: block; width: 13px; height: 14px; }
+.menu-button { display: none; width: 40px; height: 36px; align-items: center; justify-content: center; border-radius: 6px; }
+.menu-icon { display: block; width: 26px; height: 12px; }
+.chapter-nav { border-top: 1px solid rgba(255, 255, 255, 0.08); }
+.chapter-nav-list { display: flex; gap: 6px; margin: 0; padding: 0 40px; list-style: none; overflow-x: auto; scrollbar-width: none; }
+.chapter-nav-item { flex: 1 0 auto; margin: 0; padding: 0; }
+.chapter-nav-link { display: block; padding: 10px 2px 9px 2px; font-size: 13px; line-height: 1.3; color: rgba(255, 255, 255, 0.62); text-decoration: none; white-space: nowrap; transition: color 0.2s ease; }
+.chapter-nav-link:hover { color: #ffffff; }
+.chapter-nav-link.w--current { color: #ffffff; }
+.chapter-nav-text { display: block; }
+.chapter-nav-num { margin-right: 6px; font-weight: 500; color: rgba(255, 255, 255, 0.34); }
+.chapter-nav-track { display: block; height: 2px; margin-top: 8px; border-radius: 2px; background-color: rgba(255, 255, 255, 0.14); overflow: hidden; }
+.chapter-nav-fill { display: block; width: 0%; height: 100%; background-color: #1bc594; }
+
+@media screen and (max-width: 991px) {
+  .main-nav-links { display: none; }
+  .menu-button { display: flex; }
+  .chapter-nav-list { gap: 18px; }
+  .chapter-nav-item { flex: 0 0 auto; }
+}
+@media screen and (max-width: 767px) {
+  .main-nav { padding: 12px 20px; }
+  .chapter-nav-list { padding: 0 20px; }
+  .brand-wordmark { width: 196px; height: 26px; }
+  .brand-mark { width: 27px; height: 27px; }
+}
+@media screen and (max-width: 479px) {
+  .brand-wordmark { width: 166px; height: 22px; }
+  .brand-mark { width: 23px; height: 23px; }
+}

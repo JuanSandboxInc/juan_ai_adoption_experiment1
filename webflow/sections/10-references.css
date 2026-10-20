@@ -1,0 +1,14 @@
+.refs-section { padding-top: 120px; padding-bottom: 120px; background-color: #13181d; color: #ffffff; font-family: Switzer, Arial, sans-serif; border-top: 1px solid rgba(255, 255, 255, 0.14); scroll-margin-top: 120px; }
+.refs-note { margin: 0 0 20px 0; font-size: 13px; line-height: 1.4; color: rgba(255, 255, 255, 0.55); }
+.ref-list { margin: 0; padding: 0 0 0 30px; font-size: 15px; line-height: 1.55; color: rgba(255, 255, 255, 0.72); }
+.ref-item { margin: 0 0 10px 0; padding-left: 4px; overflow-wrap: anywhere; scroll-margin-top: 140px; }
+.ref-link { color: rgba(255, 255, 255, 0.9); text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.35); text-underline-offset: 3px; }
+.ref-link:hover { color: #9ae1fa; }
+
+@media screen and (max-width: 991px) {
+  .refs-section { padding-top: 96px; padding-bottom: 96px; }
+}
+@media screen and (max-width: 767px) {
+  .refs-section { padding-top: 72px; padding-bottom: 72px; }
+  .ref-list { font-size: 14px; padding-left: 26px; }
+}

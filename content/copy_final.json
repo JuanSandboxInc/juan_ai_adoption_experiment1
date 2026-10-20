@@ -1,0 +1,3012 @@
+[
+ {
+  "id": "nav-01",
+  "section": "nav",
+  "field": "Nav link",
+  "original": "Our Approach",
+  "streamlined": "Our approach",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "Our approach"
+ },
+ {
+  "id": "nav-02",
+  "section": "nav",
+  "field": "Nav link (current page)",
+  "original": "Intro to AI",
+  "streamlined": "Intro to AI",
+  "changed": false,
+  "reason": "No change",
+  "final": "Intro to AI"
+ },
+ {
+  "id": "nav-03",
+  "section": "nav",
+  "field": "Nav link",
+  "original": "AI-Accelerator",
+  "streamlined": "AI Accelerator",
+  "changed": true,
+  "reason": "Naming",
+  "final": "AI Accelerator"
+ },
+ {
+  "id": "nav-04",
+  "section": "nav",
+  "field": "Nav link (parent company)",
+  "original": "Sandbox Inc.",
+  "streamlined": "Sandbox Inc.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Sandbox Inc."
+ },
+ {
+  "id": "hero-h1",
+  "section": "hero",
+  "field": "H1 (visually hidden)",
+  "original": "Artificial intelligence, a “brief” introduction",
+  "streamlined": "Artificial intelligence, a “brief” introduction",
+  "changed": false,
+  "reason": "No change",
+  "final": "Artificial intelligence, a “brief” introduction"
+ },
+ {
+  "id": "hero-01",
+  "section": "hero",
+  "field": "Opening line",
+  "original": "Artificial intelligence is shaping decisions in policy, business, education, and media, and it is changing the conditions we all live and work under.",
+  "streamlined": "Artificial intelligence is shaping decisions in policy, business, education and media, and changing the conditions we all live and work under.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Artificial intelligence is shaping decisions in policy, business, education and media, and changing the conditions we all live and work under."
+ },
+ {
+  "id": "hero-02",
+  "section": "hero",
+  "field": "Opening line (yellow)",
+  "original": "Like other advanced technologies, it has the capacity to both improve people’s lives and to cause harm.",
+  "streamlined": "Like other advanced technologies, it can both improve people’s lives and cause harm.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Like other advanced technologies, it can both improve people’s lives and cause harm."
+ },
+ {
+  "id": "hero-03",
+  "section": "hero",
+  "field": "Panel text",
+  "original": "At Sandbox Labs, we are committed to helping citizens understand AI technologies. It is the first step to foster critical and thoughtful engagement with these tools and to build support for models of AI development that are human-centered and serve the public interest.",
+  "streamlined": "At Sandbox Labs, we are committed to helping citizens understand AI. Understanding is the first step towards critical, thoughtful engagement with these tools, and towards support for human-centred models of AI development that serve the public interest.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "At Sandbox Labs, we are committed to helping citizens understand AI. Understanding is the first step towards critical, thoughtful engagement with these tools, and towards support for human-centred models of AI development that serve the public interest."
+ },
+ {
+  "id": "hero-04",
+  "section": "hero",
+  "field": "Bridge line",
+  "original": "This page is that first step: a plain-language guide to what AI is, how it works, and the risks worth knowing about.",
+  "streamlined": "This page is that first step: a plain-language guide to what AI is, how it works and the risks worth knowing about.",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "This page is that first step: a plain-language guide to what AI is, how it works and the risks worth knowing about."
+ },
+ {
+  "id": "what-h",
+  "section": "what",
+  "field": "Heading",
+  "original": "What is artificial intelligence?",
+  "streamlined": "What is artificial intelligence?",
+  "changed": false,
+  "reason": "No change",
+  "final": "What is artificial intelligence?"
+ },
+ {
+  "id": "what-lead",
+  "section": "what",
+  "field": "Lead",
+  "original": "There are many definitions of artificial intelligence.",
+  "streamlined": "There are many definitions of artificial intelligence.",
+  "changed": false,
+  "reason": "No change",
+  "final": "There are many definitions of artificial intelligence."
+ },
+ {
+  "id": "what-p1",
+  "section": "what",
+  "field": "Paragraph",
+  "original": "In general, AI is understood as a category of technologies that let computers do tasks usually associated with human intelligence, such as recognizing patterns, making predictions and generating text, images, audio and video.[^1,2] It is an umbrella term for many tools with different capabilities.",
+  "streamlined": "In general, AI refers to technologies that let computers do tasks usually associated with human intelligence, such as recognizing patterns, making predictions and generating text, images, audio and video.[^1,2] It is an umbrella term for many tools with different capabilities.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "In general, AI refers to technologies that let computers do tasks usually associated with human intelligence, such as recognizing patterns, making predictions and generating text, images, audio and video.[^1,2] It is an umbrella term for many tools with different capabilities."
+ },
+ {
+  "id": "what-p2",
+  "section": "what",
+  "field": "Paragraph",
+  "original": "Today, when people say “AI”, they often mean generative AI. The differences between the types of AI are worth knowing, because each one works differently and plays a different role in our lives.",
+  "streamlined": "Today, when people say “AI”, they often mean generative AI. The types of AI are worth telling apart: each works differently and plays a different role in our lives.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Today, when people say “AI”, they often mean generative AI. The types of AI are worth telling apart: each works differently and plays a different role in our lives."
+ },
+ {
+  "id": "what-cap1",
+  "section": "what",
+  "field": "Explorer group label",
+  "original": "Rules written by people",
+  "streamlined": "Rules written by people",
+  "changed": false,
+  "reason": "No change",
+  "final": "Rules written by people"
+ },
+ {
+  "id": "what-cap2",
+  "section": "what",
+  "field": "Explorer group label",
+  "original": "Learns from data",
+  "streamlined": "Learns from data",
+  "changed": false,
+  "reason": "No change",
+  "final": "Learns from data"
+ },
+ {
+  "id": "what-lab",
+  "section": "what",
+  "field": "Explorer label",
+  "original": "In practice",
+  "streamlined": "In practice",
+  "changed": false,
+  "reason": "No change",
+  "final": "In practice"
+ },
+ {
+  "id": "what-sym-name",
+  "section": "what",
+  "field": "Type name",
+  "original": "Symbolic AI",
+  "streamlined": "Symbolic AI",
+  "changed": false,
+  "reason": "No change",
+  "final": "Symbolic AI"
+ },
+ {
+  "id": "what-sym-tag",
+  "section": "what",
+  "field": "Symbolic AI: tagline",
+  "original": "Follows rules written by people.[^3]",
+  "streamlined": "Follows rules written by people.[^3]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Follows rules written by people.[^3]"
+ },
+ {
+  "id": "what-sym-ex",
+  "section": "what",
+  "field": "Symbolic AI: example",
+  "original": "IBM Deep Blue",
+  "streamlined": "IBM Deep Blue",
+  "changed": false,
+  "reason": "No change",
+  "final": "IBM Deep Blue"
+ },
+ {
+  "id": "what-sym-fact",
+  "section": "what",
+  "field": "Symbolic AI: in practice",
+  "original": "In 1997 Deep Blue beat world chess champion Garry Kasparov. Its programmers told it what each piece is worth, and it scored 200 million possible positions a second using those rules.[^19]",
+  "streamlined": "In 1997 Deep Blue beat world chess champion Garry Kasparov. Its programmers told it what each piece is worth, and it scored 200 million possible positions a second using those rules.[^19]",
+  "changed": false,
+  "reason": "No change",
+  "final": "In 1997 Deep Blue beat world chess champion Garry Kasparov. Its programmers told it what each piece is worth, and it scored 200 million possible positions a second using those rules.[^19]"
+ },
+ {
+  "id": "what-ml-name",
+  "section": "what",
+  "field": "Type name",
+  "original": "Machine learning",
+  "streamlined": "Machine learning",
+  "changed": false,
+  "reason": "No change",
+  "final": "Machine learning"
+ },
+ {
+  "id": "what-ml-tag",
+  "section": "what",
+  "field": "Machine learning: tagline",
+  "original": "Learns patterns from data.[^3]",
+  "streamlined": "Learns patterns from data.[^3]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Learns patterns from data.[^3]"
+ },
+ {
+  "id": "what-ml-ex",
+  "section": "what",
+  "field": "Machine learning: example",
+  "original": "Gmail’s spam filter",
+  "streamlined": "Gmail’s spam filter",
+  "changed": false,
+  "reason": "No change",
+  "final": "Gmail’s spam filter"
+ },
+ {
+  "id": "what-ml-fact",
+  "section": "what",
+  "field": "Machine learning: in practice",
+  "original": "Nobody wrote Gmail’s spam rules. It learned what spam looks like from millions of emails people flagged, and Google says it blocks spam with over 99.9% accuracy.[^20]",
+  "streamlined": "Nobody wrote Gmail’s spam rules. It learned what spam looks like from millions of emails people flagged, and Google says it blocks spam with over 99.9% accuracy.[^20]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Nobody wrote Gmail’s spam rules. It learned what spam looks like from millions of emails people flagged, and Google says it blocks spam with over 99.9% accuracy.[^20]"
+ },
+ {
+  "id": "what-gen-name",
+  "section": "what",
+  "field": "Type name",
+  "original": "Generative AI",
+  "streamlined": "Generative AI",
+  "changed": false,
+  "reason": "No change",
+  "final": "Generative AI"
+ },
+ {
+  "id": "what-gen-tag",
+  "section": "what",
+  "field": "Generative AI: tagline",
+  "original": "Creates new content from learned patterns.[^4]",
+  "streamlined": "Creates new content from learned patterns.[^4]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Creates new content from learned patterns.[^4]"
+ },
+ {
+  "id": "what-gen-ex",
+  "section": "what",
+  "field": "Generative AI: example",
+  "original": "Image generators like DALL·E and Stable Diffusion",
+  "streamlined": "Image generators such as DALL·E and Stable Diffusion",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "Image generators such as DALL·E and Stable Diffusion"
+ },
+ {
+  "id": "what-gen-fact",
+  "section": "what",
+  "field": "Generative AI: in practice",
+  "original": "You describe a picture in words. The tool starts from random noise and shapes it, step by step, into a new image that matches. This is called diffusion.",
+  "streamlined": "You describe a picture in words. The tool starts from random noise and shapes it, step by step, into a matching new image. This is called diffusion.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "You describe a picture in words. The tool starts from random noise and shapes it, step by step, into a matching new image. This is called diffusion."
+ },
+ {
+  "id": "what-llm-name",
+  "section": "what",
+  "field": "Type name",
+  "original": "LLMs",
+  "streamlined": "LLMs",
+  "changed": false,
+  "reason": "No change",
+  "final": "LLMs"
+ },
+ {
+  "id": "what-llm-tag",
+  "section": "what",
+  "field": "LLMs: tagline",
+  "original": "Generative AI trained on human language.[^4]",
+  "streamlined": "Generative AI trained on human language.[^4]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Generative AI trained on human language.[^4]"
+ },
+ {
+  "id": "what-llm-ex",
+  "section": "what",
+  "field": "LLMs: example",
+  "original": "ChatGPT, Gemini and Claude",
+  "streamlined": "ChatGPT, Gemini and Claude",
+  "changed": false,
+  "reason": "No change",
+  "final": "ChatGPT, Gemini and Claude"
+ },
+ {
+  "id": "what-llm-fact",
+  "section": "what",
+  "field": "LLMs: in practice",
+  "original": "They write an answer one word at a time, each time choosing the most likely next word. Because every word is a prediction, an answer can sound confident and still be wrong.",
+  "streamlined": "They write an answer one word at a time, each time choosing the most likely next word. Because every word is a prediction, an answer can sound confident and still be wrong.",
+  "changed": false,
+  "reason": "No change",
+  "final": "They write an answer one word at a time, each time choosing the most likely next word. Because every word is a prediction, an answer can sound confident and still be wrong."
+ },
+ {
+  "id": "hist-h",
+  "section": "hist",
+  "field": "Heading",
+  "original": "A brief history of AI",
+  "streamlined": "A brief history of AI",
+  "changed": false,
+  "reason": "No change",
+  "final": "A brief history of AI"
+ },
+ {
+  "id": "hist-intro",
+  "section": "hist",
+  "field": "Intro",
+  "original": "Decades of research, breakthroughs and setbacks shaped the AI we use today.",
+  "streamlined": "Decades of research, breakthroughs and setbacks shaped the AI we use today.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Decades of research, breakthroughs and setbacks shaped the AI we use today."
+ },
+ {
+  "id": "hist-skip",
+  "section": "hist",
+  "field": "Button",
+  "original": "Skip the timeline",
+  "streamlined": "Skip the timeline",
+  "changed": false,
+  "reason": "No change",
+  "final": "Skip the timeline"
+ },
+ {
+  "id": "hist-01-title",
+  "section": "hist",
+  "field": "1950 · title",
+  "original": "Alan Turing asks “Can machines think?”",
+  "streamlined": "Alan Turing asks “Can machines think?”",
+  "changed": false,
+  "reason": "No change",
+  "final": "Alan Turing asks “Can machines think?”"
+ },
+ {
+  "id": "hist-01-body",
+  "section": "hist",
+  "field": "1950 · body",
+  "original": "The mathematician proposes the imitation game, later known as the Turing test: can a machine hold a conversation you can’t tell apart from a person’s?[^21]",
+  "streamlined": "The mathematician proposes the imitation game, later known as the Turing test: can a machine hold a conversation you can’t tell apart from a person’s?[^21]",
+  "changed": false,
+  "reason": "No change",
+  "final": "The mathematician proposes the imitation game, later known as the Turing test: can a machine hold a conversation you can’t tell apart from a person’s?[^21]"
+ },
+ {
+  "id": "hist-01-cap",
+  "section": "hist",
+  "field": "1950 · photo caption",
+  "original": "Ferranti Mark I computing room with early researchers; the archive associates this photograph with Turing",
+  "streamlined": "Early researchers in the Ferranti Mark I computing room; the archive links this photo to Turing",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Early researchers in the Ferranti Mark I computing room; the archive links this photo to Turing"
+ },
+ {
+  "id": "hist-02-title",
+  "section": "hist",
+  "field": "1956 · title",
+  "original": "The field gets its name",
+  "streamlined": "The field gets its name",
+  "changed": false,
+  "reason": "No change",
+  "final": "The field gets its name"
+ },
+ {
+  "id": "hist-02-body",
+  "section": "hist",
+  "field": "1956 · body",
+  "original": "A summer workshop at Dartmouth College brings researchers together around a new term: “artificial intelligence”.[^22]",
+  "streamlined": "A summer workshop at Dartmouth College brings researchers together around a new term: “artificial intelligence”.[^22]",
+  "changed": false,
+  "reason": "No change",
+  "final": "A summer workshop at Dartmouth College brings researchers together around a new term: “artificial intelligence”.[^22]"
+ },
+ {
+  "id": "hist-02-cap",
+  "section": "hist",
+  "field": "1956 · photo caption",
+  "original": "Dartmouth summer workshop participants, outside Dartmouth Hall",
+  "streamlined": "Dartmouth summer workshop participants, outside Dartmouth Hall",
+  "changed": false,
+  "reason": "No change",
+  "final": "Dartmouth summer workshop participants, outside Dartmouth Hall"
+ },
+ {
+  "id": "hist-03-title",
+  "section": "hist",
+  "field": "1956 · title",
+  "original": "The Logic Theorist",
+  "streamlined": "The Logic Theorist",
+  "changed": false,
+  "reason": "No change",
+  "final": "The Logic Theorist"
+ },
+ {
+  "id": "hist-03-body",
+  "section": "hist",
+  "field": "1956 · body",
+  "original": "Often called the first AI program, it follows logic rules written by Allen Newell, Herbert Simon and Cliff Shaw, and proves 38 theorems from a classic maths book.[^38]",
+  "streamlined": "Often called the first AI program, it follows logic rules written by Allen Newell, Herbert Simon and Cliff Shaw, and proves 38 theorems from a classic maths book.[^38]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Often called the first AI program, it follows logic rules written by Allen Newell, Herbert Simon and Cliff Shaw, and proves 38 theorems from a classic maths book.[^38]"
+ },
+ {
+  "id": "hist-03-cap",
+  "section": "hist",
+  "field": "1956 · photo caption",
+  "original": "Allen Newell and Herbert Simon with a chessboard",
+  "streamlined": "Allen Newell and Herbert Simon with a chessboard",
+  "changed": false,
+  "reason": "No change",
+  "final": "Allen Newell and Herbert Simon with a chessboard"
+ },
+ {
+  "id": "hist-04-title",
+  "section": "hist",
+  "field": "1959 · title",
+  "original": "“Machine learning” is coined",
+  "streamlined": "“Machine learning” is coined",
+  "changed": false,
+  "reason": "No change",
+  "final": "“Machine learning” is coined"
+ },
+ {
+  "id": "hist-04-body",
+  "section": "hist",
+  "field": "1959 · body",
+  "original": "IBM’s Arthur Samuel builds a checkers program that gets better by playing against itself, and calls the idea machine learning.[^23]",
+  "streamlined": "IBM’s Arthur Samuel builds a checkers program that gets better by playing against itself, and calls the idea machine learning.[^23]",
+  "changed": false,
+  "reason": "No change",
+  "final": "IBM’s Arthur Samuel builds a checkers program that gets better by playing against itself, and calls the idea machine learning.[^23]"
+ },
+ {
+  "id": "hist-04-cap",
+  "section": "hist",
+  "field": "1959 · photo caption",
+  "original": "Arthur Samuel at an IBM computer with a checkers board",
+  "streamlined": "Arthur Samuel at an IBM computer with a checkers board",
+  "changed": false,
+  "reason": "No change",
+  "final": "Arthur Samuel at an IBM computer with a checkers board"
+ },
+ {
+  "id": "hist-05-title",
+  "section": "hist",
+  "field": "1966 · title",
+  "original": "ELIZA, the first chatbot",
+  "streamlined": "ELIZA, the first chatbot",
+  "changed": false,
+  "reason": "No change",
+  "final": "ELIZA, the first chatbot"
+ },
+ {
+  "id": "hist-05-body",
+  "section": "hist",
+  "field": "1966 · body",
+  "original": "Joseph Weizenbaum’s ELIZA imitates a therapist by matching keywords to scripted replies. Many people who used it still felt understood.[^24]",
+  "streamlined": "Joseph Weizenbaum’s ELIZA imitates a therapist by matching keywords to scripted replies. Many people who used it still felt understood.[^24]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Joseph Weizenbaum’s ELIZA imitates a therapist by matching keywords to scripted replies. Many people who used it still felt understood.[^24]"
+ },
+ {
+  "id": "hist-05-cap",
+  "section": "hist",
+  "field": "1966 · photo caption",
+  "original": "Joseph Weizenbaum demonstrating a computer terminal",
+  "streamlined": "Joseph Weizenbaum demonstrating a computer terminal",
+  "changed": false,
+  "reason": "No change",
+  "final": "Joseph Weizenbaum demonstrating a computer terminal"
+ },
+ {
+  "id": "hist-06-title",
+  "section": "hist",
+  "field": "1973 · title",
+  "original": "The first “AI winter”",
+  "streamlined": "The first “AI winter”",
+  "changed": false,
+  "reason": "No change",
+  "final": "The first “AI winter”"
+ },
+ {
+  "id": "hist-06-body",
+  "section": "hist",
+  "field": "1973 · body",
+  "original": "A UK government report finds that AI hasn’t delivered what it promised. Funding is cut at most British universities, and the field slows for years.[^32]",
+  "streamlined": "A UK government report finds that AI hasn’t delivered what it promised. Funding is cut at most British universities, and the field slows for years.[^32]",
+  "changed": false,
+  "reason": "No change",
+  "final": "A report for the UK’s Science Research Council finds that AI hasn’t delivered what it promised. Funding is cut at most British universities, and the field slows for years.[^32]"
+ },
+ {
+  "id": "hist-06-cap",
+  "section": "hist",
+  "field": "1973 · photo caption",
+  "original": "Edinburgh researchers with the Freddy experimental robot",
+  "streamlined": "Edinburgh researchers with the Freddy experimental robot",
+  "changed": false,
+  "reason": "No change",
+  "final": "Edinburgh researchers with the Freddy experimental robot"
+ },
+ {
+  "id": "hist-07-title",
+  "section": "hist",
+  "field": "1970s · title",
+  "original": "Expert systems",
+  "streamlined": "Expert systems",
+  "changed": false,
+  "reason": "No change",
+  "final": "Expert systems"
+ },
+ {
+  "id": "hist-07-body",
+  "section": "hist",
+  "field": "1970s · body",
+  "original": "Stanford’s MYCIN suggests treatments for blood infections using hundreds of if-then rules written with doctors.[^25]",
+  "streamlined": "Stanford’s MYCIN suggests treatments for blood infections using hundreds of if-then rules written with doctors.[^25]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Stanford’s MYCIN suggests treatments for blood infections using hundreds of if-then rules written with doctors.[^25]"
+ },
+ {
+  "id": "hist-07-cap",
+  "section": "hist",
+  "field": "1970s · photo caption",
+  "original": "Ted Shortliffe at a computer terminal",
+  "streamlined": "Ted Shortliffe at a computer terminal",
+  "changed": false,
+  "reason": "No change",
+  "final": "Ted Shortliffe at a computer terminal"
+ },
+ {
+  "id": "hist-08-title",
+  "section": "hist",
+  "field": "1986 · title",
+  "original": "Neural networks learn from their mistakes",
+  "streamlined": "Neural networks learn from their mistakes",
+  "changed": false,
+  "reason": "No change",
+  "final": "Neural networks learn from their mistakes"
+ },
+ {
+  "id": "hist-08-body",
+  "section": "hist",
+  "field": "1986 · body",
+  "original": "Rumelhart, Hinton and Williams show how a neural network can learn by correcting its own errors. The method, backpropagation, still underpins deep learning.[^34]",
+  "streamlined": "Rumelhart, Hinton and Williams show how a neural network can learn by correcting its own errors. The method, backpropagation, still underpins deep learning.[^34]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Rumelhart, Hinton and Williams show how a neural network can learn by correcting its own errors. The method, backpropagation, still underpins deep learning.[^34]"
+ },
+ {
+  "id": "hist-08-cap",
+  "section": "hist",
+  "field": "1986 · photo caption",
+  "original": "Geoffrey Hinton at a whiteboard explaining neural networks",
+  "streamlined": "Geoffrey Hinton at a whiteboard explaining neural networks",
+  "changed": false,
+  "reason": "No change",
+  "final": "Geoffrey Hinton at a whiteboard explaining neural networks"
+ },
+ {
+  "id": "hist-09-title",
+  "section": "hist",
+  "field": "1987 · title",
+  "original": "A second winter",
+  "streamlined": "A second winter",
+  "changed": false,
+  "reason": "No change",
+  "final": "A second winter"
+ },
+ {
+  "id": "hist-09-body",
+  "section": "hist",
+  "field": "1987 · body",
+  "original": "The market for specialized AI computers collapses and expert systems prove costly to maintain. Funding dries up into the early 1990s.[^33]",
+  "streamlined": "The market for specialized AI computers collapses and expert systems prove costly to maintain. Funding dries up into the early 1990s.[^33]",
+  "changed": false,
+  "reason": "No change",
+  "final": "The market for specialized AI computers collapses and expert systems prove costly to maintain. Funding dries up into the early 1990s.[^33]"
+ },
+ {
+  "id": "hist-09-cap",
+  "section": "hist",
+  "field": "1987 · photo caption",
+  "original": "A researcher at a specialized workstation in an Inria lab",
+  "streamlined": "A researcher at a specialized workstation in an Inria lab",
+  "changed": false,
+  "reason": "No change",
+  "final": "A researcher at a specialized workstation in an Inria lab"
+ },
+ {
+  "id": "hist-10-title",
+  "section": "hist",
+  "field": "1997 · title",
+  "original": "A computer beats the world chess champion",
+  "streamlined": "A computer beats the world chess champion",
+  "changed": false,
+  "reason": "No change",
+  "final": "A computer beats the world chess champion"
+ },
+ {
+  "id": "hist-10-body",
+  "section": "hist",
+  "field": "1997 · body",
+  "original": "IBM’s Deep Blue defeats Garry Kasparov by scoring 200 million positions a second with chess knowledge written in by its programmers.[^19]",
+  "streamlined": "IBM’s Deep Blue defeats Garry Kasparov by scoring 200 million positions a second with chess knowledge written in by its programmers.[^19]",
+  "changed": false,
+  "reason": "No change",
+  "final": "IBM’s Deep Blue defeats Garry Kasparov by scoring 200 million positions a second with chess knowledge written in by its programmers.[^19]"
+ },
+ {
+  "id": "hist-10-cap",
+  "section": "hist",
+  "field": "1997 · photo caption",
+  "original": "Garry Kasparov during the IBM Deep Blue match",
+  "streamlined": "Garry Kasparov during the IBM Deep Blue match",
+  "changed": false,
+  "reason": "No change",
+  "final": "Garry Kasparov during the IBM Deep Blue match"
+ },
+ {
+  "id": "hist-11-title",
+  "section": "hist",
+  "field": "2012 · title",
+  "original": "Deep learning takes off",
+  "streamlined": "Deep learning takes off",
+  "changed": false,
+  "reason": "No change",
+  "final": "Deep learning takes off"
+ },
+ {
+  "id": "hist-11-body",
+  "section": "hist",
+  "field": "2012 · body",
+  "original": "A neural network called AlexNet recognizes objects in photos far better than any rival, and deep learning becomes the leading approach.[^26]",
+  "streamlined": "A neural network called AlexNet recognizes objects in photos far better than any rival, and deep learning becomes the leading approach.[^26]",
+  "changed": false,
+  "reason": "No change",
+  "final": "A neural network called AlexNet recognizes objects in photos far better than any rival, and deep learning becomes the leading approach.[^26]"
+ },
+ {
+  "id": "hist-11-cap",
+  "section": "hist",
+  "field": "2012 · photo caption",
+  "original": "The AlexNet researchers: Sutskever, Hinton and Krizhevsky",
+  "streamlined": "The AlexNet researchers: Sutskever, Hinton and Krizhevsky",
+  "changed": false,
+  "reason": "No change",
+  "final": "The AlexNet researchers: Sutskever, Hinton and Krizhevsky"
+ },
+ {
+  "id": "hist-12-title",
+  "section": "hist",
+  "field": "2014 · title",
+  "original": "Machines start to generate images",
+  "streamlined": "Machines start to generate images",
+  "changed": false,
+  "reason": "No change",
+  "final": "Machines start to generate images"
+ },
+ {
+  "id": "hist-12-body",
+  "section": "hist",
+  "field": "2014 · body",
+  "original": "Generative adversarial networks (GANs) set two neural networks against each other: one creates images, the other tries to spot the fakes.[^27]",
+  "streamlined": "Generative adversarial networks (GANs) set two neural networks against each other: one creates images, the other tries to spot the fakes.[^27]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Generative adversarial networks (GANs) set two neural networks against each other: one creates images, the other tries to spot the fakes.[^27]"
+ },
+ {
+  "id": "hist-12-cap",
+  "section": "hist",
+  "field": "2014 · photo caption",
+  "original": "People viewing a GAN-generated portrait at Christie’s",
+  "streamlined": "People viewing a GAN-generated portrait at Christie’s",
+  "changed": false,
+  "reason": "No change",
+  "final": "People viewing a GAN-generated portrait at Christie’s"
+ },
+ {
+  "id": "hist-13-title",
+  "section": "hist",
+  "field": "2016 · title",
+  "original": "A computer learns to play Go",
+  "streamlined": "A computer learns to play Go",
+  "changed": false,
+  "reason": "No change",
+  "final": "A computer learns to play Go"
+ },
+ {
+  "id": "hist-13-body",
+  "section": "hist",
+  "field": "2016 · body",
+  "original": "DeepMind’s AlphaGo beats champion Lee Sedol 4–1. Unlike Deep Blue, it learned its own strategy: first from expert games, then by playing itself.[^35]",
+  "streamlined": "DeepMind’s AlphaGo beats champion Lee Sedol 4–1. Unlike Deep Blue, it learned its own strategy: first from expert games, then by playing itself.[^35]",
+  "changed": false,
+  "reason": "No change",
+  "final": "DeepMind’s AlphaGo beats champion Lee Sedol 4–1. Unlike Deep Blue, it learned its own strategy: first from expert games, then by playing itself.[^35]"
+ },
+ {
+  "id": "hist-13-cap",
+  "section": "hist",
+  "field": "2016 · photo caption",
+  "original": "Lee Sedol playing against AlphaGo at the challenge match",
+  "streamlined": "Lee Sedol playing against AlphaGo at the challenge match",
+  "changed": false,
+  "reason": "No change",
+  "final": "Lee Sedol playing against AlphaGo at the challenge match"
+ },
+ {
+  "id": "hist-14-title",
+  "section": "hist",
+  "field": "2017 · title",
+  "original": "The transformer",
+  "streamlined": "The transformer",
+  "changed": false,
+  "reason": "No change",
+  "final": "The transformer"
+ },
+ {
+  "id": "hist-14-body",
+  "section": "hist",
+  "field": "2017 · body",
+  "original": "Google researchers publish “Attention Is All You Need”, introducing the transformer: the design behind today’s large language models.[^28]",
+  "streamlined": "Google researchers publish “Attention Is All You Need”, introducing the transformer: the design behind today’s large language models.[^28]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Google researchers publish “Attention Is All You Need”, introducing the transformer: the design behind today’s large language models.[^28]"
+ },
+ {
+  "id": "hist-14-cap",
+  "section": "hist",
+  "field": "2017 · photo caption",
+  "original": "Figure 1 of “Attention Is All You Need”: the original transformer architecture diagram",
+  "streamlined": "Figure 1 of “Attention Is All You Need”: the original transformer diagram",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Figure 1 of “Attention Is All You Need”: the original transformer diagram"
+ },
+ {
+  "id": "hist-15-title",
+  "section": "hist",
+  "field": "2018 · title",
+  "original": "The first GPT",
+  "streamlined": "The first GPT",
+  "changed": false,
+  "reason": "No change",
+  "final": "The first GPT"
+ },
+ {
+  "id": "hist-15-body",
+  "section": "hist",
+  "field": "2018 · body",
+  "original": "OpenAI trains a transformer on thousands of books to predict the next word. It is the first “generative pre-trained transformer”.[^29]",
+  "streamlined": "OpenAI trains a transformer on thousands of books to predict the next word. It is the first “generative pre-trained transformer”.[^29]",
+  "changed": false,
+  "reason": "No change",
+  "final": "OpenAI trains a transformer on thousands of books to predict the next word. It is the first “generative pre-trained transformer”.[^29]"
+ },
+ {
+  "id": "hist-15-cap",
+  "section": "hist",
+  "field": "2018 · photo caption",
+  "original": "OpenAI hackathon participants working on laptops",
+  "streamlined": "OpenAI hackathon participants working on laptops",
+  "changed": false,
+  "reason": "No change",
+  "final": "OpenAI hackathon participants working on laptops"
+ },
+ {
+  "id": "hist-16-title",
+  "section": "hist",
+  "field": "2020 · title",
+  "original": "Language models get much bigger",
+  "streamlined": "Language models get much bigger",
+  "changed": false,
+  "reason": "No change",
+  "final": "Language models get much bigger"
+ },
+ {
+  "id": "hist-16-body",
+  "section": "hist",
+  "field": "2020 · body",
+  "original": "OpenAI’s GPT-3 scales up to 175 billion parameters and learns to handle new language tasks from a few examples. Its fluency shows how far large-scale training can take a general-purpose model.",
+  "streamlined": "OpenAI’s GPT-3 has 175 billion parameters and can handle new language tasks from a few examples. Its fluency shows how far large-scale training can take a general-purpose model.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "OpenAI’s GPT-3 has 175 billion parameters and can handle new language tasks from a few examples. Its fluency shows how far large-scale training can take a general-purpose model."
+ },
+ {
+  "id": "hist-16-cap",
+  "section": "hist",
+  "field": "2020 · photo caption",
+  "original": "Microsoft Azure data-centre infrastructure",
+  "streamlined": "Microsoft Azure data-centre infrastructure",
+  "changed": false,
+  "reason": "No change",
+  "final": "Microsoft Azure data-centre infrastructure"
+ },
+ {
+  "id": "hist-17-title",
+  "section": "hist",
+  "field": "2022 · title",
+  "original": "Pictures from words, for everyone",
+  "streamlined": "Pictures from words, for everyone",
+  "changed": false,
+  "reason": "No change",
+  "final": "Pictures from words, for everyone"
+ },
+ {
+  "id": "hist-17-body",
+  "section": "hist",
+  "field": "2022 · body",
+  "original": "Image generators such as Stable Diffusion and DALL·E 2 open to the public. Anyone can type a description and get a new picture in seconds.[^36][^37]",
+  "streamlined": "Image generators such as Stable Diffusion and DALL·E 2 open to the public. Anyone can type a description and get a new picture in seconds.[^36][^37]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Image generators such as Stable Diffusion and DALL·E 2 open to the public. Anyone can type a description and get a new picture in seconds.[^36][^37]"
+ },
+ {
+  "id": "hist-17-cap",
+  "section": "hist",
+  "field": "2022 · photo caption",
+  "original": "AI artwork displayed with its first-place state-fair ribbon",
+  "streamlined": "AI artwork displayed with its first-place state-fair ribbon",
+  "changed": false,
+  "reason": "No change",
+  "final": "AI artwork displayed with its first-place state-fair ribbon"
+ },
+ {
+  "id": "hist-18-title",
+  "section": "hist",
+  "field": "2022 · title",
+  "original": "ChatGPT goes public",
+  "streamlined": "ChatGPT goes public",
+  "changed": false,
+  "reason": "No change",
+  "final": "ChatGPT goes public"
+ },
+ {
+  "id": "hist-18-body",
+  "section": "hist",
+  "field": "2022 · body",
+  "original": "OpenAI releases ChatGPT. It reaches an estimated 100 million users in about two months, and generative AI goes mainstream.[^30]",
+  "streamlined": "OpenAI releases ChatGPT. It reaches an estimated 100 million users in about two months, and generative AI goes mainstream.[^30]",
+  "changed": false,
+  "reason": "No change",
+  "final": "OpenAI releases ChatGPT. It reaches an estimated 100 million users in about two months, and generative AI goes mainstream.[^30]"
+ },
+ {
+  "id": "hist-18-cap",
+  "section": "hist",
+  "field": "2022 · photo caption",
+  "original": "Sam Altman on the TIME 100 Most Influential Companies cover",
+  "streamlined": "Sam Altman on the TIME 100 Most Influential Companies cover",
+  "changed": false,
+  "reason": "No change",
+  "final": "Sam Altman on the TIME 100 Most Influential Companies cover"
+ },
+ {
+  "id": "hist-19-title",
+  "section": "hist",
+  "field": "2023 · title",
+  "original": "The AI race accelerates",
+  "streamlined": "The AI race accelerates",
+  "changed": false,
+  "reason": "No change",
+  "final": "The AI race accelerates"
+ },
+ {
+  "id": "hist-19-body",
+  "section": "hist",
+  "field": "2023 · body",
+  "original": "GPT-4 arrives as Anthropic’s Claude, Meta’s Llama and Google’s Gemini bring more powerful models from competing labs. AI becomes a fast-moving global race, with different companies and research communities shaping its future.",
+  "streamlined": "GPT-4 arrives, and competing labs release more powerful models: Anthropic’s Claude, Meta’s Llama and Google’s Gemini. AI becomes a fast-moving global race, shaped by many companies and research communities.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "GPT-4 arrives, and competing labs release more powerful models: Anthropic’s Claude, Meta’s Llama and Google’s Gemini. AI becomes a fast-moving global race, shaped by many companies and research communities."
+ },
+ {
+  "id": "hist-19-cap",
+  "section": "hist",
+  "field": "2023 · photo caption",
+  "original": "Participants at the Bletchley Park AI Safety Summit",
+  "streamlined": "Participants at the Bletchley Park AI Safety Summit",
+  "changed": false,
+  "reason": "No change",
+  "final": "Participants at the Bletchley Park AI Safety Summit"
+ },
+ {
+  "id": "hist-20-title",
+  "section": "hist",
+  "field": "2024 · title",
+  "original": "Models that “think” before answering",
+  "streamlined": "Models that “think” before answering",
+  "changed": false,
+  "reason": "No change",
+  "final": "Models that “think” before answering"
+ },
+ {
+  "id": "hist-20-body",
+  "section": "hist",
+  "field": "2024 · body",
+  "original": "Reasoning models such as OpenAI’s o1 are trained to work through a problem step by step before they reply.[^31]",
+  "streamlined": "Reasoning models such as OpenAI’s o1 are trained to work through a problem step by step before they reply.[^31]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Reasoning models such as OpenAI’s o1 are trained to work through a problem step by step before they reply.[^31]"
+ },
+ {
+  "id": "hist-20-cap",
+  "section": "hist",
+  "field": "2024 · photo caption",
+  "original": "The OpenAI o1 research team, from the Building OpenAI o1 documentary",
+  "streamlined": "The OpenAI o1 research team, from the Building OpenAI o1 documentary",
+  "changed": false,
+  "reason": "No change",
+  "final": "The OpenAI o1 research team, from the Building OpenAI o1 documentary"
+ },
+ {
+  "id": "hist-21-title",
+  "section": "hist",
+  "field": "2025 · title",
+  "original": "Cheaper reasoning shakes the industry",
+  "streamlined": "Cheaper reasoning shakes the industry",
+  "changed": false,
+  "reason": "No change",
+  "final": "Cheaper reasoning shakes the industry"
+ },
+ {
+  "id": "hist-21-body",
+  "section": "hist",
+  "field": "2025 · body",
+  "original": "China’s DeepSeek releases R1, an open reasoning model that rivals OpenAI’s o1 at a fraction of the cost. Nvidia loses nearly $600 billion in market value in a single day, and the AI race goes global.",
+  "streamlined": "China’s DeepSeek releases R1, an open reasoning model that rivals OpenAI’s o1 at a fraction of the cost. Nvidia loses nearly $600 billion in market value in a single day, and the AI race goes global.",
+  "changed": false,
+  "reason": "No change",
+  "final": "China’s DeepSeek releases R1, an open reasoning model that rivals OpenAI’s o1 at a fraction of the cost. Nvidia loses nearly $600 billion in market value in a single day, and the AI race goes global."
+ },
+ {
+  "id": "hist-21-cap",
+  "section": "hist",
+  "field": "2025 · photo caption",
+  "original": "The DeepSeek chatbot app on a phone",
+  "streamlined": "The DeepSeek chatbot app on a phone",
+  "changed": false,
+  "reason": "No change",
+  "final": "The DeepSeek chatbot app on a phone"
+ },
+ {
+  "id": "hist-22-title",
+  "section": "hist",
+  "field": "2025 · title",
+  "original": "AI brings video to life",
+  "streamlined": "AI brings video to life",
+  "changed": false,
+  "reason": "No change",
+  "final": "AI brings video to life"
+ },
+ {
+  "id": "hist-22-body",
+  "section": "hist",
+  "field": "2025 · body",
+  "original": "Google’s Veo 3 turns a written description into a video clip with matching sound: dialogue, sound effects and music, generated together.",
+  "streamlined": "Google’s Veo 3 turns a written description into a video clip with matching sound: dialogue, sound effects and music, generated together.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Google’s Veo 3 turns a written description into a video clip with matching sound: dialogue, sound effects and music, generated together."
+ },
+ {
+  "id": "hist-22-cap",
+  "section": "hist",
+  "field": "2025 · photo caption",
+  "original": "Veo 3 presented on stage at Google I/O",
+  "streamlined": "Veo 3 presented on stage at Google I/O",
+  "changed": false,
+  "reason": "No change",
+  "final": "Veo 3 presented on stage at Google I/O"
+ },
+ {
+  "id": "hist-23-title",
+  "section": "hist",
+  "field": "2025 · title",
+  "original": "AI starts doing the work",
+  "streamlined": "AI starts doing the work",
+  "changed": false,
+  "reason": "No change",
+  "final": "AI starts doing the work"
+ },
+ {
+  "id": "hist-23-body",
+  "section": "hist",
+  "field": "2025 · body",
+  "original": "Coding agents such as Anthropic’s Claude Code take on whole tasks: they read a project, write and test changes, and keep going until the job is done, while people review the result.",
+  "streamlined": "Coding agents such as Anthropic’s Claude Code take on whole tasks: they read a project, write and test changes and keep going until the job is done. People review the result.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Coding agents such as Anthropic’s Claude Code take on whole tasks: they read a project, write and test changes and keep going until the job is done. People review the result."
+ },
+ {
+  "id": "hist-23-cap",
+  "section": "hist",
+  "field": "2025 · photo caption",
+  "original": "Anthropic’s illustration for “Enabling Claude Code to work more autonomously”",
+  "streamlined": "Anthropic’s illustration for “Enabling Claude Code to work more autonomously”",
+  "changed": false,
+  "reason": "No change",
+  "final": "Anthropic’s illustration for “Enabling Claude Code to work more autonomously”"
+ },
+ {
+  "id": "hist-24-title",
+  "section": "hist",
+  "field": "2026 · title",
+  "original": "The future of AI is still being written",
+  "streamlined": "The future of AI is still being written",
+  "changed": false,
+  "reason": "No change",
+  "final": "The future of AI is still being written"
+ },
+ {
+  "id": "hist-24-body",
+  "section": "hist",
+  "field": "2026 · body",
+  "original": "AI is now part of daily work for millions of people. Governments, companies and communities are still deciding how it should be built, used and governed.",
+  "streamlined": "AI is now part of daily work for millions of people. Governments, companies and communities are still deciding how it should be built, used and governed.",
+  "changed": false,
+  "reason": "No change",
+  "final": "AI is now part of daily work for millions of people. Governments, companies and communities are still deciding how it should be built, used and governed."
+ },
+ {
+  "id": "hist-24-cap",
+  "section": "hist",
+  "field": "2026 · photo caption",
+  "original": "Illustration of an office where AI works alongside people",
+  "streamlined": "Illustration of an office where AI works alongside people",
+  "changed": false,
+  "reason": "No change",
+  "final": "Illustration of an office where AI works alongside people"
+ },
+ {
+  "id": "quiz-btn",
+  "section": "quiz",
+  "field": "Button",
+  "original": "Test your knowledge",
+  "streamlined": "Test your knowledge",
+  "changed": false,
+  "reason": "No change",
+  "final": "Test your knowledge"
+ },
+ {
+  "id": "quiz-title",
+  "section": "quiz",
+  "field": "Quiz sheet heading (duplicate, sits above the glossary in the page source)",
+  "original": "Test your knowledge",
+  "streamlined": "",
+  "changed": true,
+  "reason": "Duplicate removed",
+  "final": ""
+ },
+ {
+  "id": "quiz-count",
+  "section": "quiz",
+  "field": "Progress label (template)",
+  "original": "Question {n} of {total}",
+  "streamlined": "Question {n} of {total}",
+  "changed": false,
+  "reason": "No change",
+  "final": "Question {n} of {total}"
+ },
+ {
+  "id": "quiz-hint",
+  "section": "quiz",
+  "field": "Prompt under each question",
+  "original": "Which type of AI is this? Pick the most specific one.",
+  "streamlined": "Which type of AI is this? Pick the most specific one.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Which type of AI is this? Pick the most specific one."
+ },
+ {
+  "id": "quiz-wait",
+  "section": "quiz",
+  "field": "Placeholder before answering",
+  "original": "Pick an answer to see why.",
+  "streamlined": "Pick an answer to see why.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Pick an answer to see why."
+ },
+ {
+  "id": "quiz-01-q",
+  "section": "quiz",
+  "field": "Q1 · question (answer: Machine learning)",
+  "original": "Your phone unlocks when it recognizes your face.",
+  "streamlined": "Your phone unlocks when it recognizes your face.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Your phone unlocks when it recognizes your face."
+ },
+ {
+  "id": "quiz-01-why",
+  "section": "quiz",
+  "field": "Q1 · explanation",
+  "original": "Face unlock learned what faces look like from huge numbers of example images. It recognizes things, but it doesn’t create anything new.",
+  "streamlined": "Face unlock learned what faces look like from huge numbers of example images. It recognizes things, but it doesn’t create anything new.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Face unlock learned what faces look like from huge numbers of example images. It recognizes things, but it doesn’t create anything new."
+ },
+ {
+  "id": "quiz-02-q",
+  "section": "quiz",
+  "field": "Q2 (1966) · question (answer: Symbolic AI)",
+  "original": "ELIZA chats like a therapist by matching keywords to replies its creator scripted.",
+  "streamlined": "ELIZA chats like a therapist by matching keywords to replies its creator scripted.",
+  "changed": false,
+  "reason": "No change",
+  "final": "ELIZA chats like a therapist by matching keywords to replies its creator scripted."
+ },
+ {
+  "id": "quiz-02-why",
+  "section": "quiz",
+  "field": "Q2 (1966) · explanation",
+  "original": "Every reply came from rules Joseph Weizenbaum wrote. ELIZA couldn’t learn anything new; it followed the script.[^24]",
+  "streamlined": "Every reply came from rules Joseph Weizenbaum wrote. ELIZA couldn’t learn anything new; it followed the script.[^24]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Every reply came from rules Joseph Weizenbaum wrote. ELIZA couldn’t learn anything new; it followed the script.[^24]"
+ },
+ {
+  "id": "quiz-03-q",
+  "section": "quiz",
+  "field": "Q3 · question (answer: LLMs)",
+  "original": "You ask ChatGPT to make your cover letter sound friendlier.",
+  "streamlined": "You ask ChatGPT to make your cover letter sound friendlier.",
+  "changed": false,
+  "reason": "No change",
+  "final": "You ask ChatGPT to make your cover letter sound friendlier."
+ },
+ {
+  "id": "quiz-03-why",
+  "section": "quiz",
+  "field": "Q3 · explanation",
+  "original": "ChatGPT runs on a large language model. It rewrites your letter by predicting one word at a time.",
+  "streamlined": "ChatGPT runs on a large language model. It rewrites your letter by predicting one word at a time.",
+  "changed": false,
+  "reason": "No change",
+  "final": "ChatGPT runs on a large language model. It rewrites your letter by predicting one word at a time."
+ },
+ {
+  "id": "quiz-04-q",
+  "section": "quiz",
+  "field": "Q4 (1959) · question (answer: Machine learning)",
+  "original": "Arthur Samuel’s checkers program gets better by playing game after game against itself.",
+  "streamlined": "Arthur Samuel’s checkers program gets better by playing game after game against itself.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Arthur Samuel’s checkers program gets better by playing game after game against itself."
+ },
+ {
+  "id": "quiz-04-why",
+  "section": "quiz",
+  "field": "Q4 (1959) · explanation",
+  "original": "It improved from experience instead of new rules, which is why Samuel called the idea machine learning.[^23]",
+  "streamlined": "It improved from experience instead of new rules, which is why Samuel called the idea machine learning.[^23]",
+  "changed": false,
+  "reason": "No change",
+  "final": "It improved from experience instead of new rules, which is why Samuel called the idea machine learning.[^23]"
+ },
+ {
+  "id": "quiz-05-q",
+  "section": "quiz",
+  "field": "Q5 · question (answer: Symbolic AI)",
+  "original": "Online tax software works out which forms you need by asking you a series of yes-or-no questions.",
+  "streamlined": "Online tax software works out which forms you need by asking you yes-or-no questions.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Online tax software works out which forms you need by asking you yes-or-no questions."
+ },
+ {
+  "id": "quiz-05-why",
+  "section": "quiz",
+  "field": "Q5 · explanation",
+  "original": "It follows a decision tree of tax rules written by experts. Like the expert systems of the 1970s, it doesn’t learn from your answers.",
+  "streamlined": "It follows a decision tree of tax rules written by experts. Like the expert systems of the 1970s, it doesn’t learn from your answers.",
+  "changed": false,
+  "reason": "No change",
+  "final": "It follows a decision tree of tax rules written by experts. Like the expert systems of the 1970s, it doesn’t learn from your answers."
+ },
+ {
+  "id": "quiz-06-q",
+  "section": "quiz",
+  "field": "Q6 · question (answer: Generative AI)",
+  "original": "An app turns the sentence “a cat in a raincoat” into a brand-new picture.",
+  "streamlined": "An app turns the sentence “a cat in a raincoat” into a brand-new picture.",
+  "changed": false,
+  "reason": "No change",
+  "final": "An app turns the sentence “a cat in a raincoat” into a brand-new picture."
+ },
+ {
+  "id": "quiz-06-why",
+  "section": "quiz",
+  "field": "Q6 · explanation",
+  "original": "Image generators create new pictures from patterns learned from millions of captioned images. They’re generative AI, but not language models.",
+  "streamlined": "Image generators create new pictures from patterns learned from millions of captioned images. They’re generative AI, but not language models.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Image generators create new pictures from patterns learned from millions of captioned images. They’re generative AI, but not language models."
+ },
+ {
+  "id": "quiz-07-q",
+  "section": "quiz",
+  "field": "Q7 (2014) · question (answer: Generative AI)",
+  "original": "Two neural networks compete, one making fake images and one spotting them, until the fakes look real.",
+  "streamlined": "Two neural networks compete, one making fake images and one spotting them, until the fakes look real.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Two neural networks compete, one making fake images and one spotting them, until the fakes look real."
+ },
+ {
+  "id": "quiz-07-why",
+  "section": "quiz",
+  "field": "Q7 (2014) · explanation",
+  "original": "These generative adversarial networks (GANs) were one of the first ways to create convincing new images.[^27]",
+  "streamlined": "These generative adversarial networks (GANs) were one of the first ways to create convincing new images.[^27]",
+  "changed": false,
+  "reason": "No change",
+  "final": "These generative adversarial networks (GANs) were one of the first ways to create convincing new images.[^27]"
+ },
+ {
+  "id": "quiz-08-q",
+  "section": "quiz",
+  "field": "Q8 · question (answer: LLMs)",
+  "original": "Your email app sums up a long thread in three bullet points.",
+  "streamlined": "Your email app sums up a long thread in three bullet points.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Your email app sums up a long thread in three bullet points."
+ },
+ {
+  "id": "quiz-08-why",
+  "section": "quiz",
+  "field": "Q8 · explanation",
+  "original": "Summarizing is a language task. Those summaries are written by a large language model.",
+  "streamlined": "Summarizing is a language task. Those summaries are written by a large language model.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Summarizing is a language task. Those summaries are written by a large language model."
+ },
+ {
+  "id": "quiz-09-q",
+  "section": "quiz",
+  "field": "Q9 (2022) · question (answer: LLMs)",
+  "original": "A chatbot reaches an estimated 100 million users in about two months.",
+  "streamlined": "A chatbot reaches an estimated 100 million users in about two months.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A chatbot reaches an estimated 100 million users in about two months."
+ },
+ {
+  "id": "quiz-09-why",
+  "section": "quiz",
+  "field": "Q9 (2022) · explanation",
+  "original": "That chatbot was ChatGPT. It runs on a large language model, which writes by predicting the next word.[^30]",
+  "streamlined": "That chatbot was ChatGPT. It runs on a large language model, which writes by predicting the next word.[^30]",
+  "changed": false,
+  "reason": "No change",
+  "final": "That chatbot was ChatGPT. It runs on a large language model, which writes by predicting the next word.[^30]"
+ },
+ {
+  "id": "quiz-10-q",
+  "section": "quiz",
+  "field": "Q10 · question (answer: Generative AI)",
+  "original": "A video shows a politician saying something they never said.",
+  "streamlined": "A video shows a politician saying something they never said.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A video shows a politician saying something they never said."
+ },
+ {
+  "id": "quiz-10-why",
+  "section": "quiz",
+  "field": "Q10 · explanation",
+  "original": "This is a deepfake: synthetic video made by generative AI trained on real footage of that person. It’s part of why information pollution is a growing risk.",
+  "streamlined": "This is a deepfake: synthetic video made by generative AI trained on real footage of that person. It’s part of why information pollution is a growing risk.",
+  "changed": false,
+  "reason": "No change",
+  "final": "This is a deepfake: synthetic video made by generative AI trained on real footage of that person. It’s part of why information pollution is a growing risk."
+ },
+ {
+  "id": "quiz-fb-right",
+  "section": "quiz",
+  "field": "Feedback: correct",
+  "original": "Correct",
+  "streamlined": "Correct",
+  "changed": false,
+  "reason": "No change",
+  "final": "Correct"
+ },
+ {
+  "id": "quiz-fb-close",
+  "section": "quiz",
+  "field": "Feedback: close (template)",
+  "original": "Close. {LLMs are / Generative AI is} a kind of {parent type}, but {answer} is more specific.",
+  "streamlined": "Close. {LLMs are / Generative AI is} a kind of {parent type}, but {answer} is more specific.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Close. {LLMs are / Generative AI is} a kind of {parent type}, but {answer} is more specific."
+ },
+ {
+  "id": "quiz-fb-wrong",
+  "section": "quiz",
+  "field": "Feedback: wrong (template)",
+  "original": "Not quite. This one is {answer}.",
+  "streamlined": "Not quite. This one is {answer}.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Not quite. This one is {answer}."
+ },
+ {
+  "id": "quiz-next",
+  "section": "quiz",
+  "field": "Buttons",
+  "original": "Next / See my result",
+  "streamlined": "Next / See my result",
+  "changed": false,
+  "reason": "No change",
+  "final": "Next / See my result"
+ },
+ {
+  "id": "quiz-res",
+  "section": "quiz",
+  "field": "Result label",
+  "original": "Your result",
+  "streamlined": "Your result",
+  "changed": false,
+  "reason": "No change",
+  "final": "Your result"
+ },
+ {
+  "id": "quiz-score-all",
+  "section": "quiz",
+  "field": "Result: all correct",
+  "original": "Every one. You know your AI.",
+  "streamlined": "Every one. You know your AI.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Every one. You know your AI."
+ },
+ {
+  "id": "quiz-score-high",
+  "section": "quiz",
+  "field": "Result: 8–9 correct",
+  "original": "Nicely spotted.",
+  "streamlined": "Nicely spotted.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Nicely spotted."
+ },
+ {
+  "id": "quiz-score-low",
+  "section": "quiz",
+  "field": "Result: 7 or fewer",
+  "original": "AI hides in plain sight. Try again?",
+  "streamlined": "AI hides in plain sight. Try again?",
+  "changed": false,
+  "reason": "No change",
+  "final": "AI hides in plain sight. Try again?"
+ },
+ {
+  "id": "quiz-again",
+  "section": "quiz",
+  "field": "Button",
+  "original": "Start again",
+  "streamlined": "Start again",
+  "changed": false,
+  "reason": "No change",
+  "final": "Start again"
+ },
+ {
+  "id": "quiz-onward",
+  "section": "quiz",
+  "field": "Button",
+  "original": "Next: how generative AI works",
+  "streamlined": "Next: how generative AI works",
+  "changed": false,
+  "reason": "No change",
+  "final": "Next: how generative AI works"
+ },
+ {
+  "id": "how-h",
+  "section": "how",
+  "field": "Heading",
+  "original": "How generative AI works",
+  "streamlined": "How generative AI works",
+  "changed": false,
+  "reason": "No change",
+  "final": "How generative AI works"
+ },
+ {
+  "id": "how-lead",
+  "section": "how",
+  "field": "Lead",
+  "original": "Most modern generative AI systems follow the same basic process.",
+  "streamlined": "Most modern generative AI systems follow the same basic process.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Most modern generative AI systems follow the same basic process."
+ },
+ {
+  "id": "how-p1",
+  "section": "how",
+  "field": "Paragraph",
+  "original": "An imperfect but useful way to view language models is to understand them as prediction machines. When building a sentence, the system predicts what the next word, and the one after that, is most likely to be, based on patterns learned from an enormous amount of training text.",
+  "streamlined": "An imperfect but useful way to think of language models is as prediction machines. When building a sentence, the system predicts the most likely next word, then the one after that, based on patterns learned from an enormous amount of training text.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "An imperfect but useful way to think of language models is as prediction machines. When building a sentence, the system predicts the most likely next word, then the one after that, based on patterns learned from an enormous amount of training text."
+ },
+ {
+  "id": "how-toggle",
+  "section": "how",
+  "field": "Switch label",
+  "original": "Show examples / Hide examples",
+  "streamlined": "Show examples / Hide examples",
+  "changed": false,
+  "reason": "No change",
+  "final": "Show examples / Hide examples"
+ },
+ {
+  "id": "how-ph1",
+  "section": "how",
+  "field": "Phase heading",
+  "original": "Phase 1: Building the model",
+  "streamlined": "Phase 1: Building the model",
+  "changed": false,
+  "reason": "No change",
+  "final": "Phase 1: Building the model"
+ },
+ {
+  "id": "how-01-name",
+  "section": "how",
+  "field": "Step 01 name",
+  "original": "Training Data",
+  "streamlined": "Training data",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "Training data"
+ },
+ {
+  "id": "how-01-body",
+  "section": "how",
+  "field": "Step 01 text",
+  "original": "AI developers feed vast amounts of text, images, audio or code into the model: a neural network that acts as a digital pattern-recognition engine.",
+  "streamlined": "AI developers feed vast amounts of text, images, audio or code into the model: a neural network that acts as a digital pattern-recognition engine.",
+  "changed": false,
+  "reason": "No change",
+  "final": "AI developers feed vast amounts of text, images, audio or code into the model: a neural network that acts as a digital pattern-recognition engine."
+ },
+ {
+  "id": "how-02-name",
+  "section": "how",
+  "field": "Step 02 name",
+  "original": "Learning",
+  "streamlined": "Learning",
+  "changed": false,
+  "reason": "No change",
+  "final": "Learning"
+ },
+ {
+  "id": "how-02-body",
+  "section": "how",
+  "field": "Step 02 text",
+  "original": "The model analyzes the data and finds recurring relationships and structures in it.",
+  "streamlined": "The model analyzes the data and finds recurring relationships and structures.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "The model analyzes the data and finds recurring relationships and structures."
+ },
+ {
+  "id": "how-03-name",
+  "section": "how",
+  "field": "Step 03 name",
+  "original": "The model",
+  "streamlined": "The model",
+  "changed": false,
+  "reason": "No change",
+  "final": "The model"
+ },
+ {
+  "id": "how-03-body",
+  "section": "how",
+  "field": "Step 03 text",
+  "original": "What comes out of training is a web of mathematical patterns and probabilities, not a searchable database of facts. The model uses these patterns to turn raw probabilities into natural, human-like language.",
+  "streamlined": "Training produces a web of mathematical patterns and probabilities, not a searchable database of facts. The model uses these patterns to turn raw probabilities into natural, human-like language.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Training produces a web of mathematical patterns and probabilities, not a searchable database of facts. The model uses these patterns to turn raw probabilities into natural, human-like language."
+ },
+ {
+  "id": "how-handoff",
+  "section": "how",
+  "field": "Hand-off label",
+  "original": "The trained model is ready to use",
+  "streamlined": "The trained model is ready to use",
+  "changed": false,
+  "reason": "No change",
+  "final": "The trained model is ready to use"
+ },
+ {
+  "id": "how-ph2",
+  "section": "how",
+  "field": "Phase heading",
+  "original": "Phase 2: Using the model",
+  "streamlined": "Phase 2: Using the model",
+  "changed": false,
+  "reason": "No change",
+  "final": "Phase 2: Using the model"
+ },
+ {
+  "id": "how-04-name",
+  "section": "how",
+  "field": "Step 04 name",
+  "original": "Prompt",
+  "streamlined": "Prompt",
+  "changed": false,
+  "reason": "No change",
+  "final": "Prompt"
+ },
+ {
+  "id": "how-04-body",
+  "section": "how",
+  "field": "Step 04 text",
+  "original": "People give the model a prompt: a question, an instruction, an audio recording, a photo and so on.",
+  "streamlined": "People give the model a prompt: a question, an instruction, an audio recording, a photo and so on.",
+  "changed": false,
+  "reason": "No change",
+  "final": "People give the model a prompt: a question, an instruction, an audio recording, a photo and so on."
+ },
+ {
+  "id": "how-05-name",
+  "section": "how",
+  "field": "Step 05 name",
+  "original": "Prediction",
+  "streamlined": "Prediction",
+  "changed": false,
+  "reason": "No change",
+  "final": "Prediction"
+ },
+ {
+  "id": "how-05-body",
+  "section": "how",
+  "field": "Step 05 text",
+  "original": "The model uses the learned patterns to generate a likely output. The response is built one small piece (a token) at a time, with each piece shaping what comes next, until it is complete.",
+  "streamlined": "The model uses the learned patterns to generate a likely output. It builds the response one small piece (a token) at a time, each piece shaping the next, until it is complete.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "The model uses the learned patterns to generate a likely output. It builds the response one small piece (a token) at a time, each piece shaping the next, until it is complete."
+ },
+ {
+  "id": "how-05-btn",
+  "section": "how",
+  "field": "Step 05 button",
+  "original": "See it in action",
+  "streamlined": "See it in action",
+  "changed": false,
+  "reason": "No change",
+  "final": "See it in action"
+ },
+ {
+  "id": "how-06-name",
+  "section": "how",
+  "field": "Step 06 name",
+  "original": "Response",
+  "streamlined": "Response",
+  "changed": false,
+  "reason": "No change",
+  "final": "Response"
+ },
+ {
+  "id": "how-06-body",
+  "section": "how",
+  "field": "Step 06 text",
+  "original": "The result is newly generated content, also known as synthetic content: an answer, an image, a video, synthesized speech and so on, responding to the original prompt.",
+  "streamlined": "The result is newly generated content that responds to the prompt, also called synthetic content: an answer, an image, a video, synthesized speech and so on.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "The result is newly generated content that responds to the prompt, also called synthetic content: an answer, an image, a video, synthesized speech and so on."
+ },
+ {
+  "id": "pm-eyebrow",
+  "section": "how",
+  "field": "Prediction machine eyebrow",
+  "original": "A closer look at step 5",
+  "streamlined": "A closer look at step 5",
+  "changed": false,
+  "reason": "No change",
+  "final": "A closer look at step 5"
+ },
+ {
+  "id": "pm-title",
+  "section": "how",
+  "field": "Prediction machine title",
+  "original": "The prediction machine",
+  "streamlined": "The prediction machine",
+  "changed": false,
+  "reason": "No change",
+  "final": "The prediction machine"
+ },
+ {
+  "id": "pm-btns",
+  "section": "how",
+  "field": "Buttons",
+  "original": "Play / Pause · Next step · Restart · Start over",
+  "streamlined": "Play / Pause · Next step · Restart · Start over",
+  "changed": false,
+  "reason": "No change",
+  "final": "Play / Pause · Next step · Restart · Start over"
+ },
+ {
+  "id": "pm-stage-1",
+  "section": "how",
+  "field": "Stage 1 label",
+  "original": "Current input",
+  "streamlined": "Current input",
+  "changed": false,
+  "reason": "No change",
+  "final": "Current input"
+ },
+ {
+  "id": "pm-stage-2",
+  "section": "how",
+  "field": "Stage 2 label",
+  "original": "Model predicts next token",
+  "streamlined": "Model predicts next token",
+  "changed": false,
+  "reason": "No change",
+  "final": "Model predicts next token"
+ },
+ {
+  "id": "pm-stage-3",
+  "section": "how",
+  "field": "Stage 3 label",
+  "original": "Token chosen",
+  "streamlined": "Token chosen",
+  "changed": false,
+  "reason": "No change",
+  "final": "Token chosen"
+ },
+ {
+  "id": "pm-stage-4",
+  "section": "how",
+  "field": "Stage 4 label",
+  "original": "Process repeats",
+  "streamlined": "Process repeats",
+  "changed": false,
+  "reason": "No change",
+  "final": "Process repeats"
+ },
+ {
+  "id": "pm-wait",
+  "section": "how",
+  "field": "Empty state",
+  "original": "Waiting for input…",
+  "streamlined": "Waiting for input…",
+  "changed": false,
+  "reason": "No change",
+  "final": "Waiting for input…"
+ },
+ {
+  "id": "pm-cap-1",
+  "section": "how",
+  "field": "Caption, step 1",
+  "original": "The sentence so far is sent to the model.",
+  "streamlined": "The sentence so far is sent to the model.",
+  "changed": false,
+  "reason": "No change",
+  "final": "The sentence so far is sent to the model."
+ },
+ {
+  "id": "pm-cap-2",
+  "section": "how",
+  "field": "Caption, step 2",
+  "original": "The model scores every possible next word.",
+  "streamlined": "The model scores every possible next word.",
+  "changed": false,
+  "reason": "No change",
+  "final": "The model scores every possible next word."
+ },
+ {
+  "id": "pm-cap-3",
+  "section": "how",
+  "field": "Caption, step 3 (template)",
+  "original": "The most likely token is chosen: {token}.",
+  "streamlined": "The most likely token is chosen: {token}.",
+  "changed": false,
+  "reason": "No change",
+  "final": "The most likely token is chosen: {token}."
+ },
+ {
+  "id": "pm-cap-4",
+  "section": "how",
+  "field": "Caption, step 4",
+  "original": "It joins the sentence, and the process repeats.",
+  "streamlined": "It joins the sentence, and the process repeats.",
+  "changed": false,
+  "reason": "No change",
+  "final": "It joins the sentence, and the process repeats."
+ },
+ {
+  "id": "pm-cap-end",
+  "section": "how",
+  "field": "Caption, final step",
+  "original": "One token at a time, over and over.",
+  "streamlined": "One token at a time, over and over.",
+  "changed": false,
+  "reason": "No change",
+  "final": "One token at a time, over and over."
+ },
+ {
+  "id": "pm-status",
+  "section": "how",
+  "field": "Status (template)",
+  "original": "Round {r} of 4 · Step {s} of 4",
+  "streamlined": "Round {r} of 4 · Step {s} of 4",
+  "changed": false,
+  "reason": "No change",
+  "final": "Round {r} of 4 · Step {s} of 4"
+ },
+ {
+  "id": "llm-h",
+  "section": "llm",
+  "field": "Heading",
+  "original": "What LLMs can and can't do",
+  "streamlined": "What LLMs can and can’t do",
+  "changed": true,
+  "reason": "Typo fixed",
+  "final": "What LLMs can and can’t do"
+ },
+ {
+  "id": "llm-lead",
+  "section": "llm",
+  "field": "Lead",
+  "original": "LLMs recognize and reproduce patterns very well, but they don't possess understanding or comprehension the way humans do.",
+  "streamlined": "LLMs are very good at recognizing and reproducing patterns, but they don’t understand things the way humans do.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "LLMs are very good at recognizing and reproducing patterns, but they don’t understand things the way humans do."
+ },
+ {
+  "id": "llm-p1",
+  "section": "llm",
+  "field": "Paragraph",
+  "original": "That distinction explains what these systems are good at and where they go wrong. An appropriate way to treat an LLM output is as a first draft from a fast, well-read assistant who is sometimes wrong. It can act as a useful starting point that needs to be reviewed and assessed by a human.",
+  "streamlined": "That distinction explains what these systems are good at and where they go wrong. Treat an LLM’s output as a first draft from a fast, well-read assistant who is sometimes wrong: a useful starting point that a person needs to review.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "That distinction explains what these systems are good at and where they go wrong. Treat an LLM’s output as a first draft from a fast, well-read assistant who is sometimes wrong: a useful starting point that a person needs to review."
+ },
+ {
+  "id": "llm-tabs",
+  "section": "llm",
+  "field": "Tabs",
+  "original": "Strengths / Weaknesses",
+  "streamlined": "Strengths / Weaknesses",
+  "changed": false,
+  "reason": "No change",
+  "final": "Strengths / Weaknesses"
+ },
+ {
+  "id": "llm-s1-title",
+  "section": "llm",
+  "field": "Strength 1",
+  "original": "Recognizing patterns across large datasets quickly",
+  "streamlined": "Recognizing patterns across large datasets quickly",
+  "changed": false,
+  "reason": "No change",
+  "final": "Recognizing patterns across large datasets quickly"
+ },
+ {
+  "id": "llm-s1-body",
+  "section": "llm",
+  "field": "Strength 1 detail",
+  "original": "Having learned from enormous amounts of text, an LLM can spot themes, repetitions and connections across far more material than a person could read in the same time.",
+  "streamlined": "Having learned from enormous amounts of text, an LLM can spot themes, repetitions and connections across far more material than a person could read in the same time.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Having learned from enormous amounts of text, an LLM can spot themes, repetitions and connections across far more material than a person could read in the same time."
+ },
+ {
+  "id": "llm-s2-title",
+  "section": "llm",
+  "field": "Strength 2",
+  "original": "Drafting, summarizing, and reformatting language",
+  "streamlined": "Drafting, summarizing and reformatting language",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "Drafting, summarizing and reformatting language"
+ },
+ {
+  "id": "llm-s2-body",
+  "section": "llm",
+  "field": "Strength 2 detail",
+  "original": "It can turn rough notes into a first draft, condense a long report into key points, or rewrite the same content for a different audience or format, such as an email, a list or a table.",
+  "streamlined": "It can turn rough notes into a first draft, condense a long report into key points, or rewrite content for a different audience or format, such as an email, a list or a table.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "It can turn rough notes into a first draft, condense a long report into key points, or rewrite content for a different audience or format, such as an email, a list or a table."
+ },
+ {
+  "id": "llm-s3-title",
+  "section": "llm",
+  "field": "Strength 3",
+  "original": "Translating between languages",
+  "streamlined": "Translating between languages",
+  "changed": false,
+  "reason": "No change",
+  "final": "Translating between languages"
+ },
+ {
+  "id": "llm-s3-body",
+  "section": "llm",
+  "field": "Strength 3 detail",
+  "original": "Because it has learned from text in many languages, it can translate quickly and often keep the tone as well as the meaning. Results are weaker for languages with less training data.",
+  "streamlined": "Because it has learned from text in many languages, it can translate quickly and often keep the tone as well as the meaning. Results are weaker for languages with less training data.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Because it has learned from text in many languages, it can translate quickly and often keep the tone as well as the meaning. Results are weaker for languages with less training data."
+ },
+ {
+  "id": "llm-s4-title",
+  "section": "llm",
+  "field": "Strength 4",
+  "original": "Handling repetitive analytical work at scale",
+  "streamlined": "Handling repetitive analytical work at scale",
+  "changed": false,
+  "reason": "No change",
+  "final": "Handling repetitive analytical work at scale"
+ },
+ {
+  "id": "llm-s4-body",
+  "section": "llm",
+  "field": "Strength 4 detail",
+  "original": "Tasks like sorting feedback, tagging documents or pulling details out of forms can be done across thousands of items in minutes. A person still needs to check the results.",
+  "streamlined": "It can sort feedback, tag documents or pull details out of forms across thousands of items in minutes. A person still needs to check the results.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "It can sort feedback, tag documents or pull details out of forms across thousands of items in minutes. A person still needs to check the results."
+ },
+ {
+  "id": "llm-w1-title",
+  "section": "llm",
+  "field": "Weakness 1",
+  "original": "It can be confidently wrong",
+  "streamlined": "It can be confidently wrong",
+  "changed": false,
+  "reason": "No change",
+  "final": "It can be confidently wrong"
+ },
+ {
+  "id": "llm-w1-body",
+  "section": "llm",
+  "field": "Weakness 1 detail",
+  "original": "LLMs sometimes “hallucinate”: they produce false information that reads as entirely plausible. The system has no reliable way to signal when it reaches a gap in its knowledge.[^10]",
+  "streamlined": "LLMs sometimes “hallucinate”: they produce false information that reads as entirely plausible. They have no reliable way to signal a gap in their knowledge.[^10]",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "LLMs sometimes “hallucinate”: they produce false information that reads as entirely plausible. They have no reliable way to signal a gap in their knowledge.[^10]"
+ },
+ {
+  "id": "llm-w2-title",
+  "section": "llm",
+  "field": "Weakness 2",
+  "original": "It doesn't understand or reason the way people do",
+  "streamlined": "It doesn’t understand or reason the way people do",
+  "changed": true,
+  "reason": "Typo fixed",
+  "final": "It doesn’t understand or reason the way people do"
+ },
+ {
+  "id": "llm-w2-body",
+  "section": "llm",
+  "field": "Weakness 2 detail",
+  "original": "Generative AI works by recognizing patterns in existing data. What it produces is built from things people have already made, and it has no lived experience to check its ideas against.[^12]",
+  "streamlined": "Generative AI works by recognizing patterns in existing data. What it produces is built from things people have already made, and it has no lived experience to check its ideas against.[^12]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Generative AI works by recognizing patterns in existing data. What it produces is built from things people have already made, and it has no lived experience to check its ideas against.[^12]"
+ },
+ {
+  "id": "llm-w3-title",
+  "section": "llm",
+  "field": "Weakness 3",
+  "original": "It doesn't know what's happening in real time",
+  "streamlined": "It doesn’t know what’s happening in real time",
+  "changed": true,
+  "reason": "Typo fixed",
+  "final": "It doesn’t know what’s happening in real time"
+ },
+ {
+  "id": "llm-w3-body",
+  "section": "llm",
+  "field": "Weakness 3 detail",
+  "original": "Unless it’s connected to live information, a model only knows what was in its training data. The world keeps changing, so an answer based on outdated data can be wrong or irrelevant.[^10]",
+  "streamlined": "Unless it’s connected to live information, a model only knows what was in its training data. The world keeps changing, so an answer based on outdated data can be wrong or irrelevant.[^10]",
+  "changed": false,
+  "reason": "No change",
+  "final": "Unless it’s connected to live information, a model only knows what was in its training data. The world keeps changing, so an answer based on outdated data can be wrong or irrelevant.[^10]"
+ },
+ {
+  "id": "llm-w4-title",
+  "section": "llm",
+  "field": "Weakness 4",
+  "original": "It's sensitive to how it's asked",
+  "streamlined": "It’s sensitive to how it’s asked",
+  "changed": true,
+  "reason": "Typo fixed",
+  "final": "It’s sensitive to how it’s asked"
+ },
+ {
+  "id": "llm-w4-body",
+  "section": "llm",
+  "field": "Weakness 4 detail",
+  "original": "The same request phrased differently can produce a different answer.[^13]",
+  "streamlined": "The same request phrased differently can produce a different answer.[^13]",
+  "changed": false,
+  "reason": "No change",
+  "final": "The same request phrased differently can produce a different answer.[^13]"
+ },
+ {
+  "id": "rsn-h",
+  "section": "rsn",
+  "field": "Heading",
+  "original": "Reasoning models and agentic AI",
+  "streamlined": "Reasoning models and agentic AI",
+  "changed": false,
+  "reason": "No change",
+  "final": "Reasoning models and agentic AI"
+ },
+ {
+  "id": "rsn-lead",
+  "section": "rsn",
+  "field": "Lead",
+  "original": "Building on generative AI, reasoning models and agentic AI are the latest developments in the field.",
+  "streamlined": "Building on generative AI, reasoning models and agentic AI are the latest developments in the field.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Building on generative AI, reasoning models and agentic AI are the latest developments in the field."
+ },
+ {
+  "id": "rsn-1-name",
+  "section": "rsn",
+  "field": "Card title",
+  "original": "Reasoning models",
+  "streamlined": "Reasoning models",
+  "changed": false,
+  "reason": "No change",
+  "final": "Reasoning models"
+ },
+ {
+  "id": "rsn-1-body",
+  "section": "rsn",
+  "field": "Card text",
+  "original": "Reasoning models are LLMs trained to work through a problem in steps before they answer: breaking it down, checking their work and trying another route when something doesn’t add up. This makes them better at maths, coding and planning, but slower and more costly to run. Their “thinking” is still prediction, so it can still be wrong.",
+  "streamlined": "Reasoning models are LLMs trained to work through a problem in steps before they answer: breaking it down, checking their work and trying another route when something doesn’t add up. This makes them better at maths, coding and planning, but slower and costlier to run. Their “thinking” is still prediction, so it can be wrong.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Reasoning models are LLMs trained to work through a problem in steps before they answer: breaking it down, checking their work and trying another route when something doesn’t add up. This makes them better at maths, coding and planning, but slower and costlier to run. Their “thinking” is still prediction, so it can be wrong."
+ },
+ {
+  "id": "rsn-ex-lab",
+  "section": "rsn",
+  "field": "Label",
+  "original": "Examples",
+  "streamlined": "Examples",
+  "changed": false,
+  "reason": "No change",
+  "final": "Examples"
+ },
+ {
+  "id": "rsn-1-ex1",
+  "section": "rsn",
+  "field": "Example",
+  "original": "OpenAI’s o-series models, such as o1 and o3",
+  "streamlined": "OpenAI’s o-series models, such as o1 and o3",
+  "changed": false,
+  "reason": "No change",
+  "final": "OpenAI’s o-series models, such as o1 and o3"
+ },
+ {
+  "id": "rsn-1-ex2",
+  "section": "rsn",
+  "field": "Example",
+  "original": "DeepSeek-R1",
+  "streamlined": "DeepSeek-R1",
+  "changed": false,
+  "reason": "No change",
+  "final": "DeepSeek-R1"
+ },
+ {
+  "id": "rsn-1-ex3",
+  "section": "rsn",
+  "field": "Example",
+  "original": "“Thinking” modes in Claude and Gemini",
+  "streamlined": "“Thinking” modes in Claude and Gemini",
+  "changed": false,
+  "reason": "No change",
+  "final": "“Thinking” modes in Claude and Gemini"
+ },
+ {
+  "id": "rsn-2-name",
+  "section": "rsn",
+  "field": "Card title",
+  "original": "Agentic AI",
+  "streamlined": "Agentic AI",
+  "changed": false,
+  "reason": "No change",
+  "final": "Agentic AI"
+ },
+ {
+  "id": "rsn-2-body",
+  "section": "rsn",
+  "field": "Card text",
+  "original": "Agentic AI systems, or AI agents, are given a goal rather than a single question. They plan the steps, use tools such as web search, code or other apps, check the results and keep going until the task is done. Because they act on someone’s behalf, their mistakes can have real consequences, so people need to set limits and review what they do.",
+  "streamlined": "Agentic AI systems, or AI agents, are given a goal rather than a single question. They plan the steps, use tools such as web search, code or other apps, check the results and keep going until the task is done. Because they act on someone’s behalf, their mistakes can have real consequences. People need to set limits and review what they do.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Agentic AI systems, or AI agents, are given a goal rather than a single question. They plan the steps, use tools such as web search, code or other apps, check the results and keep going until the task is done. Because they act on someone’s behalf, their mistakes can have real consequences. People need to set limits and review what they do."
+ },
+ {
+  "id": "rsn-2-ex1",
+  "section": "rsn",
+  "field": "Example",
+  "original": "Coding assistants that write, run and fix software",
+  "streamlined": "Coding assistants that write, run and fix software",
+  "changed": false,
+  "reason": "No change",
+  "final": "Coding assistants that write, run and fix software"
+ },
+ {
+  "id": "rsn-2-ex2",
+  "section": "rsn",
+  "field": "Example",
+  "original": "Assistants that browse the web and fill in forms or make bookings",
+  "streamlined": "Assistants that browse the web and fill in forms or make bookings",
+  "changed": false,
+  "reason": "No change",
+  "final": "Assistants that browse the web and fill in forms or make bookings"
+ },
+ {
+  "id": "risk-h",
+  "section": "risk",
+  "field": "Heading",
+  "original": "Risks of generative AI",
+  "streamlined": "Risks of generative AI",
+  "changed": false,
+  "reason": "No change",
+  "final": "Risks of generative AI"
+ },
+ {
+  "id": "risk-intro",
+  "section": "risk",
+  "field": "Intro",
+  "original": "As AI becomes more widespread, there's growing attention to how the technology carries both individual and systemic risks, affecting specific people and societies at large.",
+  "streamlined": "As AI becomes more widespread, attention is growing to its risks: individual risks that affect specific people, and systemic risks that affect societies at large.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "As AI becomes more widespread, attention is growing to its risks: individual risks that affect specific people, and systemic risks that affect societies at large."
+ },
+ {
+  "id": "risk-h-ind",
+  "section": "risk",
+  "field": "Subheading",
+  "original": "Individual Risks",
+  "streamlined": "Individual risks",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "Individual risks"
+ },
+ {
+  "id": "risk-bias-title",
+  "section": "risk",
+  "field": "Card title",
+  "original": "Bias and fairness",
+  "streamlined": "Bias and fairness",
+  "changed": false,
+  "reason": "No change",
+  "final": "Bias and fairness"
+ },
+ {
+  "id": "risk-bias-body",
+  "section": "risk",
+  "field": "Card text",
+  "original": "AI systems learn from data produced by people, which means they can absorb and repeat the biases present in that data, including biases around race, gender, immigration status, socio-economic background and other characteristics.",
+  "streamlined": "AI systems learn from data produced by people, so they can absorb and repeat its biases, including biases around race, gender, immigration status, socio-economic background and other characteristics.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "AI systems learn from data produced by people, so they can absorb and repeat its biases, including biases around race, gender, immigration status, socio-economic background and other characteristics."
+ },
+ {
+  "id": "risk-privacy-title",
+  "section": "risk",
+  "field": "Card title",
+  "original": "Data privacy",
+  "streamlined": "Data privacy",
+  "changed": false,
+  "reason": "No change",
+  "final": "Data privacy"
+ },
+ {
+  "id": "risk-privacy-body",
+  "section": "risk",
+  "field": "Card text",
+  "original": "Data privacy is an individual’s ability to control what information about them is collected, who can see it, and what it gets used for. Sensitive information entered into an AI tool isn't always erased afterward.",
+  "streamlined": "Data privacy is an individual’s ability to control what information about them is collected, who can see it and what it is used for. Sensitive information entered into an AI tool isn’t always erased afterward.",
+  "changed": true,
+  "reason": "Typo fixed",
+  "final": "Data privacy is an individual’s ability to control what information about them is collected, who can see it and what it is used for. Sensitive information entered into an AI tool isn’t always erased afterward."
+ },
+ {
+  "id": "risk-accuracy-title",
+  "section": "risk",
+  "field": "Card title",
+  "original": "Information accuracy",
+  "streamlined": "Information accuracy",
+  "changed": false,
+  "reason": "No change",
+  "final": "Information accuracy"
+ },
+ {
+  "id": "risk-accuracy-body",
+  "section": "risk",
+  "field": "Card text",
+  "original": "AI-generated content can be factually wrong while sounding authoritative. That's especially consequential in contexts like research, journalism, healthcare, and law, where a confident error can cause real harm.",
+  "streamlined": "AI-generated content can be factually wrong while sounding authoritative. This matters especially in research, journalism, healthcare and law, where a confident error can cause real harm.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "AI-generated content can be factually wrong while sounding authoritative. This matters especially in research, journalism, healthcare and law, where a confident error can cause real harm."
+ },
+ {
+  "id": "risk-h-sys",
+  "section": "risk",
+  "field": "Subheading",
+  "original": "Systemic Risks",
+  "streamlined": "Systemic risks",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "Systemic risks"
+ },
+ {
+  "id": "risk-env-title",
+  "section": "risk",
+  "field": "Card title",
+  "original": "Environmental cost",
+  "streamlined": "Environmental cost",
+  "changed": false,
+  "reason": "No change",
+  "final": "Environmental cost"
+ },
+ {
+  "id": "risk-env-body",
+  "section": "risk",
+  "field": "Card text",
+  "original": "Training and running large AI models takes significant computing power. The data centres that host these computers require large amounts of energy and water to maintain, creating a growing concern for the environmental footprint of this technology.",
+  "streamlined": "Training and running large AI models takes significant computing power. The data centres that host these computers use large amounts of energy and water, raising growing concern about the technology’s environmental footprint.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Training and running large AI models takes significant computing power. The data centres that host these computers use large amounts of energy and water, raising growing concern about the technology’s environmental footprint."
+ },
+ {
+  "id": "risk-labour-title",
+  "section": "risk",
+  "field": "Card title",
+  "original": "Impact on labour",
+  "streamlined": "Impact on labour",
+  "changed": false,
+  "reason": "No change",
+  "final": "Impact on labour"
+ },
+ {
+  "id": "risk-labour-body",
+  "section": "risk",
+  "field": "Card text",
+  "original": "AI is changing what jobs require, which tasks get automated, and how work gets valued. The effects aren't evenly distributed and certain fields and types of jobs are affected more than others.",
+  "streamlined": "AI is changing what jobs require, which tasks get automated and how work is valued. The effects are uneven: some fields and types of jobs are affected more than others.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "AI is changing what jobs require, which tasks get automated and how work is valued. The effects are uneven: some fields and types of jobs are affected more than others."
+ },
+ {
+  "id": "risk-pollution-title",
+  "section": "risk",
+  "field": "Card title",
+  "original": "Information pollution",
+  "streamlined": "Information pollution",
+  "changed": false,
+  "reason": "No change",
+  "final": "Information pollution"
+ },
+ {
+  "id": "risk-pollution-body",
+  "section": "risk",
+  "field": "Card text",
+  "original": "Information pollution is the contamination of the information environment with false, misleading, or low-quality content.",
+  "streamlined": "Information pollution is the contamination of the information environment with false, misleading or low-quality content.",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "Information pollution is the contamination of the information environment with false, misleading or low-quality content."
+ },
+ {
+  "id": "risk-market-title",
+  "section": "risk",
+  "field": "Card title",
+  "original": "Market and power concentration",
+  "streamlined": "Market and power concentration",
+  "changed": false,
+  "reason": "No change",
+  "final": "Market and power concentration"
+ },
+ {
+  "id": "risk-market-body",
+  "section": "risk",
+  "field": "Card text",
+  "original": "A small number of companies and countries have an outsized role in developing AI and shaping how people use it.",
+  "streamlined": "A small number of companies and countries have an outsized role in developing AI and shaping how people use it.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A small number of companies and countries have an outsized role in developing AI and shaping how people use it."
+ },
+ {
+  "id": "risk-more",
+  "section": "risk",
+  "field": "Card button",
+  "original": "Read more",
+  "streamlined": "Read more",
+  "changed": false,
+  "reason": "No change",
+  "final": "Read more"
+ },
+ {
+  "id": "risk-bias-sheet-p",
+  "section": "risk",
+  "field": "Bias sheet · intro",
+  "original": "AI systems learn from data produced by people, which means they can absorb and repeat the biases present in that data, including biases around race, gender, immigration status, socio-economic background and other characteristics. A system trained on biased data will produce biased outputs, often with no obvious signal that it's happening.",
+  "streamlined": "AI systems learn from data produced by people, so they can absorb and repeat its biases, including biases around race, gender, immigration status, socio-economic background and other characteristics. A system trained on biased data will produce biased outputs, often with no obvious sign that it’s happening.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "AI systems learn from data produced by people, so they can absorb and repeat its biases, including biases around race, gender, immigration status, socio-economic background and other characteristics. A system trained on biased data will produce biased outputs, often with no obvious sign that it’s happening."
+ },
+ {
+  "id": "risk-bias-sheet-sub",
+  "section": "risk",
+  "field": "Bias sheet · list intro",
+  "original": "Here are four examples of bias in how AI models are built and used and its impact on people:",
+  "streamlined": "Here are four examples of bias in how AI models are built and used, and how it affects people:",
+  "changed": true,
+  "reason": "Grammar",
+  "final": "Here are four examples of bias in how AI models are built and used, and how it affects people:"
+ },
+ {
+  "id": "risk-bias-sheet-1",
+  "section": "risk",
+  "field": "Bias sheet · example 1",
+  "original": "A widely used machine learning algorithm used by the American healthcare system predicted patient needs based on healthcare spending. Because the US healthcare system spends on average less on Black patients, the algorithm incorrectly concluded that Black patients were healthier and required less support than equally sick white patients.[^15]",
+  "streamlined": "A widely used machine learning algorithm in the American healthcare system predicted patients’ needs from their healthcare spending. Because the US healthcare system spends less on Black patients on average, the algorithm wrongly concluded that Black patients were healthier and needed less support than equally sick white patients.[^15]",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "A widely used machine learning algorithm in the American healthcare system predicted patients’ needs from their healthcare spending. Because the US healthcare system spends less on Black patients on average, the algorithm wrongly concluded that Black patients were healthier and needed less support than equally sick white patients.[^15]"
+ },
+ {
+  "id": "risk-bias-sheet-2",
+  "section": "risk",
+  "field": "Bias sheet · example 2",
+  "original": "A self-learning risk model used by the Dutch tax authority flagged childcare benefit claims for possible fraud, using dual nationality as one of its risk indicators. Because immigrant families had been audited disproportionately in the past, the model learned to treat a foreign background as a marker of fraud and wrongly accused an estimated 26,000 families.[^16]",
+  "streamlined": "The Dutch tax authority used a self-learning risk model to flag childcare benefit claims for possible fraud, with dual nationality as one of its risk indicators. Because immigrant families had been audited disproportionately in the past, the model learned to treat a foreign background as a marker of fraud and wrongly accused an estimated 26,000 families.[^16]",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "The Dutch tax authority used a self-learning risk model to flag childcare benefit claims for possible fraud, with dual nationality as one of its risk indicators. Because immigrant families had been audited disproportionately in the past, the model learned to treat a foreign background as a marker of fraud and contributed to wrongful fraud accusations in a scandal that affected an estimated 26,000 families.[^16]"
+ },
+ {
+  "id": "risk-bias-sheet-3",
+  "section": "risk",
+  "field": "Bias sheet · example 3",
+  "original": "A machine learning tool built by Amazon to score job applicants was trained on past resumes it received. Because most resumes had come from men, the model learned that male candidates were preferable, thus reproducing the gender imbalance present in its training data. The tool was scrapped when Amazon concluded it could not be made reliably fair toward applicants of different genders.[^17]",
+  "streamlined": "Amazon built a machine learning tool to score job applicants and trained it on resumes it had received in the past. Because most had come from men, the model learned to prefer male candidates, reproducing the gender imbalance in its training data. Amazon scrapped the tool when it concluded it could not be made reliably fair toward applicants of different genders.[^17]",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Amazon built a machine learning tool to score job applicants and trained it on resumes it had received in the past. Because most had come from men, the model learned to prefer male candidates, reproducing the gender imbalance in its training data. Amazon scrapped the tool when it concluded it could not be made reliably fair toward applicants of different genders.[^17]"
+ },
+ {
+  "id": "risk-bias-sheet-4",
+  "section": "risk",
+  "field": "Bias sheet · example 4",
+  "original": "Facial recognition reports are issued to police forces in the US to be used as investigative leads, but in practice, officers have treated software matches as positive identifications. This pattern of over-trust in the computer’s output has led to wrongful arrests.[^18]",
+  "streamlined": "US police forces receive facial recognition reports to use as investigative leads, but in practice officers have treated software matches as positive identifications. This over-trust in the computer’s output has led to wrongful arrests.[^18]",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "US police forces receive facial recognition reports to use as investigative leads, but in practice officers have treated software matches as positive identifications. This over-trust in the computer’s output has led to wrongful arrests.[^18]"
+ },
+ {
+  "id": "pi-h",
+  "section": "pi",
+  "field": "Heading",
+  "original": "Why public-interest AI matters",
+  "streamlined": "Why public-interest AI matters",
+  "changed": false,
+  "reason": "No change",
+  "final": "Why public-interest AI matters"
+ },
+ {
+  "id": "pi-lead",
+  "section": "pi",
+  "field": "Lead",
+  "original": "The choices that drive AI technologies, including how models are built, what data they are trained on, and where they are deployed, reflect the priorities of the organizations that build them.",
+  "streamlined": "The choices behind AI technologies, including how models are built, what data they are trained on and where they are deployed, reflect the priorities of the organizations that build them.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "The choices behind AI technologies, including how models are built, what data they are trained on and where they are deployed, reflect the priorities of the organizations that build them."
+ },
+ {
+  "id": "pi-p1",
+  "section": "pi",
+  "field": "Paragraph",
+  "original": "These choices impact everyone who uses the technology or is affected by it, most of whom had no involvement in the making of these decisions.",
+  "streamlined": "These choices impact everyone who uses the technology or is affected by it, yet most of those people had no say in them.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "These choices impact everyone who uses the technology or is affected by it, yet most of those people had no say in them."
+ },
+ {
+  "id": "pi-p2",
+  "section": "pi",
+  "field": "Paragraph",
+  "original": "Public-interest AI provides an alternate pathway for AI development and deployment that centres the needs of communities. It envisions AI technologies that are designed, built, and used to support outcomes that serve the long-term wellbeing of the public, and safeguard people’s democratic rights.",
+  "streamlined": "Public-interest AI offers an alternative path for developing and deploying AI, one that centres the needs of communities. It envisions AI that is designed, built and used to serve the public’s long-term wellbeing and safeguard people’s democratic rights.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Public-interest AI offers an alternative path for developing and deploying AI, one that centres the needs of communities. It envisions AI that is designed, built and used to serve the public’s long-term wellbeing and safeguard people’s democratic rights."
+ },
+ {
+  "id": "pi-p3",
+  "section": "pi",
+  "field": "Paragraph (link: “community of experts and practitioners”)",
+  "original": "The concept of Public AI, supported by a wide community of experts and practitioners, supports AI systems that incorporate public control as much as possible, in as many as possible components of the AI stack, which includes compute power, data, to the models themselves, as well as the apps that make AI accessible to the public. Public AI calls for accessible, interoperable, and transparent AI systems that are accountable to the public and governed according to democratic principles.",
+  "streamlined": "Public AI, a concept supported by a wide community of experts and practitioners, calls for as much public control as possible over as many parts of the AI stack as possible: compute power, data, the models themselves and the apps that make AI accessible to the public. Public AI systems should be accessible, interoperable and transparent, accountable to the public and governed by democratic principles.",
+  "changed": true,
+  "reason": "Grammar",
+  "final": "Public AI, a concept supported by a wide community of experts and practitioners, calls for as much public control as possible over as many parts of the AI stack as possible: compute power, data, the models themselves and the apps that make AI accessible to the public. Public AI systems should be accessible, interoperable and transparent, accountable to the public and governed by democratic principles."
+ },
+ {
+  "id": "pi-h3",
+  "section": "pi",
+  "field": "Subheading",
+  "original": "Advancing Public-Interest AI",
+  "streamlined": "Advancing public-interest AI",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "Advancing public-interest AI"
+ },
+ {
+  "id": "pi-p4",
+  "section": "pi",
+  "field": "Paragraph",
+  "original": "Sandbox Labs is part of a global movement supporting Public-Interest AI and Public AI. In collaboration with the UPF-Barcelona School of Management and hosted at Norrsken House Barcelona, we bring together our expertise in digital technology, education, and policy to create the Public-Interest AI Accelerator, a new initiative aiming at skilling up today’s and tomorrow’s leaders to ensure the future of AI benefits people and societies at large.",
+  "streamlined": "Sandbox Labs is part of a global movement supporting public-interest AI and Public AI. With the UPF-Barcelona School of Management, and hosted at Norrsken House Barcelona, we combine our expertise in digital technology, education and policy in the Public-Interest AI Accelerator: a new initiative that builds the skills of today’s and tomorrow’s leaders so the future of AI benefits people and societies at large.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "Sandbox Labs is part of a global movement supporting public-interest AI and Public AI. With the UPF-Barcelona School of Management, and hosted at Norrsken House Barcelona, we combine our expertise in digital technology, education and policy in the Public-Interest AI Accelerator: a new initiative that builds the skills of today’s and tomorrow’s leaders so the future of AI benefits people and societies at large."
+ },
+ {
+  "id": "pi-p5",
+  "section": "pi",
+  "field": "Paragraph",
+  "original": "Our pilot edition of the Accelerator took place in 2026. Over nine weeks, participants engaged with experts in law and digital rights, health, policy, computer science, and neuroscience to explore AI’s role in geopolitics and supply chains, the legal and human-rights questions it raises, what ethical governance actually looks like, and how public-interest AI gets built and implemented in the real world.",
+  "streamlined": "The pilot edition of the Accelerator ran in 2026. Over nine weeks, participants worked with experts in law and digital rights, health, policy, computer science and neuroscience. They explored AI’s role in geopolitics and supply chains, the legal and human-rights questions it raises, what ethical governance looks like and how public-interest AI is built and implemented in the real world.",
+  "changed": true,
+  "reason": "Shorter",
+  "final": "The pilot edition of the Accelerator ran in 2026. Over nine weeks, participants worked with experts in law and digital rights, health, policy, computer science and neuroscience. They explored AI’s role in geopolitics and supply chains, the legal and human-rights questions it raises, what ethical governance looks like and how public-interest AI is built and implemented in the real world."
+ },
+ {
+  "id": "pi-p6",
+  "section": "pi",
+  "field": "Paragraph",
+  "original": "The Public-Interest AI Accelerator is designed to help participants engage critically with AI technologies and answer key questions such as who benefits? Who carries the risks? What trade-offs must be transparent? How can public policy leaders make sound decisions in an AI-world?",
+  "streamlined": "The Public-Interest AI Accelerator is designed to help participants engage critically with AI and answer key questions: Who benefits? Who carries the risks? What trade-offs must be transparent? How can public policy leaders make sound decisions in an AI world?",
+  "changed": true,
+  "reason": "Grammar",
+  "final": "The Public-Interest AI Accelerator is designed to help participants engage critically with AI and answer key questions: Who benefits? Who carries the risks? What trade-offs must be transparent? How can public policy leaders make sound decisions in an AI world?"
+ },
+ {
+  "id": "pi-btn",
+  "section": "pi",
+  "field": "Button",
+  "original": "Explore the Accelerator Program",
+  "streamlined": "Explore the Accelerator Program",
+  "changed": false,
+  "reason": "No change",
+  "final": "Explore the Accelerator Program"
+ },
+ {
+  "id": "refs-h",
+  "section": "refs",
+  "field": "Toggle label",
+  "original": "References",
+  "streamlined": "References",
+  "changed": false,
+  "reason": "No change",
+  "final": "References"
+ },
+ {
+  "id": "refs-note",
+  "section": "refs",
+  "field": "Note",
+  "original": "1–18 are placeholder references",
+  "streamlined": "1–18 are placeholder references",
+  "changed": false,
+  "reason": "No change",
+  "final": "1–18 are placeholder references"
+ },
+ {
+  "id": "refs-19",
+  "section": "refs",
+  "field": "Reference 19",
+  "original": "IBM. “Deep Blue.” IBM History. www.ibm.com/history/deep-blue",
+  "streamlined": "IBM. “Deep Blue.” IBM History. www.ibm.com/history/deep-blue",
+  "changed": false,
+  "reason": "No change",
+  "final": "IBM. “Deep Blue.” IBM History. www.ibm.com/history/deep-blue"
+ },
+ {
+  "id": "refs-20",
+  "section": "refs",
+  "field": "Reference 20",
+  "original": "Google Workspace (2017). “Keeping your company data safe with new security updates to Gmail.” The Keyword, Google. blog.google/products/g-suite/keeping-your-company-data-safe-new-security-updates-gmail",
+  "streamlined": "Google Workspace (2017). “Keeping your company data safe with new security updates to Gmail.” The Keyword, Google. blog.google/products/g-suite/keeping-your-company-data-safe-new-security-updates-gmail",
+  "changed": false,
+  "reason": "No change",
+  "final": "Google Workspace (2017). “Keeping your company data safe with new security updates to Gmail.” The Keyword, Google. blog.google/products/g-suite/keeping-your-company-data-safe-new-security-updates-gmail"
+ },
+ {
+  "id": "refs-21",
+  "section": "refs",
+  "field": "Reference 21",
+  "original": "Turing, A. M. (1950). “Computing machinery and intelligence.” Mind, 59(236), 433–460. academic.oup.com/mind/article/LIX/236/433/986238",
+  "streamlined": "Turing, A. M. (1950). “Computing machinery and intelligence.” Mind, 59(236), 433–460. academic.oup.com/mind/article/LIX/236/433/986238",
+  "changed": false,
+  "reason": "No change",
+  "final": "Turing, A. M. (1950). “Computing machinery and intelligence.” Mind, 59(236), 433–460. academic.oup.com/mind/article/LIX/236/433/986238"
+ },
+ {
+  "id": "refs-22",
+  "section": "refs",
+  "field": "Reference 22",
+  "original": "McCarthy, J., Minsky, M., Rochester, N. and Shannon, C. (1955). “A proposal for the Dartmouth Summer Research Project on Artificial Intelligence.” jmc.stanford.edu/articles/dartmouth/dartmouth.pdf",
+  "streamlined": "McCarthy, J., Minsky, M., Rochester, N. and Shannon, C. (1955). “A proposal for the Dartmouth Summer Research Project on Artificial Intelligence.” jmc.stanford.edu/articles/dartmouth/dartmouth.pdf",
+  "changed": false,
+  "reason": "No change",
+  "final": "McCarthy, J., Minsky, M., Rochester, N. and Shannon, C. (1955). “A proposal for the Dartmouth Summer Research Project on Artificial Intelligence.” jmc.stanford.edu/articles/dartmouth/dartmouth.pdf"
+ },
+ {
+  "id": "refs-23",
+  "section": "refs",
+  "field": "Reference 23",
+  "original": "Samuel, A. L. (1959). “Some studies in machine learning using the game of checkers.” IBM Journal of Research and Development, 3(3), 210–229. ieeexplore.ieee.org/document/5392560",
+  "streamlined": "Samuel, A. L. (1959). “Some studies in machine learning using the game of checkers.” IBM Journal of Research and Development, 3(3), 210–229. ieeexplore.ieee.org/document/5392560",
+  "changed": false,
+  "reason": "No change",
+  "final": "Samuel, A. L. (1959). “Some studies in machine learning using the game of checkers.” IBM Journal of Research and Development, 3(3), 210–229. ieeexplore.ieee.org/document/5392560"
+ },
+ {
+  "id": "refs-24",
+  "section": "refs",
+  "field": "Reference 24",
+  "original": "Weizenbaum, J. (1966). “ELIZA: a computer program for the study of natural language communication between man and machine.” Communications of the ACM, 9(1), 36–45. dl.acm.org/doi/10.1145/365153.365168",
+  "streamlined": "Weizenbaum, J. (1966). “ELIZA: a computer program for the study of natural language communication between man and machine.” Communications of the ACM, 9(1), 36–45. dl.acm.org/doi/10.1145/365153.365168",
+  "changed": false,
+  "reason": "No change",
+  "final": "Weizenbaum, J. (1966). “ELIZA: a computer program for the study of natural language communication between man and machine.” Communications of the ACM, 9(1), 36–45. dl.acm.org/doi/10.1145/365153.365168"
+ },
+ {
+  "id": "refs-25",
+  "section": "refs",
+  "field": "Reference 25",
+  "original": "Buchanan, B. G. and Shortliffe, E. H. (1984). Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project. Addison-Wesley. www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm",
+  "streamlined": "Buchanan, B. G. and Shortliffe, E. H. (1984). Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project. Addison-Wesley. www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm",
+  "changed": false,
+  "reason": "No change",
+  "final": "Buchanan, B. G. and Shortliffe, E. H. (1984). Rule-Based Expert Systems: The MYCIN Experiments of the Stanford Heuristic Programming Project. Addison-Wesley. www.shortliffe.net/Buchanan-Shortliffe-1984/MYCIN%20Book.htm"
+ },
+ {
+  "id": "refs-26",
+  "section": "refs",
+  "field": "Reference 26",
+  "original": "Krizhevsky, A., Sutskever, I. and Hinton, G. E. (2012). “ImageNet classification with deep convolutional neural networks.” Advances in Neural Information Processing Systems 25. proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+  "streamlined": "Krizhevsky, A., Sutskever, I. and Hinton, G. E. (2012). “ImageNet classification with deep convolutional neural networks.” Advances in Neural Information Processing Systems 25. proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+  "changed": false,
+  "reason": "No change",
+  "final": "Krizhevsky, A., Sutskever, I. and Hinton, G. E. (2012). “ImageNet classification with deep convolutional neural networks.” Advances in Neural Information Processing Systems 25. proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+ },
+ {
+  "id": "refs-27",
+  "section": "refs",
+  "field": "Reference 27",
+  "original": "Goodfellow, I. et al. (2014). “Generative adversarial networks.” arXiv:1406.2661. arxiv.org/abs/1406.2661",
+  "streamlined": "Goodfellow, I. et al. (2014). “Generative adversarial networks.” arXiv:1406.2661. arxiv.org/abs/1406.2661",
+  "changed": false,
+  "reason": "No change",
+  "final": "Goodfellow, I. et al. (2014). “Generative adversarial networks.” arXiv:1406.2661. arxiv.org/abs/1406.2661"
+ },
+ {
+  "id": "refs-28",
+  "section": "refs",
+  "field": "Reference 28",
+  "original": "Vaswani, A. et al. (2017). “Attention is all you need.” arXiv:1706.03762. arxiv.org/abs/1706.03762",
+  "streamlined": "Vaswani, A. et al. (2017). “Attention is all you need.” arXiv:1706.03762. arxiv.org/abs/1706.03762",
+  "changed": false,
+  "reason": "No change",
+  "final": "Vaswani, A. et al. (2017). “Attention is all you need.” arXiv:1706.03762. arxiv.org/abs/1706.03762"
+ },
+ {
+  "id": "refs-29",
+  "section": "refs",
+  "field": "Reference 29",
+  "original": "Radford, A., Narasimhan, K., Salimans, T. and Sutskever, I. (2018). “Improving language understanding by generative pre-training.” OpenAI. openai.com/index/language-unsupervised",
+  "streamlined": "Radford, A., Narasimhan, K., Salimans, T. and Sutskever, I. (2018). “Improving language understanding by generative pre-training.” OpenAI. openai.com/index/language-unsupervised",
+  "changed": false,
+  "reason": "No change",
+  "final": "Radford, A., Narasimhan, K., Salimans, T. and Sutskever, I. (2018). “Improving language understanding by generative pre-training.” OpenAI. openai.com/index/language-unsupervised"
+ },
+ {
+  "id": "refs-30",
+  "section": "refs",
+  "field": "Reference 30",
+  "original": "Hu, K. (2023, February 2). “ChatGPT sets record for fastest-growing user base: analyst note.” Reuters. www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01",
+  "streamlined": "Hu, K. (2023, February 2). “ChatGPT sets record for fastest-growing user base: analyst note.” Reuters. www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01",
+  "changed": false,
+  "reason": "No change",
+  "final": "Hu, K. (2023, February 2). “ChatGPT sets record for fastest-growing user base: analyst note.” Reuters. www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01"
+ },
+ {
+  "id": "refs-31",
+  "section": "refs",
+  "field": "Reference 31",
+  "original": "OpenAI (2024, September 12). “Learning to reason with LLMs.” openai.com/index/learning-to-reason-with-llms",
+  "streamlined": "OpenAI (2024, September 12). “Learning to reason with LLMs.” openai.com/index/learning-to-reason-with-llms",
+  "changed": false,
+  "reason": "No change",
+  "final": "OpenAI (2024, September 12). “Learning to reason with LLMs.” openai.com/index/learning-to-reason-with-llms"
+ },
+ {
+  "id": "refs-32",
+  "section": "refs",
+  "field": "Reference 32",
+  "original": "Lighthill, J. (1973). “Artificial Intelligence: A General Survey.” In Artificial Intelligence: a paper symposium. Science Research Council. www.aiai.ed.ac.uk/events/lighthill1973/lighthill.pdf",
+  "streamlined": "Lighthill, J. (1973). “Artificial Intelligence: A General Survey.” In Artificial Intelligence: a paper symposium. Science Research Council. www.aiai.ed.ac.uk/events/lighthill1973/lighthill.pdf",
+  "changed": false,
+  "reason": "No change",
+  "final": "Lighthill, J. (1973). “Artificial Intelligence: A General Survey.” In Artificial Intelligence: a paper symposium. Science Research Council. www.aiai.ed.ac.uk/events/lighthill1973/lighthill.pdf"
+ },
+ {
+  "id": "refs-33",
+  "section": "refs",
+  "field": "Reference 33",
+  "original": "Holloway. “The Second AI Winter (1987–1993).” Making Things Think: How AI and Deep Learning Power the Products We Use. www.holloway.com/g/making-things-think/sections/the-second-ai-winter-19871993",
+  "streamlined": "Holloway. “The Second AI Winter (1987–1993).” Making Things Think: How AI and Deep Learning Power the Products We Use. www.holloway.com/g/making-things-think/sections/the-second-ai-winter-19871993",
+  "changed": false,
+  "reason": "No change",
+  "final": "Holloway. “The Second AI Winter (1987–1993).” Making Things Think: How AI and Deep Learning Power the Products We Use. www.holloway.com/g/making-things-think/sections/the-second-ai-winter-19871993"
+ },
+ {
+  "id": "refs-34",
+  "section": "refs",
+  "field": "Reference 34",
+  "original": "Rumelhart, D. E., Hinton, G. E. and Williams, R. J. (1986). “Learning representations by back-propagating errors.” Nature, 323, 533–536. www.nature.com/articles/323533a0",
+  "streamlined": "Rumelhart, D. E., Hinton, G. E. and Williams, R. J. (1986). “Learning representations by back-propagating errors.” Nature, 323, 533–536. www.nature.com/articles/323533a0",
+  "changed": false,
+  "reason": "No change",
+  "final": "Rumelhart, D. E., Hinton, G. E. and Williams, R. J. (1986). “Learning representations by back-propagating errors.” Nature, 323, 533–536. www.nature.com/articles/323533a0"
+ },
+ {
+  "id": "refs-35",
+  "section": "refs",
+  "field": "Reference 35",
+  "original": "Silver, D. et al. (2016). “Mastering the game of Go with deep neural networks and tree search.” Nature, 529, 484–489. www.nature.com/articles/nature16961",
+  "streamlined": "Silver, D. et al. (2016). “Mastering the game of Go with deep neural networks and tree search.” Nature, 529, 484–489. www.nature.com/articles/nature16961",
+  "changed": false,
+  "reason": "No change",
+  "final": "Silver, D. et al. (2016). “Mastering the game of Go with deep neural networks and tree search.” Nature, 529, 484–489. www.nature.com/articles/nature16961"
+ },
+ {
+  "id": "refs-36",
+  "section": "refs",
+  "field": "Reference 36",
+  "original": "Stability AI (2022, August 22). “Stable Diffusion public release.” stability.ai/blog/stable-diffusion-public-release",
+  "streamlined": "Stability AI (2022, August 22). “Stable Diffusion public release.” stability.ai/blog/stable-diffusion-public-release",
+  "changed": false,
+  "reason": "No change",
+  "final": "Stability AI (2022, August 22). “Stable Diffusion public release.” stability.ai/blog/stable-diffusion-public-release"
+ },
+ {
+  "id": "refs-37",
+  "section": "refs",
+  "field": "Reference 37",
+  "original": "Wiggers, K. / SiliconANGLE (2022, September 28). “OpenAI removes waitlist for DALL-E 2.” siliconangle.com/2022/09/28/openai-removes-waitlist-dall-e-2-powerful-text-image-ai-generator",
+  "streamlined": "Wiggers, K. / SiliconANGLE (2022, September 28). “OpenAI removes waitlist for DALL-E 2.” siliconangle.com/2022/09/28/openai-removes-waitlist-dall-e-2-powerful-text-image-ai-generator",
+  "changed": false,
+  "reason": "No change",
+  "final": "Wiggers, K. / SiliconANGLE (2022, September 28). “OpenAI removes waitlist for DALL-E 2.” siliconangle.com/2022/09/28/openai-removes-waitlist-dall-e-2-powerful-text-image-ai-generator"
+ },
+ {
+  "id": "refs-38",
+  "section": "refs",
+  "field": "Reference 38",
+  "original": "Newell, A. and Simon, H. A. (1956). “The logic theory machine: a complex information processing system.” IRE Transactions on Information Theory, 2(3), 61–79. doi.org/10.1109/TIT.1956.1056797",
+  "streamlined": "Newell, A. and Simon, H. A. (1956). “The logic theory machine: a complex information processing system.” IRE Transactions on Information Theory, 2(3), 61–79. doi.org/10.1109/TIT.1956.1056797",
+  "changed": false,
+  "reason": "No change",
+  "final": "Newell, A. and Simon, H. A. (1956). “The logic theory machine: a complex information processing system.” IRE Transactions on Information Theory, 2(3), 61–79. doi.org/10.1109/TIT.1956.1056797"
+ },
+ {
+  "id": "cta-label",
+  "section": "cta",
+  "field": "Label",
+  "original": "The Public-Interest AI Accelerator",
+  "streamlined": "The Public-Interest AI Accelerator",
+  "changed": false,
+  "reason": "No change",
+  "final": "The Public-Interest AI Accelerator"
+ },
+ {
+  "id": "cta-lead",
+  "section": "cta",
+  "field": "Lead",
+  "original": "A hands-on, career-relevant, program to develop AI literacy, strategic insight, and real-world confidence to build and use AI in the public interest.",
+  "streamlined": "A hands-on, career-relevant program to develop AI literacy, strategic insight and real-world confidence to build and use AI in the public interest.",
+  "changed": true,
+  "reason": "Typo fixed",
+  "final": "A hands-on, career-relevant program to develop AI literacy, strategic insight and real-world confidence to build and use AI in the public interest."
+ },
+ {
+  "id": "cta-btn",
+  "section": "cta",
+  "field": "Button",
+  "original": "Explore the Accelerator Program",
+  "streamlined": "Explore the Accelerator Program",
+  "changed": false,
+  "reason": "No change",
+  "final": "Explore the Accelerator Program"
+ },
+ {
+  "id": "foot-01",
+  "section": "foot",
+  "field": "Footer link",
+  "original": "Our approach",
+  "streamlined": "Our approach",
+  "changed": false,
+  "reason": "No change",
+  "final": "Our approach"
+ },
+ {
+  "id": "foot-02",
+  "section": "foot",
+  "field": "Footer link",
+  "original": "Intro to AI",
+  "streamlined": "Intro to AI",
+  "changed": false,
+  "reason": "No change",
+  "final": "Intro to AI"
+ },
+ {
+  "id": "foot-03",
+  "section": "foot",
+  "field": "Footer link",
+  "original": "AI-Accelerator",
+  "streamlined": "AI Accelerator",
+  "changed": true,
+  "reason": "Naming",
+  "final": "AI Accelerator"
+ },
+ {
+  "id": "foot-04",
+  "section": "foot",
+  "field": "Footer link",
+  "original": "Clients",
+  "streamlined": "Clients",
+  "changed": false,
+  "reason": "No change",
+  "final": "Clients"
+ },
+ {
+  "id": "foot-05",
+  "section": "foot",
+  "field": "Footer link (parent company)",
+  "original": "Sandbox Inc",
+  "streamlined": "Sandbox Inc.",
+  "changed": true,
+  "reason": "Naming",
+  "final": "Sandbox Inc."
+ },
+ {
+  "id": "foot-06",
+  "section": "foot",
+  "field": "Email link",
+  "original": "info@sandboxinc.ca",
+  "streamlined": "info@sandboxinc.ca",
+  "changed": false,
+  "reason": "No change",
+  "final": "info@sandboxinc.ca"
+ },
+ {
+  "id": "foot-07",
+  "section": "foot",
+  "field": "Copyright",
+  "original": "Copyright © 2026 Sandbox Inc. All rights reserved.",
+  "streamlined": "Copyright © 2026 Sandbox Labs. All rights reserved.",
+  "changed": true,
+  "reason": "Naming",
+  "final": "Copyright © 2026 Sandbox Inc. All rights reserved."
+ },
+ {
+  "id": "foot-08",
+  "section": "foot",
+  "field": "Footer link",
+  "original": "Terms of use",
+  "streamlined": "Terms of use",
+  "changed": false,
+  "reason": "No change",
+  "final": "Terms of use"
+ },
+ {
+  "id": "foot-09",
+  "section": "foot",
+  "field": "Footer link",
+  "original": "Privacy policy",
+  "streamlined": "Privacy policy",
+  "changed": false,
+  "reason": "No change",
+  "final": "Privacy policy"
+ },
+ {
+  "id": "foot-10",
+  "section": "foot",
+  "field": "Tagline",
+  "original": "Research. Design. Innovate.",
+  "streamlined": "Research. Design. Innovate.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Research. Design. Innovate."
+ },
+ {
+  "id": "foot-tips",
+  "section": "foot",
+  "field": "Floating button tooltips",
+  "original": "Back to top / Glossary",
+  "streamlined": "Back to top / Glossary",
+  "changed": false,
+  "reason": "No change",
+  "final": "Back to top / Glossary"
+ },
+ {
+  "id": "gloss-h",
+  "section": "gloss",
+  "field": "Sheet heading",
+  "original": "AI Glossary",
+  "streamlined": "AI glossary",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "AI glossary"
+ },
+ {
+  "id": "gloss-ai-agent",
+  "section": "gloss",
+  "field": "AI agent",
+  "original": "An AI system that is given a goal and works towards it by itself, planning steps and using tools such as web search or other apps.",
+  "streamlined": "An AI system that is given a goal and works towards it by itself, planning steps and using tools such as web search or other apps.",
+  "changed": false,
+  "reason": "No change",
+  "final": "An AI system that is given a goal and works towards it by itself, planning steps and using tools such as web search or other apps."
+ },
+ {
+  "id": "gloss-algorithm",
+  "section": "gloss",
+  "field": "Algorithm",
+  "original": "A set of instructions a computer follows to complete a task or solve a problem.",
+  "streamlined": "A set of instructions a computer follows to complete a task or solve a problem.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A set of instructions a computer follows to complete a task or solve a problem."
+ },
+ {
+  "id": "gloss-artificial-intelligence-ai",
+  "section": "gloss",
+  "field": "Artificial intelligence (AI)",
+  "original": "A broad category of technologies that can perform tasks that typically require human intelligence.",
+  "streamlined": "A broad category of technologies that can perform tasks that typically require human intelligence.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A broad category of technologies that can perform tasks that typically require human intelligence."
+ },
+ {
+  "id": "gloss-bias",
+  "section": "gloss",
+  "field": "Bias",
+  "original": "Systematic skew in AI outputs, often inherited from patterns in the training data.",
+  "streamlined": "Systematic skew in AI outputs, often inherited from patterns in the training data.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Systematic skew in AI outputs, often inherited from patterns in the training data."
+ },
+ {
+  "id": "gloss-deep-learning",
+  "section": "gloss",
+  "field": "Deep learning",
+  "original": "A kind of machine learning that uses neural networks with many layers. It powers most modern AI, including generative AI.",
+  "streamlined": "A kind of machine learning that uses neural networks with many layers. It powers most modern AI, including generative AI.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A kind of machine learning that uses neural networks with many layers. It powers most modern AI, including generative AI."
+ },
+ {
+  "id": "gloss-diffusion",
+  "section": "gloss",
+  "field": "Diffusion",
+  "original": "A way of generating images: the model starts from random noise and removes it step by step until a picture that matches the prompt appears.",
+  "streamlined": "A way of generating images: the model starts from random noise and removes it step by step until a picture that matches the prompt appears.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A way of generating images: the model starts from random noise and removes it step by step until a picture that matches the prompt appears."
+ },
+ {
+  "id": "gloss-generative-ai",
+  "section": "gloss",
+  "field": "Generative AI",
+  "original": "AI that creates new content such as text, images, audio, or code, rather than only analyzing existing data.",
+  "streamlined": "AI that creates new content such as text, images, audio or code, rather than only analyzing existing data.",
+  "changed": true,
+  "reason": "Consistency",
+  "final": "AI that creates new content such as text, images, audio or code, rather than only analyzing existing data."
+ },
+ {
+  "id": "gloss-hallucination",
+  "section": "gloss",
+  "field": "Hallucination",
+  "original": "When an AI system generates false or fabricated information that sounds plausible.",
+  "streamlined": "When an AI system generates false or fabricated information that sounds plausible.",
+  "changed": false,
+  "reason": "No change",
+  "final": "When an AI system generates false or fabricated information that sounds plausible."
+ },
+ {
+  "id": "gloss-large-language-model-llm",
+  "section": "gloss",
+  "field": "Large language model (LLM)",
+  "original": "A type of generative AI trained on large amounts of text to process and produce language.",
+  "streamlined": "A type of generative AI trained on large amounts of text to process and produce language.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A type of generative AI trained on large amounts of text to process and produce language."
+ },
+ {
+  "id": "gloss-machine-learning",
+  "section": "gloss",
+  "field": "Machine learning",
+  "original": "A subset of AI where systems learn patterns from data rather than explicit rules.",
+  "streamlined": "A subset of AI in which systems learn patterns from data rather than following explicit rules.",
+  "changed": true,
+  "reason": "Grammar",
+  "final": "A subset of AI in which systems learn patterns from data rather than following explicit rules."
+ },
+ {
+  "id": "gloss-model",
+  "section": "gloss",
+  "field": "Model",
+  "original": "The trained core of an AI system: a large set of mathematical patterns learned from data, used to calculate probabilities and predict outputs.",
+  "streamlined": "The trained core of an AI system: a large set of mathematical patterns learned from data, used to calculate probabilities and predict outputs.",
+  "changed": false,
+  "reason": "No change",
+  "final": "The trained core of an AI system: a large set of mathematical patterns learned from data, used to calculate probabilities and predict outputs."
+ },
+ {
+  "id": "gloss-neural-network",
+  "section": "gloss",
+  "field": "Neural network",
+  "original": "A system of connected mathematical units, loosely inspired by the brain, that learns by adjusting the strength of the connections between them.",
+  "streamlined": "A system of connected mathematical units, loosely inspired by the brain, that learns by adjusting the strength of the connections between them.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A system of connected mathematical units, loosely inspired by the brain, that learns by adjusting the strength of the connections between them."
+ },
+ {
+  "id": "gloss-pattern",
+  "section": "gloss",
+  "field": "Pattern",
+  "original": "A regularity or structure found in data that can be used to make predictions or decisions.",
+  "streamlined": "A regularity or structure found in data that can be used to make predictions or decisions.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A regularity or structure found in data that can be used to make predictions or decisions."
+ },
+ {
+  "id": "gloss-prompt",
+  "section": "gloss",
+  "field": "Prompt",
+  "original": "The input or instruction given to an AI system to generate a response.",
+  "streamlined": "The input or instruction given to an AI system to generate a response.",
+  "changed": false,
+  "reason": "No change",
+  "final": "The input or instruction given to an AI system to generate a response."
+ },
+ {
+  "id": "gloss-reasoning-model",
+  "section": "gloss",
+  "field": "Reasoning model",
+  "original": "An LLM trained to work through a problem in steps before giving its final answer.",
+  "streamlined": "An LLM trained to work through a problem in steps before giving its final answer.",
+  "changed": false,
+  "reason": "No change",
+  "final": "An LLM trained to work through a problem in steps before giving its final answer."
+ },
+ {
+  "id": "gloss-symbolic-ai",
+  "section": "gloss",
+  "field": "Symbolic AI",
+  "original": "The oldest approach to AI, where people write the rules and facts a system uses to make decisions.",
+  "streamlined": "The oldest approach to AI, where people write the rules and facts a system uses to make decisions.",
+  "changed": false,
+  "reason": "No change",
+  "final": "The oldest approach to AI, where people write the rules and facts a system uses to make decisions."
+ },
+ {
+  "id": "gloss-synthetic-content",
+  "section": "gloss",
+  "field": "Synthetic content",
+  "original": "Text, images, audio or video created by an AI system rather than captured or made by people.",
+  "streamlined": "Text, images, audio or video created by an AI system rather than captured or made by people.",
+  "changed": false,
+  "reason": "No change",
+  "final": "Text, images, audio or video created by an AI system rather than captured or made by people."
+ },
+ {
+  "id": "gloss-token",
+  "section": "gloss",
+  "field": "Token",
+  "original": "A small piece of text, such as a word or part of a word, that a language model reads and predicts one at a time.",
+  "streamlined": "A small piece of text, such as a word or part of a word, that a language model reads and predicts one at a time.",
+  "changed": false,
+  "reason": "No change",
+  "final": "A small piece of text, such as a word or part of a word, that a language model reads and predicts one at a time."
+ },
+ {
+  "id": "gloss-training-data",
+  "section": "gloss",
+  "field": "Training data",
+  "original": "The data used to teach an AI system the patterns it will later use to generate output.",
+  "streamlined": "The data used to teach an AI system the patterns it will later use to generate output.",
+  "changed": false,
+  "reason": "No change",
+  "final": "The data used to teach an AI system the patterns it will later use to generate output."
+ },
+ {
+  "id": "gloss-transformer",
+  "section": "gloss",
+  "field": "Transformer",
+  "original": "The neural network design, introduced in 2017, behind today’s large language models. It weighs how every word in a text relates to every other word.",
+  "streamlined": "The neural network design, introduced in 2017, behind today’s large language models. It weighs how every word in a text relates to every other word.",
+  "changed": false,
+  "reason": "No change",
+  "final": "The neural network design, introduced in 2017, behind today’s large language models. It weighs how every word in a text relates to every other word."
+ },
+ {
+  "id": "gloss-count",
+  "section": "gloss",
+  "field": "Footer count (template)",
+  "original": "{n} terms",
+  "streamlined": "{n} terms",
+  "changed": false,
+  "reason": "No change",
+  "final": "{n} terms"
+ }
+]

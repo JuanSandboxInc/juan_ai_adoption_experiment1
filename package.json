@@ -1,0 +1,16 @@
+{
+  "name": "sandbox-intro-to-ai-webflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sandbox Labs Intro to AI page: Webflow sections, Code Embeds and Playwright tests",
+  "scripts": {
+    "build": "python3 scripts/build_local.py",
+    "test": "playwright test",
+    "test:local": "python3 scripts/build_local.py && playwright test --project=chromium --project=mobile-chromium",
+    "test:live": "BASE_URL=https://sb-ai-adoption-page.webflow.io/intro-to-ai playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  }
+}

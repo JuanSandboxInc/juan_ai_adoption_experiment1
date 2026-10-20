@@ -1,0 +1,57 @@
+<style>
+@media (max-width:991px){
+.site-header.is-menu-open .main-nav-links{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:4px;padding:12px 20px 20px;background:#13181d;border-bottom:1px solid rgba(255,255,255,.14)}
+}
+.ripple-svg [data-rp]{opacity:0;transform:scale(.6);transform-box:fill-box;transform-origin:center;transition:opacity .5s ease,transform .7s cubic-bezier(.65,0,.35,1)}
+.ripple-svg.is-in [data-rp]{opacity:1;transform:none}
+.chapter-nav-fill{transition:width .15s linear}
+@media (prefers-reduced-motion:reduce){.ripple-svg [data-rp]{transition:none;opacity:1;transform:none}}
+</style>
+<script>
+/* Sandbox Labs · Intro to AI · page behaviours: chapter-nav progress, risk ripple reveal, mobile menu */
+(function(){
+  var header=document.querySelector('.site-header');
+  /* B: chapter navigation fill + current state */
+  var links=[].slice.call(document.querySelectorAll('.chapter-nav-link'));
+  var items=links.map(function(a){var id=a.getAttribute('href').slice(1);return{a:a,s:document.getElementById(id),f:a.querySelector('.chapter-nav-fill')}}).filter(function(x){return x.s});
+  var cur=null,ticking=false;
+  function update(){
+    ticking=false;
+    var off=(header?header.offsetHeight:0)+8,y=window.scrollY+off,active=null;
+    items.forEach(function(it,i){
+      var top=it.s.getBoundingClientRect().top+window.scrollY,next=items[i+1],end=next?next.s.getBoundingClientRect().top+window.scrollY:document.documentElement.scrollHeight-window.innerHeight+off;
+      var p=Math.max(0,Math.min(1,(y-top)/Math.max(1,end-top)));
+      if(it.f)it.f.style.width=(p*100)+'%';
+      if(y>=top&&y<end)active=it;
+    });
+    if(active!==cur){
+      items.forEach(function(it){it.a.classList.toggle('w--current',it===active);it===active?it.a.setAttribute('aria-current','location'):it.a.removeAttribute('aria-current')});
+      cur=active;
+      if(active){var list=active.a.closest('.chapter-nav-list');if(list&&list.scrollWidth>list.clientWidth){var li=active.a.parentNode;list.scrollTo({left:li.offsetLeft-(list.clientWidth-li.offsetWidth)/2,behavior:'smooth'})}}
+    }
+  }
+  function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(update)}}
+  window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);update();
+
+  /* C: risk ripple, centre first, then individual (orange), then systemic (purple) */
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  [].slice.call(document.querySelectorAll('.ripple-svg')).forEach(function(svg){
+    var els=[].slice.call(svg.querySelectorAll('circle,text,line,path'));
+    els.forEach(function(el){
+      var c=((el.getAttribute('fill')||'')+(el.getAttribute('stroke')||'')).toLowerCase();
+      var d=/f7cef6|13181d/.test(c)?0:/ff885d/.test(c)?1:/c596fe/.test(c)?2:1;
+      el.setAttribute('data-rp',d);el.style.transitionDelay=(d*0.45)+'s';
+    });
+    if(reduce||!('IntersectionObserver' in window)){svg.classList.add('is-in');return}
+    new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){svg.classList.add('is-in');o.disconnect()}})},{threshold:.4}).observe(svg);
+  });
+
+  /* Mobile menu */
+  var btn=document.querySelector('.menu-button');
+  if(btn&&header){
+    btn.setAttribute('role','button');btn.setAttribute('aria-expanded','false');
+    btn.addEventListener('click',function(e){e.preventDefault();var open=header.classList.toggle('is-menu-open');btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'Close menu':'Open menu')});
+    header.addEventListener('click',function(e){if(e.target.closest('.main-nav-links a')){header.classList.remove('is-menu-open');btn.setAttribute('aria-expanded','false')}});
+  }
+})();
+</script>

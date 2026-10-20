@@ -1,0 +1,23 @@
+.pi-section { padding-top: 150px; padding-bottom: 150px; background-color: #13181d; color: #ffffff; font-family: Switzer, Arial, sans-serif; scroll-margin-top: 120px; }
+.pi-text-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.pi-text-link:hover { color: #9ae1fa; }
+.pi-photos { display: grid; grid-template-columns: 539fr 560fr; gap: 20px; align-items: start; margin-top: 96px; padding-left: 0; margin-left: auto; max-width: 1140px; }
+.pi-photo-albert { position: relative; aspect-ratio: 539 / 566; overflow: hidden; border-radius: 4px; }
+.pi-photo-albert-img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 22% 50%; }
+.pi-photo-room { position: relative; aspect-ratio: 560 / 420; overflow: hidden; border-radius: 4px; }
+.pi-photo-room-img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; }
+.pi-more { max-width: 920px; margin: 96px 0 0 auto; }
+.pi-more-heading { margin: 0 0 24px 0; font-size: 28px; line-height: 1.15; font-weight: 500; letter-spacing: 0.01em; }
+
+@media screen and (max-width: 991px) {
+  .pi-section { padding-top: 112px; padding-bottom: 112px; }
+  .pi-photos { margin-top: 64px; max-width: none; }
+  .pi-more { margin-top: 72px; max-width: none; }
+}
+@media screen and (max-width: 767px) {
+  .pi-section { padding-top: 88px; padding-bottom: 88px; }
+  .pi-photos { grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 48px; }
+  .pi-photo-albert { aspect-ratio: 4 / 3; }
+  .pi-more { margin-top: 56px; }
+  .pi-more-heading { font-size: 24px; }
+}

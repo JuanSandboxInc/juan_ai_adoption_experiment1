@@ -1,0 +1,264 @@
+<!-- Sandbox Labs · Prediction machine (slides) · Webflow Embed (self-contained: style + markup + script) -->
+<style>
+.pm-root{--pm-navy:#13181d;--pm-panel:#192027;--pm-ink:#1e1d1b;--pm-grey:#d1d1d1;--pm-white:#fff;--pm-purple:#c596fe;--pm-focus:#1bc594;--pm-dim:rgba(255,255,255,.55);--pm-faint:rgba(255,255,255,.16);
+  container:pm / inline-size;color:var(--pm-white);font-family:inherit}
+.pm-root *,.pm-root *::before,.pm-root *::after{box-sizing:border-box}
+.pm-root :where(h3,p,ol,li){margin:0;padding:0}
+.pm-root :where(button){font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.pm-root :focus-visible{outline:3px solid var(--pm-focus);outline-offset:3px}
+
+/* "See it in action" toggle (optional: delete the button and the machine's hidden attribute to show it straight away) */
+.pm-toggle{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--pm-purple)!important;border-radius:999px;font-size:15px;line-height:1.4;color:var(--pm-white);transition:background-color .2s,color .2s}
+.pm-toggle svg{width:12px;height:8px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s ease}
+.pm-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+.pm[hidden]{display:none!important}
+.pm-toggle + .pm{margin-top:20px}
+.pm.is-opening{animation:pm-open .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes pm-open{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+
+/* one quiet surface; everything inside is type and spacing */
+.pm{display:flex;flex-direction:column;gap:clamp(28px,3cqw,44px);padding:clamp(24px,4cqw,64px);background:var(--pm-panel)}
+.pm-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px 24px;flex-wrap:wrap}
+.pm-eyebrow{font-size:13px;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:var(--pm-dim)}
+.pm-title{margin-top:6px;font-size:clamp(20px,.6cqw + 15px,26px);font-weight:400;line-height:1.2;letter-spacing:-.01em}
+.pm-status{font-size:14px;line-height:1.3;font-variant-numeric:tabular-nums;color:var(--pm-dim)}
+
+.pm-steps{list-style:none;display:flex;gap:6px}
+.pm-steps li{flex:1 1 0;min-width:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.3;color:rgba(255,255,255,.4);transition:color .3s,flex-grow .4s ease}
+.pm-steps li::before{content:"";height:2px;border-radius:1px;background:var(--pm-faint);transition:background-color .4s}
+.pm-steps li b{font-weight:500;margin-right:6px;font-variant-numeric:tabular-nums}
+.pm-steps li.is-done{color:var(--pm-dim)}
+.pm-steps li.is-done::before{background:rgba(255,255,255,.5)}
+.pm-steps li[aria-current="step"]{color:var(--pm-white)}
+.pm-steps li[aria-current="step"]::before{background:var(--pm-purple)}
+
+/* the stage: four slides in one grid cell, so it never changes height */
+.pm-stage{display:grid;min-height:clamp(300px,30cqw,400px);align-items:center}
+.pm-slide{grid-area:1/1;min-width:0;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .45s ease,transform .55s cubic-bezier(.2,.7,.2,1),visibility 0s linear .45s}
+.pm-slide.is-on{opacity:1;visibility:visible;transform:none;transition:opacity .5s ease .08s,transform .6s cubic-bezier(.2,.7,.2,1) .08s,visibility 0s}
+.pm-sent{font-size:clamp(34px,4.6cqw,68px);font-weight:400;line-height:1.12;letter-spacing:-.03em;text-wrap:balance}
+.pm-sent--sm{font-size:clamp(18px,1.2cqw + 10px,24px);letter-spacing:-.01em;color:var(--pm-dim);margin-bottom:clamp(18px,2.4cqw,32px)}
+.pm-blank{display:inline-block;width:1.9em;height:.09em;margin-left:.12em;vertical-align:baseline;background:currentColor;opacity:.5}
+.pm-slide.is-on .pm-sent:not(.pm-sent--sm) .pm-blank{animation:pm-blink 1.6s ease-in-out infinite}
+@keyframes pm-blink{50%{opacity:.15}}
+.pm-new{color:var(--pm-purple)}
+.pm-slide.is-on .pm-new{animation:pm-in .6s cubic-bezier(.2,.7,.2,1) .25s both}
+@keyframes pm-in{from{opacity:0;transform:translateY(.25em)}to{opacity:1;transform:none}}
+.pm-new,.pm-old{display:inline-block}
+.pm-old{background-image:linear-gradient(var(--pm-purple),var(--pm-purple));background-size:100% .06em;background-repeat:no-repeat;background-position:0 96%}
+.pm-note{margin-top:clamp(14px,1.6cqw,22px);font-size:clamp(15px,.4cqw + 12px,18px);line-height:1.4;color:var(--pm-dim);display:flex;align-items:center;gap:10px}
+.pm-note b{font-weight:500;color:var(--pm-purple);font-variant-numeric:tabular-nums}
+.pm-note svg{width:18px;height:18px;fill:none;stroke:var(--pm-purple);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+.pm-probs{display:grid;grid-template-columns:minmax(80px,auto) minmax(0,1fr) auto;gap:clamp(8px,1cqw,14px) clamp(14px,2cqw,28px);align-items:center;max-width:860px}
+.pm-prob{display:contents}
+.pm-prob__name{font-size:clamp(18px,1cqw + 10px,24px);line-height:1.2;white-space:nowrap}
+.pm-prob--other .pm-prob__name{color:var(--pm-dim)}
+.pm-prob__track{height:clamp(8px,.8cqw,12px);position:relative;overflow:hidden;border-radius:2px;background:rgba(255,255,255,.07)}
+.pm-prob__fill{position:absolute;inset:0 auto 0 0;width:0;border-radius:2px;background:rgba(255,255,255,.55);transition:width .8s cubic-bezier(.2,.7,.2,1)}
+.pm-prob__pct{min-width:3ch;text-align:right;font-size:clamp(15px,.4cqw + 12px,18px);font-variant-numeric:tabular-nums;color:var(--pm-dim)}
+.pm-prob--other .pm-prob__fill{background:rgba(255,255,255,.22)}
+
+.pm-foot{display:flex;align-items:center;justify-content:space-between;gap:16px 32px;flex-wrap:wrap}
+.pm-caption{flex:1 1 320px;min-height:calc(2 * 1.45em);font-size:clamp(16px,.4cqw + 13px,19px);line-height:1.45;color:var(--pm-grey);display:flex;align-items:center}
+.pm-btns{display:flex;align-items:center;gap:4px}
+.pm-btn{height:44px;padding:0 16px;border-radius:999px;font-size:15px;line-height:1;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;color:var(--pm-dim);transition:background-color .2s,color .2s,box-shadow .2s}
+.pm-btn svg{width:13px;height:13px;fill:currentColor;flex:none}
+.pm-play{padding:0 20px 0 16px;color:var(--pm-white);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.pm-play .pm-ic-pause,.pm-play[data-playing="true"] .pm-ic-play{display:none}
+.pm-play[data-playing="true"] .pm-ic-pause{display:inline}
+.pm-next{color:var(--pm-white)}
+@media (hover:hover){.pm-toggle:hover{background:var(--pm-purple);color:var(--pm-ink)}.pm-btn:hover{color:var(--pm-white);background:rgba(255,255,255,.06)}.pm-play:hover{box-shadow:inset 0 0 0 1px var(--pm-white);background:none}}
+.pm-next svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+@container pm (max-width:599px){
+  .pm{padding:22px 18px 18px;gap:24px}
+  .pm-steps li{font-size:13px;gap:8px}
+  .pm-steps li span{display:none}
+  .pm-steps li[aria-current="step"]{flex-grow:4}
+  .pm-steps li[aria-current="step"] span{display:inline;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .pm-steps li{white-space:nowrap;overflow:hidden}
+  .pm-stage{min-height:0;align-items:center}
+  .pm-sent{font-size:34px}
+  .pm-sent--sm{font-size:18px}
+  .pm-probs{grid-template-columns:minmax(64px,auto) minmax(0,1fr) auto;gap:10px 12px}
+  .pm-prob__name{font-size:17px}
+  .pm-prob__pct{font-size:14px}
+  .pm-caption{flex-basis:100%;font-size:15px}
+  .pm-btns{width:100%;justify-content:space-between}
+  .pm-btn{padding:0 10px}
+}
+@media (prefers-reduced-motion:reduce){
+  .pm-root *,.pm-root *::before,.pm-root *::after{transition-duration:.01ms!important;transition-delay:0s!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+</style>
+
+<div class="pm-root" data-pm>
+  <button type="button" class="pm-toggle" data-pm-toggle aria-expanded="false">See it in action<svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5l5-5"/></svg></button>
+  <div class="pm" data-pm-machine role="group" aria-labelledby="pm-title" hidden>
+    <div class="pm-head">
+      <div>
+        <p class="pm-eyebrow">05 · A closer look at step 5</p>
+        <h3 class="pm-title" id="pm-title">The prediction machine</h3>
+      </div>
+      <p class="pm-status" data-status></p>
+    </div>
+    <ol class="pm-steps" aria-label="Steps">
+      <li data-step="1"><p><b>1</b><span>Current input</span></p></li>
+      <li data-step="2"><p><b>2</b><span>Model predicts next token</span></p></li>
+      <li data-step="3"><p><b>3</b><span>Token chosen</span></p></li>
+      <li data-step="4"><p><b>4</b><span>Process repeats</span></p></li>
+    </ol>
+    <div class="pm-stage">
+      <div class="pm-slide" data-slide="1"></div>
+      <div class="pm-slide" data-slide="2"></div>
+      <div class="pm-slide" data-slide="3"></div>
+      <div class="pm-slide" data-slide="4"></div>
+    </div>
+    <div class="pm-foot">
+      <p class="pm-caption" aria-live="polite" data-caption></p>
+      <div class="pm-btns">
+        <button type="button" class="pm-btn pm-play" data-play data-playing="false" aria-label="Play"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="pm-ic-play" d="M5 3.5v9l7-4.5z"/><path class="pm-ic-pause" d="M4.5 3.5h2.5v9H4.5zM9 3.5h2.5v9H9z"/></svg><span data-play-label>Play</span></button>
+        <button type="button" class="pm-btn pm-next" data-next aria-label="Next step"><span data-next-label>Next step</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13.5 6.5 19 12l-5.5 5.5"/></svg></button>
+        <button type="button" class="pm-btn" data-restart aria-label="Restart from the beginning">Restart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ================= EDIT CONTENT HERE =================
+     START: the prompt, one token per entry.
+     ROUNDS: one per generated token. Each lists the candidates as [token, percent]; the FIRST one is chosen.
+     STEP_MS: time per step when playing.                                                            */
+  var START = ["The", "cat", "sat", "on", "the"];
+  var ROUNDS = [
+    [["mat", 32], ["floor", 19], ["cushion", 13], ["chair", 9], ["bed", 7], ["Other", 20]],
+    [["and", 28], [".", 24], [",", 15], ["while", 8], ["all", 5], ["Other", 20]],
+    [["purred", 26], ["fell", 18], ["stared", 12], ["looked", 10], ["slept", 8], ["Other", 26]],
+    [[".", 41], ["softly", 17], ["happily", 11], ["loudly", 7], ["contentedly", 4], ["Other", 20]]
+  ];
+  var STEP_MS = 2200;
+  /* ====================================================== */
+
+  var LOOP = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v4.5h-4.5"/></svg>';
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+  function isPunct(t){ return /^[.,;:!?]$/.test(t); }
+  function quote(t){ return isPunct(t) ? "“" + t + "”" : t; }
+  /* words → HTML, punctuation joined to the word before it; cls marks the last word */
+  function line(words, lastCls, blank){
+    var h = "";
+    words.forEach(function(w, i){
+      var t = esc(w), last = i === words.length - 1 && lastCls;
+      if (last) t = '<span class="' + lastCls + '">' + t + "</span>";
+      h += (i && !isPunct(w) ? " " : "") + t;
+    });
+    return h + (blank ? '<span class="pm-blank" aria-hidden="true"></span>' : "");
+  }
+
+  function pmInit(root){
+    if (!root || root.hasAttribute("data-pm-ready")) return;
+    root.setAttribute("data-pm-ready", "");
+    var el = root.querySelector("[data-pm-machine]"), R = ROUNDS.length;
+    var st = { round:1, step:1 }, timer = null, autoMode = false, userTook = false, built = 0;
+    function $(s){ return el.querySelector(s); }
+    function sentence(r){ var out = START.slice(); for (var i = 0; i < r - 1; i++) out.push(ROUNDS[i][0][0]); return out; }
+    function isLast(){ return st.round === R && st.step === 4; }
+
+    /* build the four slides for one round */
+    function build(r){
+      var data = ROUNDS[r - 1], words = sentence(r), chosen = data[0][0], withNew = words.concat(chosen), lastRound = r === R;
+      $('[data-slide="1"]').innerHTML = '<p class="pm-sent">' + line(words, "", true) + "</p>";
+      $('[data-slide="2"]').innerHTML = '<p class="pm-sent pm-sent--sm">' + line(words, "", true) + '</p><div class="pm-probs">' +
+        data.map(function(p){
+          return '<div class="pm-prob' + (p[0] === "Other" ? " pm-prob--other" : "") + '"><span class="pm-prob__name">' + esc(quote(p[0])) +
+            '</span><span class="pm-prob__track"><span class="pm-prob__fill" data-w="' + p[1] + '"></span></span><span class="pm-prob__pct">' + p[1] + "%</span></div>";
+        }).join("") + "</div>";
+      $('[data-slide="3"]').innerHTML = '<p class="pm-sent">' + line(withNew, "pm-new") + '</p><p class="pm-note"><b>' + data[0][1] + "%</b>Token chosen</p>";
+      $('[data-slide="4"]').innerHTML = '<p class="pm-sent">' + line(withNew, "pm-old", !lastRound) + '</p><p class="pm-note">' + LOOP + (lastRound ? "One token at a time" : "Process repeats · round " + (r + 1) + " of " + R) + "</p>";
+      built = r;
+    }
+
+    function render(){
+      var r = st.round, s = st.step, chosen = ROUNDS[r - 1][0][0], last = isLast();
+      if (built !== r){ build(r); void el.offsetWidth; }
+      el.querySelectorAll(".pm-slide").forEach(function(d){
+        var on = +d.getAttribute("data-slide") === s;
+        if (on && !d.classList.contains("is-on")){ d.classList.add("is-on"); }
+        else if (!on) d.classList.remove("is-on");
+        d.setAttribute("aria-hidden", on ? "false" : "true");
+      });
+      /* bars grow when their slide is shown */
+      el.querySelectorAll(".pm-prob__fill").forEach(function(f){ f.style.width = s === 2 ? f.getAttribute("data-w") + "%" : "0"; });
+      el.querySelectorAll(".pm-steps li").forEach(function(li){
+        var n = +li.getAttribute("data-step");
+        li.classList.toggle("is-done", n < s);
+        if (n === s) li.setAttribute("aria-current", "step"); else li.removeAttribute("aria-current");
+      });
+      $("[data-caption]").textContent = s === 1 ? "The sentence so far is sent to the model."
+        : s === 2 ? "The model scores every possible next word."
+        : s === 3 ? "The most likely token is chosen: " + quote(chosen) + "."
+        : last ? "One token at a time, over and over: “" + sentence(R).concat(chosen).join(" ").replace(/ ([.,])/g, "$1") + "”"
+        : "It joins the sentence, and the process repeats.";
+      $("[data-status]").textContent = "Round " + r + " of " + R;
+      $("[data-next-label]").textContent = last ? "Start over" : "Next step";
+      $("[data-next]").setAttribute("aria-label", last ? "Start over" : "Next step");
+    }
+    function next(){
+      if (isLast()){ st.round = 1; st.step = 1; }
+      else if (st.step < 4) st.step++;
+      else { st.round++; st.step = 1; }
+      render();
+    }
+    var playBtn = $("[data-play]");
+    function setPlaying(on, auto){
+      clearInterval(timer); clearTimeout(timer); timer = null; autoMode = !!(on && auto);
+      playBtn.setAttribute("data-playing", on ? "true" : "false");
+      playBtn.setAttribute("aria-label", on ? "Pause" : "Play");
+      playBtn.querySelector("[data-play-label]").textContent = on ? "Pause" : "Play";
+      if (on) timer = setInterval(function(){
+        next();
+        if (isLast()){
+          if (!autoMode){ setPlaying(false); return; }
+          clearInterval(timer);
+          timer = setTimeout(function(){ st.round = 1; st.step = 1; render(); setPlaying(true, true); }, 4000);
+        }
+      }, STEP_MS);
+    }
+    playBtn.addEventListener("click", function(){
+      userTook = true;
+      if (timer){ setPlaying(false); return; }
+      if (isLast()){ st.round = 1; st.step = 1; render(); } else next();
+      setPlaying(true);
+    });
+    $("[data-next]").addEventListener("click", function(){ userTook = true; setPlaying(false); next(); });
+    $("[data-restart]").addEventListener("click", function(){ userTook = true; setPlaying(false); st.round = 1; st.step = 1; render(); });
+
+    /* autoplay while on screen (never with reduced motion) until the reader takes the controls */
+    if ("IntersectionObserver" in window && !reduce){
+      new IntersectionObserver(function(es){
+        var e = es[es.length - 1]; if (userTook) return;
+        var shown = e.isIntersecting && e.intersectionRect.height >= Math.min(e.boundingClientRect.height * .6, innerHeight * .5);
+        if (shown){ if (!timer){ if (isLast()){ st.round = 1; st.step = 1; render(); } setPlaying(true, true); } }
+        else if (autoMode) setPlaying(false);
+      }, { threshold:[0, .2, .4, .6, .8, 1] }).observe(el);
+    }
+
+    var toggle = root.querySelector("[data-pm-toggle]");
+    if (toggle){
+      toggle.setAttribute("aria-controls", el.id || (el.id = "pm-machine-" + Math.random().toString(36).slice(2, 7)));
+      toggle.addEventListener("click", function(){
+        var open = toggle.getAttribute("aria-expanded") !== "true";
+        toggle.setAttribute("aria-expanded", String(open)); el.hidden = !open;
+        if (open && !reduce){ el.classList.remove("is-opening"); void el.offsetWidth; el.classList.add("is-opening"); }
+        if (!open){ setPlaying(false); }
+      });
+    }
+    render();
+  }
+  window.pmInit = pmInit;
+  document.querySelectorAll(".pm-root[data-pm]").forEach(pmInit);
+})();
+</script>
