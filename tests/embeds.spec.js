@@ -1,6 +1,7 @@
-// The three Code Embeds: timeline slideshow, knowledge-check quiz, prediction machine.
+// Code Embeds: timeline slideshow, knowledge-check quiz, how it works slideshow.
+// Embeds keep real <button>s (Webflow does not rewrite Code Embed markup).
 const { test, expect } = require('@playwright/test');
-const { openPage } = require('./helpers');
+const { openPage, norm } = require('./helpers');
 
 test.describe('timeline slideshow', () => {
   test('renders 24 slides; arrows and ArrowRight move the counter', async ({ page }) => {
@@ -32,6 +33,13 @@ test.describe('timeline slideshow', () => {
     await expect(count).toHaveText(/^\s*24\s*\/\s*24\s*$/);
     await expect(next).toBeDisabled();
   });
+
+  test('Lighthill (1973) slide credits the Science Research Council', async ({ page }) => {
+    await openPage(page);
+    const slide = page.locator('.tl-slide', { has: page.locator('.tl-year', { hasText: /^1973$/ }) });
+    await expect(slide).toHaveCount(1);
+    expect(norm(await slide.evaluate((s) => s.textContent))).toContain('Science Research Council');
+  });
 });
 
 test.describe('knowledge-check quiz', () => {
@@ -61,39 +69,35 @@ test.describe('knowledge-check quiz', () => {
   });
 });
 
-test.describe('prediction machine', () => {
-  test('toggle opens it; Next step advances caption and status through 4 steps', async ({ page }) => {
+test.describe('how it works slideshow', () => {
+  test('6 numbered steps; Next advances, the end offers Start over, Restart returns to step 1', async ({ page }) => {
     await openPage(page);
-    const root = page.locator('.pm-root[data-pm]');
-    const toggle = root.locator('[data-pm-toggle]');
-    const machine = root.locator('[data-pm-machine]');
-    await toggle.scrollIntoViewIfNeeded();
-    await expect(machine).toBeHidden();
-    await toggle.click();
-    await expect(toggle).toHaveAttribute('aria-expanded', 'true');
-    await expect(machine).toBeVisible();
+    const root = page.locator('#how-it-works .hw-root[data-hw-ready]');
+    await expect(root).toHaveCount(1);
+    await expect(root.locator('.hw-rail .hw-seg')).toHaveCount(6);
+    const status = root.locator('.hw-status');
+    const next = root.locator('.hw-next');
+    const label = next.locator('[data-next-label]');
+    const restart = root.locator('.hw-rst');
 
-    // take the controls (stops autoplay) and start from a known state
-    await machine.locator('[data-restart]').click();
-    const caption = machine.locator('[data-caption]');
-    const status = machine.locator('[data-status]');
-    const current = machine.locator('.pm-steps li[aria-current="step"]');
-    const expected = [
-      /sent to the model/,
-      /scores every possible next word/,
-      /most likely token is chosen/,
-      /joins the sentence|One token at a time/,
-    ];
-    for (let step = 1; step <= 4; step++) {
-      if (step > 1) await machine.locator('.pm-next[data-next]').click();
-      await expect(current).toHaveAttribute('data-step', String(step));
-      await expect(caption).toHaveText(expected[step - 1]);
-      await expect(status).toHaveText(/^Round 1 of \d+$/);
-      await expect(machine.locator(`.pm-slide[data-slide="${step}"]`)).toHaveClass(/is-on/);
-    }
-    await expect(machine.locator('.pm-steps li.is-done')).toHaveCount(3);
-    await machine.locator('.pm-next[data-next]').click();
-    await expect(status).toHaveText(/^Round 2 of \d+$/);
-    await expect(current).toHaveAttribute('data-step', '1');
+    // take the controls (stops any autoplay) and start from a known state
+    await restart.click();
+    await expect(status).toHaveText('Step 1 of 6');
+    await expect(label).toHaveText('Next step');
+    await expect(root.locator('.hw-seg[aria-current="step"]')).toHaveAttribute('data-go', '0');
+
+    await next.click();
+    await expect(status).toHaveText('Step 2 of 6');
+    await expect(root.locator('.hw-seg[aria-current="step"]')).toHaveAttribute('data-go', '1');
+
+    // walk to the end: the label turns into "Start over"
+    for (let i = 0; i < 40 && (await label.textContent()) !== 'Start over'; i++) await next.click();
+    await expect(label).toHaveText('Start over');
+    await expect(next).toHaveAttribute('aria-label', 'Start over');
+    await expect(status).toHaveText(/^Step 6 of 6/);
+
+    await restart.click();
+    await expect(status).toHaveText('Step 1 of 6');
+    await expect(label).toHaveText('Next step');
   });
 });

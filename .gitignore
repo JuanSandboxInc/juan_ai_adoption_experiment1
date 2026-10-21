@@ -4,3 +4,4 @@ playwright-report/
 blob-report/
 site/
 __pycache__/
+webflow/payloads-v2/
