@@ -1,0 +1,72 @@
+.wai-explorer { display: grid; grid-template-columns: minmax(240px, 360px) minmax(0, 1fr); align-items: start; margin-top: 100px; padding: 64px 56px; background-color: #d1d1d1; color: #13181d; font-family: Switzer, Arial, sans-serif; box-sizing: border-box; }
+.wai-nav { display: flex; flex-direction: column; gap: 22px; max-width: 300px; padding-top: 8px; }
+.wai-grp { display: flex; flex-direction: column; align-items: stretch; gap: 10px; }
+.wai-grp2 { display: flex; flex-direction: column; align-items: stretch; gap: 10px; padding-top: 22px; border-top: 1px solid rgba(19, 24, 29, 0.3); }
+.wai-cap { margin: 0; font-size: 13px; line-height: 1.5; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(19, 24, 29, 0.85); }
+.wai-pick { display: flex; align-items: center; gap: 8px; width: 100%; margin: 0; padding: 6px 16px; border: 1px solid #13181d; border-radius: 999px; background-color: transparent; color: #13181d; font-family: Switzer, Arial, sans-serif; font-size: 16px; line-height: 1.3; font-weight: 400; text-align: left; cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+.wai-pick:hover { background-color: rgba(19, 24, 29, 0.08); }
+.wai-pick:focus-visible { outline: 3px solid #13181d; outline-offset: 3px; }
+.wai-nest { display: flex; flex-direction: column; gap: 6px; padding: 0 6px 6px 6px; border: 1px solid rgba(19, 24, 29, 0.55); border-radius: 18px; color: #13181d; cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+.wai-nest:hover { border-color: #13181d; }
+.wai-nest2 { display: flex; flex-direction: column; gap: 6px; margin-left: 32px; padding: 0 6px 6px 6px; border: 1px solid rgba(19, 24, 29, 0.55); border-radius: 18px; color: #13181d; cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+.wai-nest2:hover { border-color: #13181d; }
+.wai-nest-btn { display: flex; align-items: center; gap: 8px; width: 100%; margin: 0; padding: 8px 10px 4px 10px; border: 0; border-radius: 14px; background-color: transparent; color: inherit; font-family: Switzer, Arial, sans-serif; font-size: 16px; line-height: 1.3; font-weight: 400; text-align: left; cursor: pointer; }
+.wai-nest-btn:focus-visible { outline: 3px solid #13181d; outline-offset: 2px; }
+.wai-pick-in { display: flex; align-items: center; gap: 8px; width: auto; margin: 0 0 0 32px; padding: 6px 16px; border: 1px solid #13181d; border-radius: 999px; background-color: transparent; color: #13181d; font-family: Switzer, Arial, sans-serif; font-size: 16px; line-height: 1.3; font-weight: 400; text-align: left; cursor: pointer; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+.wai-pick-in:hover { background-color: rgba(19, 24, 29, 0.08); }
+.wai-pick-in:focus-visible { outline: 3px solid #13181d; outline-offset: 3px; }
+.wai-dot-sym { flex: none; width: 9px; height: 9px; margin-left: auto; border-radius: 50%; background-color: #f7ff88; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
+.wai-dot-ml { flex: none; width: 9px; height: 9px; margin-left: auto; border-radius: 50%; background-color: #c596fe; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
+.wai-dot-gen { flex: none; width: 9px; height: 9px; margin-left: auto; border-radius: 50%; background-color: #af8780; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
+.wai-dot-llm { flex: none; width: 9px; height: 9px; margin-left: auto; border-radius: 50%; background-color: #ff885d; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
+.wai-stage { display: flex; flex-direction: column; gap: 56px; min-width: 0; padding-left: 84px; }
+.wai-item { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); column-gap: 40px; align-items: start; min-width: 0; }
+.wai-head { min-width: 0; }
+.wai-name { display: flex; align-items: center; gap: 14px; margin: 0; font-family: Switzer, Arial, sans-serif; font-size: 40px; line-height: 1.1; font-weight: 400; letter-spacing: -0.02em; color: #13181d; }
+.wai-mark-sym { flex: none; width: 16px; height: 16px; border-radius: 50%; background-color: #f7ff88; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
+.wai-mark-ml { flex: none; width: 16px; height: 16px; border-radius: 50%; background-color: #c596fe; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
+.wai-mark-gen { flex: none; width: 16px; height: 16px; border-radius: 50%; background-color: #af8780; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
+.wai-mark-llm { flex: none; width: 16px; height: 16px; border-radius: 50%; background-color: #ff885d; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
+.wai-tag { margin: 12px 0 0 0; font-size: 26px; line-height: 1.35; font-weight: 400; color: rgba(19, 24, 29, 0.72); }
+.wai-ex { display: flex; flex-direction: column; gap: 8px; min-width: 0; padding: 4px 0 0 32px; border-left: 1px dotted rgba(19, 24, 29, 0.38); }
+.wai-lab { margin: 0; font-size: 13px; line-height: 1.5; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(19, 24, 29, 0.6); }
+.wai-exname { margin: 0; font-size: 28px; line-height: 1.25; font-weight: 400; letter-spacing: -0.01em; color: #13181d; }
+.wai-fact { margin: 4px 0 0 0; font-size: 21px; line-height: 1.5; font-weight: 400; color: rgba(19, 24, 29, 0.82); }
+
+@media screen and (max-width: 991px) {
+  .wai-explorer { grid-template-columns: minmax(0, 1fr); margin-top: 48px; padding: 0; }
+  .wai-nav { max-width: none; padding: 32px 29px; gap: 16px; border-bottom: 1px solid #13181d; }
+  .wai-grp2 { padding-top: 8px; border-top: 0; }
+  .wai-stage { gap: 48px; padding: 32px 29px 40px 29px; }
+  .wai-item { grid-template-columns: minmax(0, 1fr); row-gap: 20px; }
+  .wai-name { font-size: 34px; }
+  .wai-tag { font-size: 22px; }
+  .wai-ex { padding: 20px 0 0 0; border-left: 0; border-top: 1px dotted rgba(19, 24, 29, 0.38); }
+  .wai-exname { font-size: 24px; }
+  .wai-fact { font-size: 19px; }
+}
+@media screen and (max-width: 767px) {
+  .wai-name { font-size: 30px; gap: 12px; }
+  .wai-tag { font-size: 20px; }
+  .wai-exname { font-size: 22px; }
+  .wai-fact { font-size: 18px; }
+}
+@media screen and (max-width: 479px) {
+  .wai-explorer { margin-top: 60px; }
+  .wai-nav { padding: 24px 20px; gap: 12px; }
+  .wai-stage { padding: 28px 20px 32px 20px; }
+  .wai-cap { font-size: 12px; letter-spacing: 0.05em; }
+  .wai-pick { padding: 5px 13px; font-size: 15px; }
+  .wai-pick-in { margin-left: 20px; padding: 5px 13px; font-size: 15px; }
+  .wai-nest-btn { padding: 7px 7px 3px 7px; font-size: 15px; }
+  .wai-nest { border-radius: 16px; }
+  .wai-nest2 { margin-left: 20px; border-radius: 16px; }
+  .wai-name { font-size: 28px; }
+  .wai-mark-sym { width: 14px; height: 14px; }
+  .wai-mark-ml { width: 14px; height: 14px; }
+  .wai-mark-gen { width: 14px; height: 14px; }
+  .wai-mark-llm { width: 14px; height: 14px; }
+  .wai-tag { font-size: 19px; }
+  .wai-exname { font-size: 21px; }
+  .wai-fact { font-size: 17px; }
+}

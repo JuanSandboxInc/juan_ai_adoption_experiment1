@@ -1,0 +1,49 @@
+<!-- Sandbox Labs · Agentic AI loop (replaces Boaz's agentic.gif) · Webflow Code Embed, self-contained.
+     Replace VIDEO_URL_MP4 and POSTER_URL after upload. VIDEO_URL_WEBM is optional: delete that <source> line if no WebM is uploaded.
+     Muted, looping, no audio. Autoplays only when the reader has not asked for reduced motion; pauses off screen; pause/play button (WCAG 2.2.2). -->
+<style>
+.rsv{position:relative;width:100%;aspect-ratio:16/9;background:#d1d1d1;overflow:hidden}
+.rsv-v{position:absolute;top:0;left:0;width:100%;height:100%;display:block;object-fit:cover;background:#d1d1d1}
+.rsv-btn{position:absolute;right:8px;bottom:8px;width:32px;height:32px;display:grid;place-items:center;padding:0;margin:0;border:1px solid #13181d;border-radius:999px;background:rgba(209,209,209,.92);color:#13181d;cursor:pointer;opacity:0;transition:opacity .2s,background-color .2s,color .2s;-webkit-tap-highlight-color:transparent}
+.rsv:hover .rsv-btn,.rsv-btn:focus-visible,.rsv.is-still .rsv-btn{opacity:1}
+.rsv-btn:hover{background:#13181d;color:#fff}
+.rsv-btn:focus-visible{outline:2px solid #13181d;outline-offset:2px}
+.rsv-btn svg{width:14px;height:14px;display:block}
+.rsv-btn .rsv-play{display:none}
+.rsv.is-paused .rsv-btn .rsv-play{display:block}
+.rsv.is-paused .rsv-btn .rsv-pause{display:none}
+@media (hover:none){.rsv-btn{opacity:1}}
+</style>
+<div class="rsv" data-rsv>
+  <video class="rsv-v" autoplay muted loop playsinline preload="metadata" poster="POSTER_URL" aria-label="An AI agent loops through planning, using tools and checking results until a task is done">
+    <source src="VIDEO_URL_WEBM" type="video/webm">
+    <source src="VIDEO_URL_MP4" type="video/mp4">
+  </video>
+  <button type="button" class="rsv-btn" aria-label="Pause animation"><svg class="rsv-pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx=".5"/><rect x="9.5" y="2.5" width="3" height="11" rx=".5"/></svg><svg class="rsv-play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 2.6v10.8c0 .4.4.6.7.4l8.3-5.4a.5.5 0 0 0 0-.8L5.2 2.2c-.3-.2-.7 0-.7.4z"/></svg></button>
+</div>
+<script>
+(function(){
+  var me = document.currentScript, root = me && me.previousElementSibling;
+  if (!root || !root.hasAttribute('data-rsv')) { var all = document.querySelectorAll('[data-rsv]:not([data-rsv-on])'); root = all[0]; }
+  if (!root || root.hasAttribute('data-rsv-on')) return;
+  root.setAttribute('data-rsv-on', '');
+  var v = root.querySelector('video'), b = root.querySelector('.rsv-btn');
+  var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+  var userPaused = !!(mq && mq.matches), inView = true;
+  v.muted = true;
+  function sync(){
+    var play = !userPaused && inView;
+    if (play) { var p = v.play(); if (p && p.catch) p.catch(function(){}); } else v.pause();
+    root.classList.toggle('is-paused', userPaused);
+    root.classList.toggle('is-still', userPaused);
+    b.setAttribute('aria-label', userPaused ? 'Play animation' : 'Pause animation');
+  }
+  if (userPaused) { v.removeAttribute('autoplay'); v.autoplay = false; v.pause(); }
+  b.addEventListener('click', function(){ userPaused = !userPaused; sync(); });
+  if (mq && mq.addEventListener) mq.addEventListener('change', function(e){ if (e.matches) { userPaused = true; sync(); } });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){ inView = es[0].isIntersecting; sync(); }, { rootMargin: '100px 0px' }).observe(root);
+  }
+  sync();
+})();
+</script>

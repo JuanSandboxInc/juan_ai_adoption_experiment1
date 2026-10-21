@@ -1,0 +1,24 @@
+.refs2-section { padding-top: 80px; padding-bottom: 20px; background-color: #13181d; color: #ffffff; font-family: Switzer, Arial, sans-serif; font-weight: 400; scroll-margin-top: 100px; }
+.refs2-box { border-top: 1px solid #ffffff; }
+.refs2-h { margin: 0; font-family: Switzer, Arial, sans-serif; font-size: 22px; line-height: 1.5; font-weight: 400; }
+.refs2-btn { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; padding: 24px; border: 0; background-color: transparent; font-family: Switzer, Arial, sans-serif; font-size: 22px; line-height: 1.5; font-weight: 400; color: #ffffff; text-align: left; cursor: pointer; transition: background-color 0.2s ease; }
+.refs2-btn:hover { background-color: rgba(255, 255, 255, 0.05); }
+.refs2-btn:focus-visible { outline: 2px solid #1bc594; outline-offset: -2px; }
+.refs2-btn-ic { display: block; flex: none; width: 34px; height: 34px; transform: rotate(45deg); transition: transform 0.35s ease; }
+.refs2-panel { padding: 0 24px 32px; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+.refs2-note { margin: 0 0 16px 0; font-size: 13px; line-height: 1.5; color: #d1d1d1; }
+.refs2-list { margin: 0; padding-left: 32px; font-size: 16px; line-height: 1.5; color: #d1d1d1; }
+.ref-item { margin: 0 0 10px 0; padding-left: 4px; overflow-wrap: anywhere; scroll-margin-top: 140px; }
+.refs2-link { color: inherit; text-decoration: underline; text-underline-offset: 2px; transition: color 0.2s ease; }
+.refs2-link:hover { color: #9ae1fa; }
+
+@media screen and (max-width: 991px) {
+  .refs2-section { padding-top: 60px; scroll-margin-top: 76px; }
+  .refs2-h { font-size: 19px; }
+  .refs2-btn { font-size: 19px; }
+}
+@media screen and (max-width: 479px) {
+  .refs2-section { padding-top: 30px; }
+  .refs2-btn { padding: 20px 8px; }
+  .refs2-panel { padding: 0 8px 28px; }
+}

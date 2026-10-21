@@ -1,0 +1,16 @@
+.hiw2-section { padding-top: 80px; padding-bottom: 0; background-color: #13181d; color: #ffffff; font-family: Switzer, Arial, sans-serif; font-weight: 400; scroll-margin-top: 100px; }
+.hiw2-intro { max-width: 977px; margin: 0; font-family: Switzer, Arial, sans-serif; font-size: 18px; line-height: 1.5; font-weight: 400; color: rgba(255, 255, 255, 0.7); }
+.hiw2-panel { margin-top: 100px; padding-top: 72px; padding-bottom: 72px; background-color: #d1d1d1; color: #13181d; scroll-margin-top: 100px; }
+
+@media screen and (max-width: 991px) {
+  .hiw2-section { padding-top: 60px; scroll-margin-top: 76px; }
+  .hiw2-intro { font-size: 16px; line-height: 1.45; }
+  .hiw2-panel { margin-top: 60px; padding-top: 48px; padding-bottom: 48px; scroll-margin-top: 76px; }
+}
+@media screen and (max-width: 767px) {
+  .hiw2-panel { margin-top: 40px; padding-top: 32px; padding-bottom: 32px; }
+}
+@media screen and (max-width: 479px) {
+  .hiw2-section { padding-top: 30px; }
+  .hiw2-panel { padding-top: 24px; padding-bottom: 28px; }
+}

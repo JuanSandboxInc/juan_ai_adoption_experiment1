@@ -1,0 +1,31 @@
+.pi2-stack { display: flex; flex-direction: column; gap: 80px; }
+.pi2-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s ease; }
+.pi2-link:hover { color: #9ae1fa; }
+.pi2-photos-row { display: grid; grid-template-columns: minmax(180px, 1fr) minmax(0, 977px); column-gap: 48px; }
+.pi2-photos { grid-column-start: 2; display: grid; grid-template-columns: 539fr 560fr; gap: 20px; align-items: start; }
+.pi2-albert { position: relative; overflow: hidden; aspect-ratio: 539 / 566; }
+.pi2-albert-img { position: absolute; top: -11.48%; left: -15.43%; display: block; width: 175.58%; height: 111.48%; max-width: none; }
+.pi2-room { position: relative; overflow: hidden; aspect-ratio: 560 / 420; opacity: 0.9; }
+.pi2-room-img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; }
+.pi2-spacer { display: block; }
+.pi2-more { display: flex; flex-direction: column; align-items: flex-start; gap: 34px; }
+.pi2-more-h { margin: 0 0 24px 0; font-family: Switzer, Arial, sans-serif; font-size: 28px; line-height: 1.055; font-weight: 500; letter-spacing: 0.02em; color: #ffffff; }
+.pi2-pill { display: inline-flex; align-items: center; padding: 10px 20px; border: 1px solid #ffffff; border-radius: 50px; font-family: Switzer, Arial, sans-serif; font-size: 18px; line-height: 1.4; font-weight: 400; color: #ffffff; text-decoration: none; white-space: nowrap; transition: background-color 0.2s ease, color 0.2s ease; }
+.pi2-pill:hover { background-color: #ffffff; color: #13181d; }
+.pi2-pill:focus-visible { outline: 2px solid #1bc594; outline-offset: 3px; }
+
+@media screen and (max-width: 991px) {
+  .pi2-stack { gap: 40px; }
+  .pi2-photos-row { grid-template-columns: minmax(0, 1fr); }
+  .pi2-photos { grid-column-start: 1; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 7px; }
+  .pi2-room { aspect-ratio: 349 / 281; }
+  .pi2-more-h { margin-bottom: 15px; font-size: 18px; line-height: 1.2; font-weight: 400; letter-spacing: -0.02em; }
+}
+@media screen and (max-width: 767px) {
+  .pi2-spacer { display: none; }
+}
+@media screen and (max-width: 479px) {
+  .pi2-photos { grid-template-columns: minmax(0, 1fr); }
+  .pi2-room { order: -1; aspect-ratio: 370 / 281; }
+  .pi2-pill { white-space: normal; }
+}
