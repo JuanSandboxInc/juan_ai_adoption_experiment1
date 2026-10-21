@@ -43,7 +43,7 @@ def main():
             raise SystemExit(f'embed slot for {name} not found in sections')
         emb = read(os.path.join(EMBEDS, 'dist', f'{name}.html'))
         # the timeline reads its image base from the closest [data-img-base] ancestor
-        attrs = f' data-img-base="{TIMELINE_IMG_BASE}"' if name == 'timeline' else ''
+        attrs = ''  # timeline now loads its photos from Webflow's CDN (see embeds/timeline-asset-ids.json)
         markup = markup.replace(slot, f'<div class="embed-slot" data-embed="{name}"{attrs}>{emb}</div>')
 
     font = read(os.path.join(EMBEDS, 'font.html'))
