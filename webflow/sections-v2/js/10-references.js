@@ -10,7 +10,7 @@
     if (ic) ic.style.transform = open ? '' : 'rotate(0deg)';
   }
   set(false);
-  btn.addEventListener('click', function () { set(btn.getAttribute('aria-expanded') !== 'true'); });
+  btn.addEventListener('click', function (e) { e.preventDefault(); set(btn.getAttribute('aria-expanded') !== 'true'); });
 
   function goTo(hash) {
     try { document.dispatchEvent(new CustomEvent('sbx:close-dialogs')); } catch (e) {}

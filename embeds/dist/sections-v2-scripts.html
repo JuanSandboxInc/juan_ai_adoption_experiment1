@@ -1,0 +1,475 @@
+<script>
+/* Webflow turns <button> into <a href="#" class="w-button">: stop those from jumping to the top */
+document.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('a.w-button[href="#"]'); if (a) e.preventDefault(); });
+</script>
+<script>
+/* 02-hero: "Why this page" scroll-linked text fill (after Boaz's original).
+   The two opening paragraphs start dim and a soft edge sweeps through the words as the reader scrolls,
+   one paragraph after the other. "Artificial intelligence" (.why2-pre) is lit from the start.
+   The yellow paragraph rises in once the first is fully lit; the grey "At Sandbox Labs" panel
+   fades and grows in with the scroll. Without JS, or with reduced motion, everything is simply fully lit. */
+(function () {
+  var sec = document.getElementById('why-this-page');
+  if (!sec) return;
+  var p1 = sec.querySelector('.why2-text');
+  var p2 = sec.querySelector('.why2-yellow');
+  var panel = sec.querySelector('.why2-panel');
+  if (!p1 || !p2) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var DIM = 'rgba(255, 255, 255, 0.16)';
+  var paras = [{ el: p1, ink: '#ffffff' }, { el: p2, ink: '#f7ff88' }];
+
+  /* wrap every word (outside .why2-pre) in a span; whitespace stays as plain text so lines wrap as before */
+  function wrap(p) {
+    var words = [];
+    var nodes = [].slice.call(p.childNodes);
+    nodes.forEach(function (n) {
+      if (n.nodeType !== 3) return;
+      var parts = n.nodeValue.split(/(\s+)/);
+      var frag = document.createDocumentFragment();
+      parts.forEach(function (t) {
+        if (!t) return;
+        if (/^\s+$/.test(t)) { frag.appendChild(document.createTextNode(t)); return; }
+        var s = document.createElement('span');
+        s.textContent = t;
+        s.style.webkitBackgroundClip = 'text';
+        s.style.backgroundClip = 'text';
+        s.style.backgroundRepeat = 'no-repeat';
+        s.style.backgroundColor = DIM;
+        s.style.color = 'transparent';
+        frag.appendChild(s);
+        words.push(s);
+      });
+      p.replaceChild(frag, n);
+    });
+    return words;
+  }
+  paras.forEach(function (o) {
+    o.words = wrap(o.el);
+    o.chars = o.words.reduce(function (a, w) { return a + w.textContent.length + 1; }, 0);
+  });
+  var total = paras[0].chars + paras[1].chars;
+
+  /* the yellow paragraph waits below, hidden, until the first one is full */
+  p2.style.transition = 'opacity .7s ease, transform .9s cubic-bezier(.2,.7,.2,1)';
+  if (panel) panel.style.transformOrigin = '50% 0';
+
+  var geo = null;
+  function measure() {
+    geo = paras.map(function (o) {
+      var fs = parseFloat(getComputedStyle(o.el).fontSize) || 40;
+      var space = fs * 0.26, x = 0;
+      var pre = o.el.querySelector('.why2-pre');
+      if (pre) x = pre.getBoundingClientRect().width + space;
+      var start = x;
+      var pos = o.words.map(function (w) {
+        var wd = w.getBoundingClientRect().width;
+        var r = { s: x, w: wd };
+        x += wd + space;
+        return r;
+      });
+      return { pos: pos, from: start, len: x, edge: Math.max(40, fs * 1.4) };
+    });
+  }
+
+  function absTop(el) { return el.getBoundingClientRect().top + window.pageYOffset; }
+
+  var shown = null;
+  function update() {
+    if (!geo) measure();
+    var vh = window.innerHeight, y = window.pageYOffset;
+    var start = Math.max(0, absTop(p1) - vh * 0.75);
+    var end = absTop(p2) + p2.offsetHeight - vh * 0.45;
+    var maxY = Math.max(1, document.documentElement.scrollHeight - vh);
+    end = Math.min(Math.max(end, start + 1), maxY);
+    var done = Math.max(0, Math.min(1, (y - start) / (end - start))) * total, at = 0;
+
+    paras.forEach(function (o, i) {
+      var g = geo[i];
+      var t = Math.max(0, Math.min(1, (done - at) / o.chars));
+      var x0 = g.from - g.edge;
+      var x = x0 + t * (g.len - x0);
+      o.words.forEach(function (w, k) {
+        var p = g.pos[k], lx = x - p.s;
+        w.style.backgroundImage = 'linear-gradient(90deg,' + o.ink + ' ' + lx.toFixed(1) + 'px,transparent ' + (lx + g.edge).toFixed(1) + 'px)';
+      });
+      if (i === 0) {
+        var on = t >= 1;
+        if (on !== shown) {
+          shown = on;
+          p2.style.opacity = on ? '1' : '0';
+          p2.style.transform = on ? 'none' : 'translateY(28px)';
+        }
+      }
+      at += o.chars;
+    });
+
+    /* panel: fades in and grows from 92% as its top travels from the bottom of the screen to 55% up */
+    if (panel) {
+      var r = panel.getBoundingClientRect();
+      var q = Math.max(0, Math.min(1, (vh - r.top) / (vh * 0.45)));
+      q = q * q * (3 - 2 * q);
+      panel.style.opacity = (0.05 + 0.95 * q).toFixed(3);
+      panel.style.transform = 'scale(' + (0.92 + 0.08 * q).toFixed(4) + ')';
+    }
+  }
+
+  var ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function () { ticking = false; update(); });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', function () { geo = null; onScroll(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { geo = null; update(); });
+  update();
+})();
+
+</script>
+<script>
+/* 03-what-is-ai: the "Types of AI" explorer (after Boaz's original, without the animations).
+   The nav pills select one type; its card shows and the others hide (they share one grid cell, so the
+   panel keeps the height of the tallest card and never jumps). Selected-state colours are set inline, so no
+   extra Webflow classes are needed. Without JS every card is simply listed one under another. */
+(function () {
+  var sec = document.getElementById('what-is-ai');
+  if (!sec) return;
+  var stage = sec.querySelector('.wai-stage');
+  var nav = sec.querySelector('.wai-nav');
+  if (!stage || !nav) return;
+  var items = [].slice.call(stage.querySelectorAll('[data-item]'));
+  var ctls = [].slice.call(nav.querySelectorAll('[data-ctl]'));
+  var btns = [].slice.call(nav.querySelectorAll('[data-t]'));
+  if (!items.length) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var NAVY = '#13181d', SOFT = 'rgba(255, 255, 255, 0.45)';
+  stage.style.display = 'grid';
+  stage.style.gap = '0';
+  items.forEach(function (it) {
+    it.style.gridArea = '1 / 1';
+    if (!reduce) it.style.transition = 'opacity .35s ease, transform .35s ease';
+  });
+
+  function paint(el, on) {
+    el.style.backgroundColor = on ? NAVY : '';
+    el.style.borderColor = on ? NAVY : '';
+    el.style.color = on ? '#ffffff' : '';
+  }
+  function soft(el) { el.style.borderColor = SOFT; el.style.color = '#ffffff'; }
+
+  function select(t) {
+    ctls.forEach(function (c) { paint(c, c.getAttribute('data-ctl') === t); });
+    var on = nav.querySelector('[data-ctl="' + t + '"]');
+    /* children inside a dark (selected) box switch to light outlines */
+    if (on) [].forEach.call(on.querySelectorAll('[data-ctl]'), soft);
+    btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-t') === t ? 'true' : 'false'); });
+    items.forEach(function (it) {
+      var show = it.getAttribute('data-item') === t;
+      it.style.visibility = show ? 'visible' : 'hidden';
+      it.style.opacity = show ? '1' : '0';
+      it.style.transform = show || reduce ? 'none' : 'translateY(8px)';
+      if (show) it.removeAttribute('aria-hidden'); else it.setAttribute('aria-hidden', 'true');
+    });
+  }
+
+  nav.addEventListener('click', function (e) {
+    var el = e.target;
+    while (el && el !== nav && !el.getAttribute('data-t')) el = el.parentNode;
+    if (!el || el === nav) return;
+    e.preventDefault();
+    select(el.getAttribute('data-t'));
+  });
+  /* Webflow publishes <button> as <a href="#" class="w-button">: give them button semantics */
+  btns.forEach(function (b) { if (b.tagName === 'A') { b.setAttribute('role', 'button'); b.removeAttribute('href'); b.tabIndex = 0; b.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); b.click(); } }); } });
+  select('sym');
+})();
+
+</script>
+<script>
+/* 06-llms: Strengths / Weaknesses tabs + one accordion per item (after Boaz's original).
+   Without JS both lists show fully open and the tab bar stays hidden. With JS: the tab bar appears,
+   only the selected list shows, and each item's explanation opens on click / Enter / Space.
+   State is set with inline styles + ARIA, so no extra Webflow classes are needed. */
+(function () {
+  var sec = document.getElementById('llms');
+  if (!sec) return;
+  var box = sec.querySelector('.llm2-box');
+  var bar = sec.querySelector('.llm2-tabs');
+  if (!box || !bar) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var tabs = [].slice.call(bar.querySelectorAll('.llm2-tab-s, .llm2-tab-w'));
+  var INK = '#1e1d1b', ON = { 'llm2-tab-s': '#1bc594', 'llm2-tab-w': '#ff885d' };
+
+  bar.setAttribute('role', 'tablist');
+  bar.style.display = 'inline-flex';
+
+  function panelOf(t) { return document.getElementById(t.getAttribute('data-panel')); }
+  function select(t, focus) {
+    tabs.forEach(function (x) {
+      var on = x === t, p = panelOf(x);
+      x.setAttribute('aria-selected', on ? 'true' : 'false');
+      x.tabIndex = on ? 0 : -1;
+      x.style.backgroundColor = on ? ON[x.className.split(' ')[0]] : '';
+      x.style.color = on ? INK : '';
+      if (p) p.style.display = on ? '' : 'none';
+    });
+    if (focus) t.focus();
+  }
+  tabs.forEach(function (t, i) {
+    var p = panelOf(t);
+    t.setAttribute('role', 'tab');
+    t.setAttribute('aria-controls', t.getAttribute('data-panel'));
+    if (p) { p.setAttribute('role', 'tabpanel'); p.setAttribute('aria-labelledby', t.id); p.removeAttribute('aria-label'); }
+    t.addEventListener('click', function () { select(t); });
+    t.addEventListener('keydown', function (e) {
+      var k = e.key, n = null;
+      if (k === 'ArrowRight' || k === 'ArrowDown') n = tabs[(i + 1) % tabs.length];
+      else if (k === 'ArrowLeft' || k === 'ArrowUp') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (k === 'Home') n = tabs[0];
+      else if (k === 'End') n = tabs[tabs.length - 1];
+      else if (k === 'Enter' || k === ' ') { e.preventDefault(); select(t); return; }
+      if (n) { e.preventDefault(); select(n, true); }
+    });
+  });
+  select(tabs[0]);
+
+  /* accordions */
+  [].forEach.call(box.querySelectorAll('.llm2-item'), function (li, i) {
+    var row = li.querySelector('.llm2-row'), panel = li.querySelector('.llm2-panel');
+    var more = li.querySelector('.llm2-more'), chev = li.querySelector('.llm2-chev');
+    if (!row || !panel) return;
+    var links = [].slice.call(panel.querySelectorAll('a, button'));
+    panel.id = panel.id || 'llm2-panel-' + i;
+    row.setAttribute('role', 'button');
+    row.tabIndex = 0;
+    row.style.cursor = 'pointer';
+    row.setAttribute('aria-controls', panel.id);
+    if (chev) chev.style.display = 'block';
+    if (reduce) { panel.style.transition = 'none'; if (more) more.style.transition = 'none'; if (chev) chev.style.transition = 'none'; }
+    function set(open) {
+      row.setAttribute('aria-expanded', open ? 'true' : 'false');
+      panel.style.gridTemplateRows = open ? '1fr' : '0fr';
+      panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+      if (more) { more.style.opacity = open ? '1' : '0'; }
+      if (chev) chev.style.transform = open ? 'rotate(180deg)' : '';
+      links.forEach(function (a) { a.tabIndex = open ? 0 : -1; });
+    }
+    set(false);
+    function toggle() { set(row.getAttribute('aria-expanded') !== 'true'); }
+    row.addEventListener('click', toggle);
+    row.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  });
+})();
+
+</script>
+<script>
+/* Risks: "Read more" sheet (native dialog pattern) + drag-to-scroll card rows. */
+(function () {
+  var sec = document.getElementById('risks');
+  if (!sec) return;
+  var FOCUSABLE = 'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])';
+  var current = null, lastTrigger = null;
+
+  /* open/closed states are inline styles (Webflow only creates classes that some element carries) */
+  function show(sheet, on) {
+    var box = sheet.querySelector('.rsk2-sheet-box');
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    sheet.style.transition = reduce ? 'none' : (on ? 'opacity 0.3s ease, visibility 0s linear 0s' : '');
+    if (box) box.style.transition = reduce ? 'none' : '';
+    sheet.style.visibility = on ? 'visible' : '';
+    sheet.style.opacity = on ? '1' : '';
+    if (box) box.style.transform = on ? 'none' : '';
+  }
+  function open(sheet, trigger) {
+    if (!sheet || current === sheet) return;
+    lastTrigger = trigger || null; current = sheet;
+    show(sheet, true);
+    sheet.setAttribute('aria-hidden', 'false');
+    document.documentElement.style.overflow = 'hidden';
+    var box = sheet.querySelector('.rsk2-sheet-box'); if (box) box.scrollTop = 0;
+    var c = sheet.querySelector('.rsk2-sheet-close'); if (c) setTimeout(function () { c.focus(); }, 30);
+  }
+  function close(restore) {
+    if (!current) return;
+    var sheet = current; current = null;
+    show(sheet, false);
+    sheet.setAttribute('aria-hidden', 'true');
+    document.documentElement.style.overflow = '';
+    if (restore !== false && lastTrigger && lastTrigger.focus) lastTrigger.focus();
+  }
+  [].slice.call(sec.querySelectorAll('.rsk2-sheet')).forEach(function (s) { s.setAttribute('aria-hidden', 'true'); });
+
+  sec.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('[data-rsk2-open],[data-rsk2-close]') : null;
+    if (!t) return;
+    if (t.hasAttribute('data-rsk2-open')) { e.preventDefault(); open(document.getElementById(t.getAttribute('data-rsk2-open')), t); }
+    else { e.preventDefault(); close(); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (!current) return;
+    if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+    if (e.key !== 'Tab') return;
+    var f = [].slice.call(current.querySelectorAll(FOCUSABLE)).filter(function (x) { return x.offsetParent !== null; });
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  /* footnote links inside the sheet: close it first (references script does the scrolling) */
+  document.addEventListener('sbx:close-dialogs', function () { close(false); });
+
+  /* card rows: drag with a mouse, arrow keys when the row has focus */
+  [].slice.call(sec.querySelectorAll('.rsk2-row')).forEach(function (sc) {
+    var down = false, startX = 0, startLeft = 0, moved = false;
+    sc.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || e.button !== 0 || sc.scrollWidth <= sc.clientWidth) return;
+      if (e.target.closest && e.target.closest('button,a')) return;
+      down = true; moved = false; startX = e.clientX; startLeft = sc.scrollLeft;
+    });
+    window.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      var dx = e.clientX - startX;
+      if (!moved && Math.abs(dx) > 6) { moved = true; sc.style.cursor = 'grabbing'; sc.style.scrollSnapType = 'none'; }
+      if (moved) { sc.scrollLeft = startLeft - dx; e.preventDefault(); }
+    });
+    window.addEventListener('pointerup', function () {
+      if (!down) return; down = false;
+      setTimeout(function () { sc.style.cursor = ''; sc.style.scrollSnapType = ''; }, 0);
+    });
+    sc.addEventListener('click', function (e) { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+    sc.addEventListener('keydown', function (e) {
+      if (e.target !== sc) return;
+      var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var step = (sc.firstElementChild ? sc.firstElementChild.offsetWidth : 300) + 10;
+      if (e.key === 'ArrowRight') { sc.scrollBy({ left: step, behavior: reduce ? 'auto' : 'smooth' }); e.preventDefault(); }
+      if (e.key === 'ArrowLeft') { sc.scrollBy({ left: -step, behavior: reduce ? 'auto' : 'smooth' }); e.preventDefault(); }
+    });
+  });
+})();
+
+</script>
+<script>
+/* References: collapsible list (closed by default once JS runs) + footnote links open it and highlight the entry. */
+(function () {
+  var btn = document.querySelector('#references .refs2-btn');
+  var panel = document.getElementById('refs-panel');
+  if (!btn || !panel) return;
+  var ic = btn.querySelector('.refs2-btn-ic');
+  function set(open) {
+    btn.setAttribute('aria-expanded', String(open));
+    panel.style.display = open ? '' : 'none';
+    if (ic) ic.style.transform = open ? '' : 'rotate(0deg)';
+  }
+  set(false);
+  btn.addEventListener('click', function (e) { e.preventDefault(); set(btn.getAttribute('aria-expanded') !== 'true'); });
+
+  function goTo(hash) {
+    try { document.dispatchEvent(new CustomEvent('sbx:close-dialogs')); } catch (e) {}
+    set(true);
+    var target = document.getElementById(hash.slice(1));
+    if (!target) return;
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    requestAnimationFrame(function () {
+      target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: hash === '#references' ? 'start' : 'center' });
+      if (target.classList.contains('ref-item')) {
+        target.style.transition = 'background-color 0.6s ease';
+        target.style.backgroundColor = 'rgba(154, 225, 250, 0.18)';
+        setTimeout(function () { target.style.backgroundColor = ''; }, 1600);
+      }
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#ref-"], a[href="#references"]');
+    if (!a) return;
+    e.preventDefault(); goTo(a.getAttribute('href'));
+    if (history.replaceState) history.replaceState(null, '', a.getAttribute('href'));
+  });
+  if (/^#ref-\d+$|^#references$/.test(location.hash)) goTo(location.hash);
+})();
+
+</script>
+<script>
+/* Glossary: side sheet opened from the floating button, from links to #glossary,
+   and from inline term buttons (.gt[data-term] / [data-glossary-term]) which jump to that entry. */
+(function () {
+  var sheet = document.getElementById('glossary-sheet');
+  if (!sheet) return;
+  var panel = sheet.querySelector('.gl2-panel'), dim = sheet.querySelector('.gl2-dim');
+  var list = sheet.querySelector('.gl2-scroll');
+  var FOCUSABLE = 'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])';
+  var isOpen = false, lastTrigger = null;
+  sheet.setAttribute('aria-hidden', 'true');
+  /* open/closed states are inline styles (Webflow only creates classes that some element carries) */
+  function show(on) {
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    sheet.style.transition = reduce ? 'none' : (on ? 'visibility 0s linear 0s' : '');
+    if (panel) panel.style.transition = reduce ? 'none' : '';
+    if (dim) dim.style.transition = reduce ? 'none' : '';
+    sheet.style.visibility = on ? 'visible' : '';
+    if (dim) dim.style.opacity = on ? '1' : '';
+    if (panel) panel.style.transform = on ? 'none' : '';
+  }
+
+  function open(trigger, term) {
+    lastTrigger = trigger || null;
+    if (!isOpen) {
+      isOpen = true;
+      show(true);
+      sheet.setAttribute('aria-hidden', 'false');
+      document.documentElement.style.overflow = 'hidden';
+      if (list) list.scrollTop = 0;
+    }
+    var row = null;
+    if (term) {
+      [].slice.call(sheet.querySelectorAll('.gl2-row')).forEach(function (r) {
+        if (!row && r.getAttribute('data-term').toLowerCase() === term.toLowerCase()) row = r;
+      });
+    }
+    setTimeout(function () {
+      var c = sheet.querySelector('.gl2-close'); if (c) c.focus();
+      if (row) {
+        row.scrollIntoView({ block: 'start' });
+        row.style.backgroundColor = 'rgba(154, 225, 250, 0.16)';
+        setTimeout(function () { row.style.backgroundColor = ''; }, 1800);
+      }
+    }, 30);
+  }
+  function close(restore) {
+    if (!isOpen) return;
+    isOpen = false;
+    show(false);
+    sheet.setAttribute('aria-hidden', 'true');
+    document.documentElement.style.overflow = '';
+    if (restore !== false && lastTrigger && lastTrigger.focus) lastTrigger.focus();
+  }
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest) return;
+    var t = e.target.closest('[data-gl2-open], a[href="#glossary"], .gt[data-term], [data-glossary-term]');
+    if (t) {
+      e.preventDefault();
+      open(t, t.getAttribute('data-term') || t.getAttribute('data-glossary-term'));
+      return;
+    }
+    if (isOpen && e.target.closest('[data-gl2-close]')) { e.preventDefault(); close(); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (!isOpen) return;
+    if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+    if (e.key !== 'Tab') return;
+    var f = [].slice.call(sheet.querySelectorAll(FOCUSABLE)).filter(function (x) { return x.offsetParent !== null; });
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  document.addEventListener('sbx:close-dialogs', function () { close(false); });
+  if (location.hash === '#glossary') open(null);
+})();
+
+</script>

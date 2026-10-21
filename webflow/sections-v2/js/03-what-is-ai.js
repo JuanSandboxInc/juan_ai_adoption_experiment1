@@ -10,7 +10,7 @@
   if (!stage || !nav) return;
   var items = [].slice.call(stage.querySelectorAll('[data-item]'));
   var ctls = [].slice.call(nav.querySelectorAll('[data-ctl]'));
-  var btns = [].slice.call(nav.querySelectorAll('button[data-t]'));
+  var btns = [].slice.call(nav.querySelectorAll('[data-t]'));
   if (!items.length) return;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -48,7 +48,10 @@
     var el = e.target;
     while (el && el !== nav && !el.getAttribute('data-t')) el = el.parentNode;
     if (!el || el === nav) return;
+    e.preventDefault();
     select(el.getAttribute('data-t'));
   });
+  /* Webflow publishes <button> as <a href="#" class="w-button">: give them button semantics */
+  btns.forEach(function (b) { if (b.tagName === 'A') { b.setAttribute('role', 'button'); b.removeAttribute('href'); b.tabIndex = 0; b.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); b.click(); } }); } });
   select('sym');
 })();
