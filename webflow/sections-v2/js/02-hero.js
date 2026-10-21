@@ -6,9 +6,9 @@
 (function () {
   var sec = document.getElementById('why-this-page');
   if (!sec) return;
-  var p1 = sec.querySelector('.why2-text');
-  var p2 = sec.querySelector('.why2-yellow');
-  var panel = sec.querySelector('.why2-panel');
+  var p1 = (sec.querySelector('.why3-text') || sec.querySelector('.why2-text'));
+  var p2 = (sec.querySelector('.why3-yellow') || sec.querySelector('.why2-yellow'));
+  var panel = (sec.querySelector('.why3-panel') || sec.querySelector('.why2-panel'));
   if (!p1 || !p2) return;
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 

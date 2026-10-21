@@ -1,4 +1,4 @@
-.wai-explorer { display: grid; grid-template-columns: minmax(240px, 360px) minmax(0, 1fr); align-items: start; margin-top: 100px; padding: 64px 56px; background-color: #d1d1d1; color: #13181d; font-family: Switzer, Arial, sans-serif; box-sizing: border-box; }
+.wai3-explorer { display: grid; grid-template-columns: minmax(240px, 360px) minmax(0, 1fr); align-items: stretch; margin-top: 100px; padding: 64px 56px; background-color: #d1d1d1; color: #13181d; font-family: Switzer, Arial, sans-serif; box-sizing: border-box; }
 .wai-nav { display: flex; flex-direction: column; gap: 22px; max-width: 300px; padding-top: 8px; }
 .wai-grp { display: flex; flex-direction: column; align-items: stretch; gap: 10px; }
 .wai-grp2 { display: flex; flex-direction: column; align-items: stretch; gap: 10px; padding-top: 22px; border-top: 1px solid rgba(19, 24, 29, 0.3); }
@@ -19,54 +19,44 @@
 .wai-dot-ml { flex: none; width: 9px; height: 9px; margin-left: auto; border-radius: 50%; background-color: #c596fe; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
 .wai-dot-gen { flex: none; width: 9px; height: 9px; margin-left: auto; border-radius: 50%; background-color: #af8780; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
 .wai-dot-llm { flex: none; width: 9px; height: 9px; margin-left: auto; border-radius: 50%; background-color: #ff885d; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
-.wai-stage { display: flex; flex-direction: column; gap: 56px; min-width: 0; padding-left: 84px; }
-.wai-item { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); column-gap: 40px; align-items: start; min-width: 0; }
-.wai-head { min-width: 0; }
-.wai-name { display: flex; align-items: center; gap: 14px; margin: 0; font-family: Switzer, Arial, sans-serif; font-size: 40px; line-height: 1.1; font-weight: 400; letter-spacing: -0.02em; color: #13181d; }
 .wai-mark-sym { flex: none; width: 16px; height: 16px; border-radius: 50%; background-color: #f7ff88; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
 .wai-mark-ml { flex: none; width: 16px; height: 16px; border-radius: 50%; background-color: #c596fe; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
 .wai-mark-gen { flex: none; width: 16px; height: 16px; border-radius: 50%; background-color: #af8780; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
 .wai-mark-llm { flex: none; width: 16px; height: 16px; border-radius: 50%; background-color: #ff885d; box-shadow: 0 0 0 1px rgba(19, 24, 29, 0.35); }
-.wai-tag { margin: 12px 0 0 0; font-size: 26px; line-height: 1.35; font-weight: 400; color: rgba(19, 24, 29, 0.72); }
-.wai-ex { display: flex; flex-direction: column; gap: 8px; min-width: 0; padding: 4px 0 0 32px; border-left: 1px dotted rgba(19, 24, 29, 0.38); }
-.wai-lab { margin: 0; font-size: 13px; line-height: 1.5; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(19, 24, 29, 0.6); }
-.wai-exname { margin: 0; font-size: 28px; line-height: 1.25; font-weight: 400; letter-spacing: -0.01em; color: #13181d; }
-.wai-fact { margin: 4px 0 0 0; font-size: 21px; line-height: 1.5; font-weight: 400; color: rgba(19, 24, 29, 0.82); }
+.wai3-stage { display: flex; flex-direction: column; gap: 24px; min-width: 0; padding-left: 82px; }
+.wai3-card { display: flex; flex-direction: column; gap: 28px; min-width: 0; }
+.wai3-head { padding-top: 4px; }
+.wai3-name { display: flex; align-items: center; gap: 12px; margin: 0; font-family: Switzer, Arial, sans-serif; font-size: 33px; line-height: 1.05; font-weight: 400; letter-spacing: -0.5px; color: #13181d; }
+.wai3-tag { margin: 8px 0 0 0; font-size: 22px; line-height: 1.35; font-weight: 400; color: rgba(19, 24, 29, 0.72); }
+.wai3-ex { display: flex; flex-direction: column; flex: 1 1 auto; gap: 6px; padding: 28px 32px 32px 32px; border-top: 1px solid #13181d; background-color: #e6e6e6; }
+.wai3-lab { margin: 0 0 4px 0; font-size: 12px; line-height: 1.5; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(19, 24, 29, 0.6); }
+.wai3-exname { margin: 0; font-size: 20px; line-height: 1.3; font-weight: 400; color: #13181d; }
+.wai3-fact { max-width: 680px; margin: 0; font-size: 18px; line-height: 1.5; font-weight: 400; color: rgba(19, 24, 29, 0.82); }
 
 @media screen and (max-width: 991px) {
-  .wai-explorer { grid-template-columns: minmax(0, 1fr); margin-top: 48px; padding: 0; }
+  .wai3-explorer { grid-template-columns: minmax(0, 1fr); margin-top: 48px; padding: 0; }
+  .wai3-stage { padding: 29px 29px 36px 29px; }
+  .wai3-card { gap: 22px; }
+  .wai3-name { font-size: 24px; }
+  .wai3-tag { font-size: 19px; }
+  .wai3-ex { padding: 22px 24px 24px 24px; }
   .wai-nav { max-width: none; padding: 32px 29px; gap: 16px; border-bottom: 1px solid #13181d; }
   .wai-grp2 { padding-top: 8px; border-top: 0; }
-  .wai-stage { gap: 48px; padding: 32px 29px 40px 29px; }
-  .wai-item { grid-template-columns: minmax(0, 1fr); row-gap: 20px; }
-  .wai-name { font-size: 34px; }
-  .wai-tag { font-size: 22px; }
-  .wai-ex { padding: 20px 0 0 0; border-left: 0; border-top: 1px dotted rgba(19, 24, 29, 0.38); }
-  .wai-exname { font-size: 24px; }
-  .wai-fact { font-size: 19px; }
-}
-@media screen and (max-width: 767px) {
-  .wai-name { font-size: 30px; gap: 12px; }
-  .wai-tag { font-size: 20px; }
-  .wai-exname { font-size: 22px; }
-  .wai-fact { font-size: 18px; }
 }
 @media screen and (max-width: 479px) {
-  .wai-explorer { margin-top: 60px; }
+  .wai3-explorer { margin-top: 60px; }
+  .wai3-stage { padding: 24px 20px 28px 20px; }
+  .wai3-ex { padding: 18px 18px 20px 18px; }
+  .wai3-fact { font-size: 16px; }
   .wai-nav { padding: 24px 20px; gap: 12px; }
-  .wai-stage { padding: 28px 20px 32px 20px; }
   .wai-cap { font-size: 12px; letter-spacing: 0.05em; }
   .wai-pick { padding: 5px 13px; font-size: 15px; }
   .wai-pick-in { margin-left: 20px; padding: 5px 13px; font-size: 15px; }
   .wai-nest-btn { padding: 7px 7px 3px 7px; font-size: 15px; }
   .wai-nest { border-radius: 16px; }
   .wai-nest2 { margin-left: 20px; border-radius: 16px; }
-  .wai-name { font-size: 28px; }
   .wai-mark-sym { width: 14px; height: 14px; }
   .wai-mark-ml { width: 14px; height: 14px; }
   .wai-mark-gen { width: 14px; height: 14px; }
   .wai-mark-llm { width: 14px; height: 14px; }
-  .wai-tag { font-size: 19px; }
-  .wai-exname { font-size: 21px; }
-  .wai-fact { font-size: 17px; }
 }

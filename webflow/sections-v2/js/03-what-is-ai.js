@@ -1,22 +1,23 @@
 /* 03-what-is-ai: the "Types of AI" explorer (after Boaz's original, without the animations).
    The nav pills select one type; its card shows and the others hide (they share one grid cell, so the
-   panel keeps the height of the tallest card and never jumps). Selected-state colours are set inline, so no
+   panel is as tall as the nav or the tallest card, whichever is taller, and never jumps). Selected-state colours are set inline, so no
    extra Webflow classes are needed. Without JS every card is simply listed one under another. */
 (function () {
   var sec = document.getElementById('what-is-ai');
   if (!sec) return;
-  var stage = sec.querySelector('.wai-stage');
+  var stage = sec.querySelector('.wai3-stage') || sec.querySelector('.wai-stage');
   var nav = sec.querySelector('.wai-nav');
   if (!stage || !nav) return;
   var items = [].slice.call(stage.querySelectorAll('[data-item]'));
   var ctls = [].slice.call(nav.querySelectorAll('[data-ctl]'));
-  var btns = [].slice.call(nav.querySelectorAll('[data-t]'));
+  var btns = [].slice.call(nav.querySelectorAll('[data-t][aria-controls]'));
   if (!items.length) return;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var NAVY = '#13181d', SOFT = 'rgba(255, 255, 255, 0.45)';
   stage.style.display = 'grid';
   stage.style.gap = '0';
+  stage.style.alignItems = 'stretch';
   items.forEach(function (it) {
     it.style.gridArea = '1 / 1';
     if (!reduce) it.style.transition = 'opacity .35s ease, transform .35s ease';
